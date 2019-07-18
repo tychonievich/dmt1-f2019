@@ -238,12 +238,14 @@ def raw2cal(data):
                 continue # does not apply
             if 'recess' in k or 'Reading' in k or 'break' in k:
                 return ans # no classes
-            ans.append({
-                "title":k,
-                "kind":"special",
-                "day":d
-            })
-            if 'exam' in k.lower() or 'test' in k.lower() or 'midterm' in k.lower(): isexam = True
+            if 'exam' in k.lower() or 'test' in k.lower() or 'midterm' in k.lower():
+                isexam = True
+            else:
+                ans.append({
+                    "title":k,
+                    "kind":"special",
+                    "day":d
+                })
         if d < beg: return ans
         if d > end: return ans
         
@@ -356,22 +358,26 @@ def cal2html(cal):
     
 if __name__ == '__main__':
     import json, sys, yaml
-    raw = yamlfile('newcal.yaml')
+    raw = yamlfile('cal.yaml')
     cal = raw2cal(raw)
     with open('/tmp/tmp2.html', 'w') as fh:
         fh.write('''﻿<style>
                  table.calendar { border-collapse: collapse; width: 100%; background: rgba(0,0,0,0.125); border-radius: 1ex; padding-bottom: 2ex; }
                  table.calendar td:empty { padding: 0; border: none; height: 1.5em; }
-                 table.calendar td { height: 100%; }
+                 table.calendar td { height: 100%; box-sizing:border-box; }
+                 table.calendar tr { height: 100%; }
                  table.calendar span.date { font-size: 70.7%; padding-left: 0.5ex; float:right; }
                  table.calendar div.wrapper { 
+                    box-sizing:border-box; 
                     background: white;
                     border-radius: 1ex;
                     padding: .5ex;
-                    flex-direction:row;
-                    width: calc(100% - 1ex);
-                    height: calc(100% - 1ex);
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
                 }
+                
+                .special { background-color: #ffeeaa; margin:-.5ex; padding: .5ex; }
                  
                  table.agenda { display: block; }
                  table.agenda tr { display: block; border-top: thick solid grey; min-height: 2em; }
