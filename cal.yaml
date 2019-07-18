@@ -1,0 +1,130 @@
+Special Dates:
+  Courses begin: 2019-08-27
+  Courses end: 2019-12-06
+  Add deadline: 2019-09-10
+  Drop deadline: 2019-10-15
+  Withdraw deadline: 2019-10-22
+  Thanksgiving recess:
+    start: 2019-11-27
+    end: 2019-12-01
+  Reading days:
+    start: 2019-10-05
+    end: 2019-10-08
+  Exam 1: 2019-10-01
+  Exam 2: 2019-11-05
+
+meta:
+  timezone: America/New_York
+  name: DMT1
+  lecture exam: true
+  final:
+    start: 2019-12-16 14:00:00
+    duration: 180
+    room: Rufner G008
+
+sections:
+  CS2102-002:
+    type: lecture
+    room: Rufner G008
+    days: [Monday, Wednesday, Friday]
+    start: 15:30:00
+    duration: 50
+
+lectures:
+    -   welcome
+    -   Booleans revisited
+    -   a new syntax
+    -   equivalence rules
+
+    -   three kinds of proof
+
+
+
+reading:
+    
+    Review: ["[topics list](review.html)"]
+    Boolean algebra: ["[Booleans §1--2](bool.html)"]
+    binary arithmetic: ["[Bits §2.1--2.4](bits.html)"]
+    gates, wires, bitwise: ["[Booleans §1--2, 4](bool.html)"]
+    mux, demux, adder: ["[Booleans §3](bool.html)"]
+    clocks: ["[Parts §2--3](parts.html)"]
+    other hardware: ["[Parts §1--5](parts.html)"]
+    addressing modes; endianness: ["[ISA §3.3](isa.html)", "[Bits §1--3](bits.html)"]
+    
+    von Neumann model; state: ["[ISA §1--3](isa.html)"]
+    fetch-decode-execute: ["[ISA §1--3](isa.html)"]
+    moves, memory, ALU ops: ["[ISA §3.1](isa.html)"]
+    conditional jump; back doors: ["[ISA §3.4](isa.html)"]
+    the stack: ["[ISA §3.4.2](isa.html)"]
+    
+    review: ["[E1 practice](files/f2018e1practice.pdf)", "[E2 practice](files/f2018e2practice.pdf)"]
+    review: ["[review page](review.html)"]
+
+    x86-64: ["[x86-64 summary](x86.html)"]
+    tracing variables: ["[debugger example](cmdadd.html)"]
+    
+    C introduction: ["[wikipedia](https://en.wikipedia.org/wiki/C_syntax)", "[language reference](c.html)"]
+    "global, stack, heap": ["[memory writeup](memory.html)"]
+    "malloc and free": ["[memory writeup](memory.html)"]
+    C std library conventions: ["[writeup](manpage.html)"]
+    function pointers: ["[example from wikipedia](https://en.wikipedia.org/wiki/Function_pointer#Example_in_C)", "[C++ virtual functions](vtable.html)"]
+    defensive programming: ["[wikipedia](https://en.wikipedia.org/wiki/Defensive_programming)"]
+
+assignments:
+    ".groups":
+        PA:
+            portion: "40"
+            late-policy: [0.9, 0.8]
+            total: 10
+        Lab:
+            portion: 10
+            drop: 1
+            rubric: {"kind":"percentage"}
+        Exam:
+            portion: "40"
+            rubric: {"kind":"percentage"}
+        Quiz:
+            portion: "10"
+            drop: 1
+            duration: -1
+            rubric: {"kind":"percentage"}
+            link: https://kytos.cs.virginia.edu/dmt1-f2019/quizzes/
+
+    PA01:
+        title: bit fiddling
+        due: 2019-09-13 14:00:00
+        notes: things like "count the number of set bits in an int" using limited numbers of bitwise operations
+    PA02:
+        title: worksheet
+        due: 2019-09-20 14:00:00
+        total: 100
+        notes: 
+    PA03:
+        title: simulator
+        files: ['*.py', '*.java', 'fib.binary']
+        due: 2019-09-27 14:00:00
+        notes: in Java or Python, implement a toy machine language fetch/decode/execute simulator
+        total: 100
+    PA04:
+        title: assembly
+        files: 'matlib.s'
+        due: 2019-10-18 14:00:00
+    PA05:
+        title: 'bomb'
+        due: 2019-10-25 14:00:00
+    PA06:
+        title: smallc
+        files: smallfunc.c
+        due: 2019-11-01 14:00:00
+    PA07:
+        title: linkedlist
+        files: linkedlist.c
+        due: 2019-11-15 14:00:00
+    PA08:
+        title: postfix
+        files: rpn.c
+        due: 2019-11-29 14:00:00
+    PA09:
+        title: schat
+        files: schat.c
+        due: 2019-12-06 14:00:00
