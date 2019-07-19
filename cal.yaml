@@ -17,6 +17,7 @@ meta:
   timezone: America/New_York
   name: DMT1
   lecture exam: true
+  home: https://www.cs.virginia.edu/luther/DMT1/F2019/
   final:
     start: 2019-12-16 14:00:00
     duration: 180

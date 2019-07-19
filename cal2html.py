@@ -8,7 +8,6 @@ def yamlfile(f):
     except ImportError:
         from yaml import Loader
 
-    global default_tz
     if type(f) is str:
         with open(f) as stream:
             data = load(stream, Loader=Loader)
@@ -31,7 +30,7 @@ def dow(n):
     raise Exception("Unknown weekday: "+str(n))
 
 
-def raw2cal(data):
+def raw2cal(data, links=None):
     """Given the data from a cal.yaml, return a list of weeks,
     where each week is a list of seven data,
     where each day is either None or {"date":datetime.date, "events":[...]}
@@ -65,7 +64,6 @@ def raw2cal(data):
         for k,v in data['Special Dates'].items():
             if (v['start'] > d or v['end'] < d) if type(v) is dict else v != d:
                 continue # does not apply
-            print(d, k, v)
             if 'recess' in k or 'Reading' in k or 'break' in k:
                 return ans # no classes
             if 'exam' in k.lower() or 'test' in k.lower() or 'midterm' in k.lower():
@@ -118,8 +116,15 @@ def raw2cal(data):
                         ans[-1]['reading'] = tmp
                     else:
                         ans[-1]['reading'] = [tmp]
-                # add from-lecture links
                 ent['sidx'] += 1
+            # handle separate links file
+            if links and d in links:
+                for f in links[d].get('files',[]):
+                    n = os.path.basename(f)
+                    n = n[n.find('-')+1:]
+                    ans[-1].setdefault('reading',[]).append({'txt':n,'lnk':f})
+                if 'video' in links: ans[-1]['video'] = f['video']
+                if 'audio' in links: ans[-1]['audio'] = f['audio']
 
         # handle assignments
         for task,ent in data['assignments'].items():
@@ -154,7 +159,7 @@ def raw2cal(data):
     return ans
 
 def cal2html(cal):
-    ans = ['<table class="agenda">']
+    ans = ['<table class="calendar">']
     for week in cal:
         ans.append('<tr class="week">')
         for day in week:
@@ -196,7 +201,7 @@ def cal2html(cal):
     return ''.join(ans)
 
 
-def cal2ical(cal, course, tz=None, sections=None, stamp=None):
+def cal2ical(cal, course, home, tz=None, sections=None, stamp=None):
     if tz is None: tz = 'America/New_York'
     now = datetime.utcnow().strftime('%Y%m%dT%H%M%S')
     
@@ -212,6 +217,10 @@ NAME:{0}'''.format(course)]
         s = s.replace(r',', r'\,')
         s = s.replace(r',', r'\;')
         return s
+    def fixlinks(l):
+        for i in range(len(l)):
+            l[i] = l[i].replace('<//','<https://')
+            l[i] = re.sub(r'<([^><:]*)>', r'<{}\1>'.format(home.replace('\\','\\\\')), l[i])
     def encode(event):
         details = []
         if 'link' in event: details.append('see <' + event.get('link')+'>')
@@ -235,6 +244,7 @@ NAME:{0}'''.format(course)]
         if 'section' in event: title = event['section']+' -- ' + title
         elif 'group' in event and event['group'] not in title:
             title = event['group']+' '+title
+        fixlinks(details)
         return '''BEGIN:VEVENT
 SUMMARY:{title}
 DESCRIPTION:{notes}
@@ -265,7 +275,8 @@ if __name__ == '__main__':
 
     import json, sys, yaml
     raw = yamlfile('cal.yaml')
-    cal = raw2cal(raw)
+    links = yamlfile('links.yaml') if os.path.exists('links.yaml') else {}
+    cal = raw2cal(raw, links)
     with open('/tmp/tmp2.html', 'w') as fh:
         fh.write('''﻿<style>
 table.calendar { 
@@ -276,7 +287,7 @@ table.calendar {
     border-radius: 1.5ex; 
 }
 table.calendar td:empty { padding: 0; height: 1.5em; }
-table.calendar td { height: 100%; border: 0.25ex solid rgba(0,0,0,0); }
+table.calendar td { border: 0.25ex solid rgba(0,0,0,0); }
 table.calendar span.date { 
     font-size: 70.7%;
     padding-left: 0.5ex;
@@ -291,6 +302,7 @@ table.calendar div.wrapper {
     box-sizing:border-box; 
     width: 100%;
     height: 100%;
+    min-height:4em; 
     overflow: hidden;
 }
 table.calendar div.wrapper div {
@@ -307,13 +319,13 @@ table.calendar div.wrapper div:last-child {
 }
 
 
-table.agenda { display: block; }
+table.agenda, table.agenda tbody { display: block; }
 table.agenda tr {
     display: block; border-top: thick solid grey;
     min-height: 2em;
 }
 table.agenda td {
-    display: table; border-top: thin dotted black; width: 100%;
+    display: table; border-top: thin solid grey; width: 100%;
     padding: 0;
 }
 table.agenda td:empty { display: none; }
@@ -343,4 +355,4 @@ summary { margin-left: -1em; }
         fh.write(cal2html(cal))
 
     with open('/tmp/tmp2.ics', 'w') as fh:
-        fh.write(cal2ical(cal, course, tz=raw['meta']['timezone']))
+        fh.write(cal2ical(cal, course, raw['meta']['home'], tz=raw['meta']['timezone']))
