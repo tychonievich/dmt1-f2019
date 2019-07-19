@@ -1,5 +1,5 @@
-import datetime, re, markdown, dateutil, json
-# import pytz, unidecode
+import re, markdown, dateutil, json
+from datetime import timedelta, datetime
 
 def yamlfile(f):
     from yaml import load
@@ -36,7 +36,6 @@ def raw2cal(data):
     where each week is a list of seven data,
     where each day is either None or {"date":datetime.date, "events":[...]}
     """
-    from datetime import timedelta, datetime
     s = data['Special Dates']['Courses begin']
     beg = s
     e = data['Special Dates']['Courses end']
@@ -64,8 +63,9 @@ def raw2cal(data):
                 "where":final['room']
             })
         for k,v in data['Special Dates'].items():
-            if (v['start'] < d or v['end'] > d) if type(v) is dict else v != d:
+            if (v['start'] > d or v['end'] < d) if type(v) is dict else v != d:
                 continue # does not apply
+            print(d, k, v)
             if 'recess' in k or 'Reading' in k or 'break' in k:
                 return ans # no classes
             if 'exam' in k.lower() or 'test' in k.lower() or 'midterm' in k.lower():
@@ -126,7 +126,6 @@ def raw2cal(data):
             if task[0] == '.': continue
             if 'due' not in ent: continue
             if ent['due'].date() != d: continue
-            print(task, ent)
             group = ent.get('group', re.match('^[A-Za-z]*',task).group(0))
             tmp = data['assignments'].get('.groups',{}).get(group,{})
             tmp.update(ent)
@@ -196,8 +195,74 @@ def cal2html(cal):
     ans.append('</table>')
     return ''.join(ans)
 
+
+def cal2ical(cal, course, tz=None, sections=None, stamp=None):
+    if tz is None: tz = 'America/New_York'
+    now = datetime.utcnow().strftime('%Y%m%dT%H%M%S')
+    
+    ans = ['''BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//University of Virginia//{0}//EN
+CALSCALE:GREGORIAN
+NAME:{0}'''.format(course)]
+    def icescape(s):
+        s = s.replace('"', '').replace(':', '')
+        s = s.replace('\\', '\\\\')
+        s = s.replace('\n', '\\n')
+        s = s.replace(r',', r'\,')
+        s = s.replace(r',', r'\;')
+        return s
+    def encode(event):
+        details = []
+        if 'link' in event: details.append('see <' + event.get('link')+'>')
+        if 'details' in event: details.append(event.get('details'))
+        if 'reading' in event:
+            for r in event['reading']:
+                if type(r) is str: details.append(r)
+                else: details.append('{txt} <{lnk}>'.format(**r))
+        for media in ('video', 'audio'):
+            if media in event:
+                details.append('{}: <{}>'.format(media, event[media]))
+        if 'day' in event:
+            dts = ':{}'.format(event['day'].strftime('%Y%m%d'))
+            dte = ':{}'.format((event['day'] + timedelta(1)).strftime('%Y%m%d'))
+        elif 'from' in event and 'to' in event:
+            dts = ';TZID={}:{}'.format(tz, event['from'].strftime('%Y%m%dT%H%M%S'))
+            dte = ';TZID={}:{}'.format(tz, event['to'].strftime('%Y%m%dT%H%M%S'))
+        else:
+            raise Exception("Event without time: "+str(event))
+        title = event.get('title','TBA')
+        if 'section' in event: title = event['section']+' -- ' + title
+        elif 'group' in event and event['group'] not in title:
+            title = event['group']+' '+title
+        return '''BEGIN:VEVENT
+SUMMARY:{title}
+DESCRIPTION:{notes}
+DTSTART{dts}
+DTEND{dte}
+DTSTAMP:{now}Z
+UID:{uid}@{course}.cs.virginia.edu
+END:VEVENT'''.format(
+            title=title, dts=dts, dte=dte, course=course, now=now,
+            notes=icescape('\n'.join(details)),
+            uid='{}-{}'.format(dts,title),
+        )
+    for week in cal:
+        for day in week:
+            if day:
+                for event in day['events']:
+                    if 'section' in event and sections and event['section'] not in sections: continue
+                    ans.append(encode(event))
+    ans.append('END:VCALENDAR\r\n')
+    return '\r\n'.join(_.replace('\n','\r\n') for _ in ans)
     
 if __name__ == '__main__':
+    import os, os.path
+    here = os.path.realpath(os.path.dirname(__file__))
+    os.chdir(here)
+    course = os.path.basename(here)
+
+
     import json, sys, yaml
     raw = yamlfile('cal.yaml')
     cal = raw2cal(raw)
@@ -276,3 +341,6 @@ summary { margin-left: -1em; }
 
 </style>''')
         fh.write(cal2html(cal))
+
+    with open('/tmp/tmp2.ics', 'w') as fh:
+        fh.write(cal2ical(cal, course, tz=raw['meta']['timezone']))
