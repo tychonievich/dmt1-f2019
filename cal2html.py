@@ -1,4 +1,5 @@
-import pytz, datetime, re, markdown, dateutil, unidecode, json
+import datetime, re, markdown, dateutil, json
+# import pytz, unidecode
 
 def calendar(data, linkfile):
     """Given a yaml file, creates a calendar: a date-sorted sequence of entries
@@ -238,22 +239,24 @@ def raw2cal(data):
                 continue # does not apply
             if 'recess' in k or 'Reading' in k or 'break' in k:
                 return ans # no classes
-            ans.append({
-                "title":k,
-                "kind":"special",
-                "day":d
-            })
+            
             if 'exam' in k.lower() or 'test' in k.lower() or 'midterm' in k.lower(): isexam = True
+            else:
+                ans.append({
+                    "title":k,
+                    "kind":"special",
+                    "day":d
+                })
         if d < beg: return ans
         if d > end: return ans
         
         # handle sections
         for sec, ent in data['sections'].items():
             if d.weekday() not in ent['days']: continue
-            if isexam and any(
+            if isexam and any((
                 data['meta'].get('lecture exam') == (ent['type'] == 'lecture'),
                 ent.get('exams')
-            ):
+            )):
                 ans.append({
                     'section':sec,
                     'title':'Exam',
@@ -265,7 +268,7 @@ def raw2cal(data):
             elif ent['type']+'s' not in data or len(data[ent['type']+'s']) <= ent['sidx']:
                 ans.append({
                     'section':sec,
-                    'title':'TBA',#ent['type'],
+                    'title':ent['type'],
                     "kind":ent['type'],
                     "from":dt + timedelta(0,ent['start']),
                     "to":dt + timedelta(0,ent['start'] + 60*ent['duration']),
@@ -280,7 +283,13 @@ def raw2cal(data):
                     "to":dt + timedelta(0,ent['start'] + 60*ent['duration']),
                     "where":ent['room']
                 })
-                # add from-lecture links, reading
+                if ans[-1]['title'] in data['reading']:
+                    tmp = data['reading'][ans[-1]['title']]
+                    if type(tmp) is list:
+                        ans[-1]['reading'] = tmp
+                    else:
+                        ans[-1]['reading'] = [tmp]
+                # add from-lecture links
                 ent['sidx'] += 1
 
         # handle assignments
@@ -294,11 +303,14 @@ def raw2cal(data):
             tmp.update(ent)
             ent = tmp
             ans.append({
-                'title':ent.get('title', group),
+                'title':ent.get('title', task),
                 'kind':'assignment',
                 'group':group,
+                'from':ent['due']-timedelta(0,900),
+                'to':ent['due'],
             })
-            # add links, data for submission server
+            if 'link' in ent: ans[-1]['link'] = ent['link']
+            # add data for submission server
             
         return ans
 
@@ -314,7 +326,7 @@ def raw2cal(data):
     return ans
 
 def cal2html(cal):
-    ans = ['<table class="calendar">']
+    ans = ['<table class="agenda">']
     for week in cal:
         ans.append('<tr class="week">')
         for day in week:
@@ -327,10 +339,8 @@ def cal2html(cal):
                     classes = [e[k] for k in ('section','kind','group') if k in e]
                     title = e.get('title','TBA')
                     more = []
-                    for reading in e.get('reading',[]):
-                        if type(reading) is str:
-                            more.append(reading)
-                        more.append('<a href="{}">{}</a>'.format(reading['txt'], reading['lnk']))
+                    if 'link' in e:
+                        title = '<a href="{}">{}</a>'.format(e['link'], title)
                     for media in ('video', 'audio'):
                         if media in e:
                             more.append('<a href="{}">{}{}</a>'.format(
@@ -338,10 +348,15 @@ def cal2html(cal):
                                 media,
                                 e[media][e[media].rfind('.'):]
                             ))
+                    for reading in e.get('reading',[]):
+                        if type(reading) is str:
+                            more.append(reading)
+                        else:
+                            more.append('<a href="{}">{}</a>'.format(reading['lnk'], reading['txt']))
                     if more:
                         ans.append('<details class="{}">'.format(' '.join(classes)))
-                        ans.append('<summary>{}</summary>'.format(ttile))
-                        ans.append(' '.join(more))
+                        ans.append('<summary>{}</summary>'.format(title))
+                        ans.append(' <small>and</small> '.join(more))
                         ans.append('</details>')
                     else:
                         ans.append('<div class="{}">{}</div>'.format(' '.join(classes), title))
@@ -349,44 +364,86 @@ def cal2html(cal):
                 ans.append('</div>')
             ans.append('</td>')
         ans.append('</tr>')
-    ans.append('<tr><td></td></tr>')
+    # ans.append('<tr><td></td></tr>')
     ans.append('</table>')
     return ''.join(ans)
 
     
 if __name__ == '__main__':
     import json, sys, yaml
-    raw = yamlfile('newcal.yaml')
+    raw = yamlfile('cal.yaml')
     cal = raw2cal(raw)
     with open('/tmp/tmp2.html', 'w') as fh:
         fh.write('''﻿<style>
-                 table.calendar { border-collapse: collapse; width: 100%; background: rgba(0,0,0,0.125); border-radius: 1ex; padding-bottom: 2ex; }
-                 table.calendar td:empty { padding: 0; border: none; height: 1.5em; }
-                 table.calendar td { height: 100%; }
-                 table.calendar span.date { font-size: 70.7%; padding-left: 0.5ex; float:right; }
-                 table.calendar div.wrapper { 
-                    background: white;
-                    border-radius: 1ex;
-                    padding: .5ex;
-                    flex-direction:row;
-                    width: calc(100% - 1ex);
-                    height: calc(100% - 1ex);
-                }
-                 
-                 table.agenda { display: block; }
-                 table.agenda tr { display: block; border-top: thick solid grey; min-height: 2em; }
-                 table.agenda td { display: block; border-top: thin dotted black; }
-                 table.agenda td:empty { display: none; }
-                 table.agenda span.date.w0:before { content: "Sun "; }
-                 table.agenda span.date.w1:before { content: "Mon "; }
-                 table.agenda span.date.w2:before { content: "Tue "; }
-                 table.agenda span.date.w3:before { content: "Wed "; }
-                 table.agenda span.date.w4:before { content: "Thu "; }
-                 table.agenda span.date.w5:before { content: "Fri "; }
-                 table.agenda span.date.w6:before { content: "Sat "; }
-                 table.agenda span.date { font-size: 70.7%; width:7em; }
-                 table.agenda div.wrapper { display: table-row; }
-                 table.agenda span.date { display: table-cell; }
-                 table.agenda div.events { display: table-cell; }
-            </style>''')
+table.calendar { 
+    border-collapse: collapse; 
+    width: 100%; 
+    background: rgba(0,0,0,0.125); 
+    border: 0.5ex solid rgba(0,0,0,0);
+    border-radius: 1.5ex; 
+}
+table.calendar td:empty { padding: 0; height: 1.5em; }
+table.calendar td { height: 100%; border: 0.25ex solid rgba(0,0,0,0); }
+table.calendar span.date { 
+    font-size: 70.7%;
+    padding-left: 0.5ex;
+    float:right;
+    margin-top:-0.5ex;
+}
+table.calendar div.wrapper { 
+    background: white;
+    border-radius: 1ex;
+    padding: .5ex;
+    flex-direction:row;
+    width: calc(100% - 1ex);
+    height: calc(100% - 1ex);
+    overflow: hidden;
+}
+table.calendar div.wrapper div {
+    padding: 0 0.5ex 0 0.5ex;
+    margin: 0 -0.5ex 0 -0.5ex;
+}
+table.calendar div.wrapper div:first-child {
+    padding-top: 0.5ex;
+    margin-top: -0.5ex;
+}
+table.calendar div.wrapper div:last-child {
+    padding-bottom: 0.5ex;
+    margin-bottom: -0.5ex;
+}
+
+
+table.agenda { display: block; }
+table.agenda tr {
+    display: block; border-top: thick solid grey;
+    min-height: 2em;
+}
+table.agenda td {
+    display: table; border-top: thin dotted black; width: 100%;
+    padding: 0;
+}
+table.agenda td:empty { display: none; }
+table.agenda span.date.w0:before { content: "Sun "; }
+table.agenda span.date.w1:before { content: "Mon "; }
+table.agenda span.date.w2:before { content: "Tue "; }
+table.agenda span.date.w3:before { content: "Wed "; }
+table.agenda span.date.w4:before { content: "Thu "; }
+table.agenda span.date.w5:before { content: "Fri "; }
+table.agenda span.date.w6:before { content: "Sat "; }
+table.agenda span.date {
+    font-size: 70.7%; width:7em;
+    vertical-align: middle; 
+    display: table-cell;
+}
+table.agenda div.wrapper { display: table-row; }
+table.agenda div.events { display: table-cell; vertical-align: middle; }
+
+.assignment:before { content: "due: "; font-size: 70.7%; }
+small { opacity: 0.5; }
+.special, .exam { background: rgba(255,127,0,0.25); opacity: 0.75; }
+span.date { font-family:monospace; }
+details { padding-left: 1em; }
+summary { margin-left: -1em; }
+
+</style>''')
         fh.write(cal2html(cal))

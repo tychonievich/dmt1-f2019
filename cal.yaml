@@ -10,7 +10,7 @@ Special Dates:
   Reading days:
     start: 2019-10-05
     end: 2019-10-08
-  Exam 1: 2019-10-01
+  Exam 1: 2019-09-04
   Exam 2: 2019-11-05
 
 meta:
@@ -41,6 +41,13 @@ lectures:
 
 
 reading:
+    
+    welcome: "§1"
+    Booleans revisited: 
+        - "§2"
+        - lnk: //www.cs.virginia.edu/~njb2b
+          txt: Brunelle's page 
+    
     
     Review: ["[topics list](review.html)"]
     Boolean algebra: ["[Booleans §1--2](bool.html)"]
@@ -128,3 +135,12 @@ assignments:
         title: schat
         files: schat.c
         due: 2019-12-06 14:00:00
+    
+    Quiz01:
+        due: 2019-09-02 15:30:00
+    Quiz02:
+        due: 2019-09-09 15:30:00
+    Quiz03:
+        due: 2019-09-16 15:30:00
+    Quiz04:
+        due: 2019-09-23 15:30:00
