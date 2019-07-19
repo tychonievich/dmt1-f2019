@@ -1,177 +1,6 @@
 import datetime, re, markdown, dateutil, json
 # import pytz, unidecode
 
-def calendar(data, linkfile):
-    """Given a yaml file, creates a calendar: a date-sorted sequence of entries
-    Each entry contains some subset of
-    
-    - datetime data:
-        - at least two of
-            - open date
-            - close date
-            - duration
-        - on a calendar, display as [close-duration, close] or [open, close] or [open, open+duration]
-    - filter strings, including
-        - type (lecture, lab, PA, Quiz, etc)
-        - sections (a set of strings; None implies all)
-    - title
-    - hyperlink
-    - textual details
-    - submission info, including
-        - filename globs
-        - submission instructions
-        - support files
-        - tester to run
-        - due date/time
-    - grading rubric
-    """
-    
-    name = data['meta']['name']
-    month = data['Special Dates']['Courses begin'].month
-    year = data['Special Dates']['Courses begin'].year
-    finalurl = 'http://www.virginia.edu/registrar/exams.html#1{}{}'.format(year%100, month + (month == 1))
-    calname = '{}.{}{}'.format(name, ('S' if month < 5 else 'Su' if  month < 8 else 'F'), year)
-    lecexam = data['meta'].get('lecture exam',True)
-    ans = []
-    
-    breaks = []
-    exams = {}
-    for k,v in data['Special Dates'].items():
-        if 'recess' in k or 'break' in k or 'Reading' in k:
-            if type(v) is dict: breaks.append((v['start'], v['end']))
-            else: breaks.append((v, v))
-        elif 'xam' in k or 'uiz' in k:
-            exams[v] = k
-    breaks, _breaks = [], breaks
-    for s,e in _breaks:
-        while s <= e:
-            breaks.append(s)
-            s += datetime.timedelta(1)
-    breaks.append(day(fixDate(data['Special Dates']['Courses begin']) + datetime.timedelta(-1)))
-    breaks.append(day(fixDate(data['Special Dates']['Courses end']) + datetime.timedelta(+1)))
-    
-    labDOW = flatten([[dow(_1) for _1 in _['days']] for _ in data['sections'].values() if _['type'] == 'lab'])
-    
-    # Lectures and labs 
-    for sec, sdat in data['sections'].items():
-        d = fixDate(data['Special Dates']['Courses begin'], newtime=sdat['start'])
-        if sdat.get('type',sec) == 'lecture':
-            skip=breaks[:]
-            if lecexam: skip.extend(exams)
-            d = nextDOW(d, sdat['days'], True, skip=skip)
-            for top in data['lectures']:
-                details = {
-                    'start':d, 'end':plusMin(d, sdat['duration']),
-                    'type':'lecture', 'section':sec,
-                }
-                if not top:
-                    details['title'] = 'TBA'
-                else:
-                    if type(top) is str: top = [top]
-                    details['title'] = l2s(top, md=markdown.markdown)
-                    details['reading'] = l2s((data['reading'].get(_,()) for _ in top), md=markdown.markdown)
-                    details['_reading'] = flatten([data['reading'][_] for _ in top if _ in data['reading']])
-                    if not details['reading']: details.pop('reading')
-                    if not details['_reading']: details.pop('_reading')
-                
-                if d.date() in linkfile:
-                    links = []
-                    for k,v in linkfile[d.date()].items():
-                        if k in ['mp3','webm']: continue
-                        if k != 'files':
-                            links.append('['+k+']('+v+')')
-                    links.extend('['+os.path.basename(_).replace('.html','')+']('+_+')' for _ in linkfile[d.date()].get('files',[]))
-                    details['links'] = ' (lecture: '+l2s(links, md=markdown.markdown)+')'
-
-                ans.append((d.timestamp(), details))
-                d = nextDOW(d, sdat['days'], skip=skip)
-            while day(d) <= day(data['Special Dates']['Courses end']):
-                ans.append((d.timestamp(), {
-                    'start':d, 'end':plusMin(d, sdat['duration']),
-                    'type':'lecture', 'section':sec,
-                    'title':'TBA',
-                }))
-                d = nextDOW(d, sdat['days'], skip=skip)
-        elif sdat.get('type',sec) == 'lab':
-            base = data['assignments'].get('.groups',{}).get('Lab',{}).get('base',None)
-            skip=breaks[:]
-            if not lecexam: skip.extend(exams)
-            skip.extend(sdat.get('skip',()))
-            d = nextDOW(d, sdat['days'], True, skip=skip, skippad=labDOW)
-            num = 0
-            for top in data['labs']:
-                num += 1
-                details = {
-                    'start':d, 'end':plusMin(d, sdat['duration']),
-                    'type':'lab', 'section':sec,
-                }
-                if not top:
-                    details['title'] = 'TBA'
-                else:
-                    if type(top) is str: top={'title':top}
-                    details['title'] = top.get('title', l2s(top.get('files', 'TBA')))
-                    if 'link' in top: details['link'] = top['link']
-                    elif 'title' in top and base is not None: 
-                        details['link'] = base + 'lab{:02d}-'.format(num)+slugify(top['title'])+'.html'
-                    
-                ans.append((d.timestamp(), details))
-                d = nextDOW(d, sdat['days'], skip=skip, skippad=labDOW)
-            while day(d) <= day(data['Special Dates']['Courses end']):
-                ans.append((d.timestamp(), {
-                    'start':d, 'end':plusMin(d, sdat['duration']),
-                    'type':'lab', 'section':sec,
-                    'title':'TBA',
-                }))
-                d = nextDOW(d, sdat['days'], skip=skip)
-    
-    # assignments, quizzes, etc
-    for task,tdat in data.get('assignments',{}).items():
-        if task.startswith('.'): continue
-        if tdat is None or 'due' not in tdat: continue
-        print(task ,tdat)
-        group = tdat.get('group', re.sub('^([A-Za-z]+).*',r'\1', task))
-        for k,v in data['assignments'].get('.groups', {}).get(group, {}).items():
-            if k not in tdat: tdat[k] = v
-        
-        end = fixDate(tdat['due'])
-        start = plusMin(end, min(0,-tdat.get('duration', 0)))
-        title = task
-        if 'title' in tdat: title += ': ' + tdat['title']
-        details = {
-            'start':start, 'end':end,
-            'type':group, 'title':title,
-        }
-        if 'link' in tdat: details['link'] = tdat['link']
-        elif 'writeup' in tdat and 'base' in data['meta']: details['link'] = data['meta']['base'] + tdat['writeup']
-        elif 'title' in tdat and 'base' in tdat:
-            details['link'] = tdat['base'] + slugify(title)+'.html'
-        ans.append((start.timestamp(), details))
-    
-    # Exams
-    ans.append((fixDate(data['meta']['final']['start']).timestamp(),{
-        'start':fixDate(data['meta']['final']['start']),
-        'end':plusMin(fixDate(data['meta']['final']['start']), data['meta']['final']['duration']),
-        'type':'Exam',
-        'title':data['meta']['final'].get('title', exams.get(day(data['meta']['final']['start']), 'Final')),
-        'link':data['meta']['final'].get('link', finalurl),
-        'details':'in '+ data['meta']['final'].get('room', 'the usual classroom'),
-    }))
-    for e in exams:
-        if day(e) >= day(data['Special Dates']['Courses end']):
-            continue
-        for sec,sdat in data['sections'].items():
-            if (sdat['type'] == 'lecture') == data['meta'].get('lecture exam',True):
-                start = fixDate(e, newtime=sdat['start'], weekday=sdat['days'])
-                ans.append((start.timestamp(), {
-                    'start':start, 'end':plusMin(start, sdat['duration']),
-                    'type':'Exam', 'section':sec,
-                    'title':exams[e]
-                }))
-    
-    ans.sort(key=lambda a: (a[0], a[1].get('type','')))
-    ans.insert(0, (0, calname, finalurl))
-    return ans
-
 def yamlfile(f):
     from yaml import load
     try:
@@ -239,8 +68,8 @@ def raw2cal(data):
                 continue # does not apply
             if 'recess' in k or 'Reading' in k or 'break' in k:
                 return ans # no classes
-            
-            if 'exam' in k.lower() or 'test' in k.lower() or 'midterm' in k.lower(): isexam = True
+            if 'exam' in k.lower() or 'test' in k.lower() or 'midterm' in k.lower():
+                isexam = True
             else:
                 ans.append({
                     "title":k,
@@ -364,7 +193,6 @@ def cal2html(cal):
                 ans.append('</div>')
             ans.append('</td>')
         ans.append('</tr>')
-    # ans.append('<tr><td></td></tr>')
     ans.append('</table>')
     return ''.join(ans)
 
@@ -395,8 +223,9 @@ table.calendar div.wrapper {
     border-radius: 1ex;
     padding: .5ex;
     flex-direction:row;
-    width: calc(100% - 1ex);
-    height: calc(100% - 1ex);
+    box-sizing:border-box; 
+    width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 table.calendar div.wrapper div {
