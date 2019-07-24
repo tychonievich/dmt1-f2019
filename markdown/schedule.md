@@ -7,7 +7,7 @@ It may be adjusted as the semester progresses to reflect actual pacing and uptak
 
 <hr/>
 
-<style>
+<style id="schedule-css">
 
 #schedule td, #schedule th { padding: 0ex; }
 
@@ -30,11 +30,10 @@ table.calendar div.wrapper {
     background: white;
     border-radius: 1ex;
     padding: .5ex;
-    flex-direction:row;
     box-sizing:border-box; 
     width: 100%;
     height: 100%;
-    min-height:4em; 
+    min-height:5em; 
     overflow: hidden;
 }
 table.calendar div.wrapper div {
@@ -84,6 +83,13 @@ details { padding-left: 1em; }
 summary { margin-left: -1em; }
 
 </style>
+
+
+<p>View as 
+<label><input type="radio" name="viewmode" onchange="viewmode(this)" value="calendar" id="viewmode=calendar"> calendar</label>
+or
+<label><input type="radio" name="viewmode" onchange="viewmode(this)" checked value="agenda" id="viewmode=agenda"> agenda</label>;
+<label><input type="checkbox" name="showpast" onclick="showPast(this)" checked id="showpast"> show past</label></p>
 
 
 {#include schedule.html}

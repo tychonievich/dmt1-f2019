@@ -197,7 +197,7 @@ def cal2html(cal):
                 ans.append('</div>')
                 ans.append('</td>')
             else:
-                ans.append('<td class="day"></td>')
+                ans.append('<td class="day" />')
         ans.append('</tr>')
     ans.append('</table>')
     return ''.join(ans)

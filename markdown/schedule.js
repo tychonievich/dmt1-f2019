@@ -43,7 +43,13 @@ function show(me,val) {
     saveCookie('view_'+me, val);
 }
 function showPast(visible) {
-    if (typeof(visible) != 'boolean') visible = visible.checked;
+    if (typeof(visible) != 'boolean') {
+        visible = visible.checked;
+        saveCookie('showpast', visible);
+        console.log('showPast button',visible)
+    } else {
+        console.log('showPast cookie',visible)
+    }
     let css = document.getElementById('schedule-css');
     if (visible) {
         for(let i=0; i<css.sheet.cssRules.length; i+=1) {
@@ -59,10 +65,12 @@ function showPast(visible) {
         css.sheet.insertRule('.agenda .day.past { display: none; }');
         css.sheet.insertRule('.agenda .week.past { display: none; }');
     }
+    document.getElementById('showpast').checked = visible;
 }
 String(document.cookie).split('; ').forEach(function(x){
     x = x.split('=');
     if (x[0] == 'viewmode') viewmode(x[1]);
+    else if (x[0] == 'showpast') showPast(x[1] == 'true');
     else if (x[0].startsWith('view_')) {
         let input = document.querySelector('input[name="show"][value="'+x[0].substr(5)+'"]');
         if (input) {
