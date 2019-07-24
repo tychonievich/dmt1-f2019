@@ -159,12 +159,12 @@ def raw2cal(data, links=None):
     return ans
 
 def cal2html(cal):
-    ans = ['<table class="calendar">']
+    ans = ['<table id="schedule" class="calendar">']
     for week in cal:
         ans.append('<tr class="week">')
         for day in week:
-            ans.append('<td class="day">')
             if day is not None:
+                ans.append('<td class="day" date="{}">'.format(day['date'].strftime('%Y-%m-%d')))
                 ans.append('<div class="wrapper">')
                 ans.append('<span class="date w{1}">{0}</span>'.format(day['date'].strftime('%d %b').strip('0'), day['date'].strftime('%w')))
                 ans.append('<div class="events">')
@@ -195,7 +195,9 @@ def cal2html(cal):
                         ans.append('<div class="{}">{}</div>'.format(' '.join(classes), title))
                 ans.append('</div>')
                 ans.append('</div>')
-            ans.append('</td>')
+                ans.append('</td>')
+            else:
+                ans.append('<td class="day"></td>')
         ans.append('</tr>')
     ans.append('</table>')
     return ''.join(ans)
@@ -277,82 +279,8 @@ if __name__ == '__main__':
     raw = yamlfile('cal.yaml')
     links = yamlfile('links.yaml') if os.path.exists('links.yaml') else {}
     cal = raw2cal(raw, links)
-    with open('/tmp/tmp2.html', 'w') as fh:
-        fh.write('''﻿<style>
-table.calendar { 
-    border-collapse: collapse; 
-    width: 100%; 
-    background: rgba(0,0,0,0.125); 
-    border: 0.5ex solid rgba(0,0,0,0);
-    border-radius: 1.5ex; 
-}
-table.calendar td:empty { padding: 0; height: 1.5em; }
-table.calendar td { border: 0.25ex solid rgba(0,0,0,0); }
-table.calendar span.date { 
-    font-size: 70.7%;
-    padding-left: 0.5ex;
-    float:right;
-    margin-top:-0.5ex;
-}
-table.calendar div.wrapper { 
-    background: white;
-    border-radius: 1ex;
-    padding: .5ex;
-    flex-direction:row;
-    box-sizing:border-box; 
-    width: 100%;
-    height: 100%;
-    min-height:4em; 
-    overflow: hidden;
-}
-table.calendar div.wrapper div {
-    padding: 0 0.5ex 0 0.5ex;
-    margin: 0 -0.5ex 0 -0.5ex;
-}
-table.calendar div.wrapper div:first-child {
-    padding-top: 0.5ex;
-    margin-top: -0.5ex;
-}
-table.calendar div.wrapper div:last-child {
-    padding-bottom: 0.5ex;
-    margin-bottom: -0.5ex;
-}
-
-
-table.agenda, table.agenda tbody { display: block; }
-table.agenda tr {
-    display: block; border-top: thick solid grey;
-    min-height: 2em;
-}
-table.agenda td {
-    display: table; border-top: thin solid grey; width: 100%;
-    padding: 0;
-}
-table.agenda td:empty { display: none; }
-table.agenda span.date.w0:before { content: "Sun "; }
-table.agenda span.date.w1:before { content: "Mon "; }
-table.agenda span.date.w2:before { content: "Tue "; }
-table.agenda span.date.w3:before { content: "Wed "; }
-table.agenda span.date.w4:before { content: "Thu "; }
-table.agenda span.date.w5:before { content: "Fri "; }
-table.agenda span.date.w6:before { content: "Sat "; }
-table.agenda span.date {
-    font-size: 70.7%; width:7em;
-    vertical-align: middle; 
-    display: table-cell;
-}
-table.agenda div.wrapper { display: table-row; }
-table.agenda div.events { display: table-cell; vertical-align: middle; }
-
-.assignment:before { content: "due: "; font-size: 70.7%; }
-small { opacity: 0.5; }
-.special, .exam { background: rgba(255,127,0,0.25); opacity: 0.75; }
-span.date { font-family:monospace; }
-details { padding-left: 1em; }
-summary { margin-left: -1em; }
-
-</style>''')
+    with open('markdown/schedule.html', 'w') as fh:
         fh.write(cal2html(cal))
 
-    with open('/tmp/tmp2.ics', 'w') as fh:
+    with open('markdown/cal.ics', 'w') as fh:
         fh.write(cal2ical(cal, course, raw['meta']['home'], tz=raw['meta']['timezone']))
