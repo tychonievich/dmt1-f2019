@@ -9,6 +9,8 @@ It may be adjusted as the semester progresses to reflect actual pacing and uptak
 
 <style>
 
+#schedule td, #schedule th { padding: 0ex; }
+
 table.calendar { 
     border-collapse: collapse; 
     width: 100%; 
