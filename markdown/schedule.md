@@ -18,7 +18,7 @@ table.calendar {
     border: 0.5ex solid rgba(0,0,0,0);
     border-radius: 1.5ex; 
 }
-table.calendar td:empty { padding: 0; height: 1.5em; }
+table.calendar td:empty { padding: 0; height: 4em; }
 table.calendar td { border: 0.25ex solid rgba(0,0,0,0); }
 table.calendar span.date { 
     font-size: 70.7%;
