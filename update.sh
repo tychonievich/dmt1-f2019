@@ -38,6 +38,7 @@ function pd() {
 
 if [ cal.yaml -nt markdown/schedule.html ] \
 || [ links.yaml -nt markdown/schedule.html ] \
+|| [ cal2html.py -nt markdown/schedule.html ] \
 || [ cal.yaml -nt markdown/cal.ics ]
 then
     python3 cal2html.py

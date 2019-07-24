@@ -92,7 +92,6 @@ def raw2cal(data, links=None):
                     "to":dt + timedelta(0,ent['start'] + 60*ent['duration']),
                     "where":ent['room']
                 })
-            elif ent is None: continue
             elif ent['type']+'s' not in data or len(data[ent['type']+'s']) <= ent['sidx']:
                 ans.append({
                     'section':sec,
@@ -105,7 +104,7 @@ def raw2cal(data, links=None):
             else:
                 ans.append({
                     'section':sec,
-                    'title':data[ent['type']+'s'][ent['sidx']],
+                    'title':data[ent['type']+'s'][ent['sidx']] or '',
                     "kind":ent['type'],
                     "from":dt + timedelta(0,ent['start']),
                     "to":dt + timedelta(0,ent['start'] + 60*ent['duration']),
