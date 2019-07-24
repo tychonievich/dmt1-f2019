@@ -31,23 +31,23 @@ sections:
     duration: 50
 
 lectures:
-    -   welcome
-    -   Booleans revisited
-    -   a new syntax
-    -   equivalence rules
+    - welcome
+    - Booleans revisited
+    - a new syntax
+    - equivalence rules
 
-    -   three kinds of proof
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
+    - propositions
+    - proofs
+    - proofs
+    - 
+    - predicates
+    - sets
+    - sets
+    - sets
+    - quantifiers
+    - quantifiers
+    - proofs
+    - proofs
     - Review
 
 
