@@ -82,6 +82,7 @@ span.date { font-family:monospace; }
 details { padding-left: 1em; }
 summary { margin-left: -1em; }
 
+.past, .today { opacity: 50%; }
 </style>
 
 
