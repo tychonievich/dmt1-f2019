@@ -1,7 +1,4 @@
 var today = new Date().toISOString().substr(0,10);
-document.querySelectorAll('.week').forEach(function(x){
-    x.classList.add('past');
-});
 document.querySelectorAll('.day').forEach(function(x){
     if (!x.getAttribute('date')) return;
     if (x.getAttribute('date') < today) x.classList.add('past');
@@ -10,6 +7,12 @@ document.querySelectorAll('.day').forEach(function(x){
         else x.classList.add('future');
         x.parentElement.classList.remove('past');
     }
+});
+document.querySelectorAll('.week').forEach(function(x){
+    if (x.querySelector('.future') || x.querySelector('.today'))
+        x.classList.add('future');
+    else
+        x.classList.add('past');
 });
 function saveCookie(key, value) {
     var d = new Date();
