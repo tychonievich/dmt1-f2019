@@ -68,7 +68,7 @@ table.agenda span.date.w4:before { content: "Thu "; }
 table.agenda span.date.w5:before { content: "Fri "; }
 table.agenda span.date.w6:before { content: "Sat "; }
 table.agenda span.date {
-    font-size: 70.7%; width:7em;
+    font-size: 70.7%; width:1ex;
     vertical-align: middle; 
     display: table-cell;
 }
@@ -82,7 +82,8 @@ span.date { font-family:monospace; }
 details { padding-left: 1em; }
 summary { margin-left: -1em; }
 
-.past, .today { opacity: 50%; }
+.past { opacity: 50%; }
+
 </style>
 
 
