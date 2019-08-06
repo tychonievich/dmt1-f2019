@@ -32,6 +32,7 @@ sections:
 
 lectures:
     - welcome
+    - real maths
     - Booleans revisited
     - a new syntax
     - equivalence rules
@@ -76,40 +77,13 @@ lectures:
 
 reading:
     
-    welcome: "§1"
-    Booleans revisited: 
-        - "§2"
-        - lnk: //www.cs.virginia.edu/~njb2b
-          txt: Brunelle's page 
-    
-    
-    Review: ["[topics list](review.html)"]
-    Boolean algebra: ["[Booleans §1--2](bool.html)"]
-    binary arithmetic: ["[Bits §2.1--2.4](bits.html)"]
-    gates, wires, bitwise: ["[Booleans §1--2, 4](bool.html)"]
-    mux, demux, adder: ["[Booleans §3](bool.html)"]
-    clocks: ["[Parts §2--3](parts.html)"]
-    other hardware: ["[Parts §1--5](parts.html)"]
-    addressing modes; endianness: ["[ISA §3.3](isa.html)", "[Bits §1--3](bits.html)"]
-    
-    von Neumann model; state: ["[ISA §1--3](isa.html)"]
-    fetch-decode-execute: ["[ISA §1--3](isa.html)"]
-    moves, memory, ALU ops: ["[ISA §3.1](isa.html)"]
-    conditional jump; back doors: ["[ISA §3.4](isa.html)"]
-    the stack: ["[ISA §3.4.2](isa.html)"]
-    
-    review: ["[E1 practice](files/f2018e1practice.pdf)", "[E2 practice](files/f2018e2practice.pdf)"]
-    review: ["[review page](review.html)"]
-
-    x86-64: ["[x86-64 summary](x86.html)"]
-    tracing variables: ["[debugger example](cmdadd.html)"]
-    
-    C introduction: ["[wikipedia](https://en.wikipedia.org/wiki/C_syntax)", "[language reference](c.html)"]
-    "global, stack, heap": ["[memory writeup](memory.html)"]
-    "malloc and free": ["[memory writeup](memory.html)"]
-    C std library conventions: ["[writeup](manpage.html)"]
-    function pointers: ["[example from wikipedia](https://en.wikipedia.org/wiki/Function_pointer#Example_in_C)", "[C++ virtual functions](vtable.html)"]
-    defensive programming: ["[wikipedia](https://en.wikipedia.org/wiki/Defensive_programming)"]
+    welcome: 
+      - "§1"
+      - txt: on proofs
+        lnk: proofs.html
+    real maths:
+        lnk: https://medium.com/@jeremyjkun/habits-of-highly-mathematical-people-b719df12d15e
+        txt: six habits
 
 assignments:
     ".groups":

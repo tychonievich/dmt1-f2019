@@ -71,6 +71,7 @@ table.agenda span.date {
     font-size: 70.7%; width:7em;
     vertical-align: middle; 
     display: table-cell;
+    padding: 0 0.5ex;
 }
 table.agenda div.wrapper { display: table-row; }
 table.agenda div.events { display: table-cell; vertical-align: middle; }
@@ -82,7 +83,9 @@ span.date { font-family:monospace; }
 details { padding-left: 1em; }
 summary { margin-left: -1em; }
 
-.past { opacity: 50%; }
+.day.past { opacity: 0.707; }
+.day.today .wrapper { box-shadow: 0 0 0.5ex 0.5ex grey; }
+.agenda .day.today .wrapper { margin: 0.5ex 0;}
 
 </style>
 
@@ -91,7 +94,10 @@ summary { margin-left: -1em; }
 <label><input type="radio" name="viewmode" onchange="viewmode(this)" value="calendar" id="viewmode=calendar"> calendar</label>
 or
 <label><input type="radio" name="viewmode" onchange="viewmode(this)" checked value="agenda" id="viewmode=agenda"> agenda</label>;
-<label><input type="checkbox" name="showpast" onclick="showPast(this)" checked id="showpast"> show past</label></p>
+<label><input type="checkbox" name="showpast" onclick="showPast(this)" checked id="showpast"> show past</label>;
+readings can be <input type="button" value="shown" onclick="document.querySelectorAll('details').forEach(x => x.setAttribute('open','open'))"></input> or <input type="button" value="hidden" onclick="document.querySelectorAll('details').forEach(x => x.removeAttribute('open'))"></input> as a whole, or clicked on individually to toggle visibility.
+</p>
+
 
 
 {#include schedule.html}

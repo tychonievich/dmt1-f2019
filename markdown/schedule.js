@@ -1,19 +1,22 @@
 var today = new Date().toISOString().substr(0,10);
+
 document.querySelectorAll('.day').forEach(function(x){
     if (!x.getAttribute('date')) return;
     if (x.getAttribute('date') < today) x.classList.add('past');
     else {
-        if (x.getAttribute('date') == today) x.classList.add('today');
-        else x.classList.add('future');
+        /* if (x.getAttribute('date') == today) x.classList.add('today');
+        else */ x.classList.add('future');
         x.parentElement.classList.remove('past');
     }
 });
 document.querySelectorAll('.week').forEach(function(x){
-    if (x.querySelector('.future') || x.querySelector('.today'))
+    if (x.querySelector('.future'))
         x.classList.add('future');
     else
         x.classList.add('past');
 });
+document.querySelector('.day:not(.past) div').parentElement.classList.add('today');
+
 function saveCookie(key, value) {
     var d = new Date();
     d.setTime(d.getTime() + (365.24*24*60*60*1000)); // 1 year
