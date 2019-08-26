@@ -15,14 +15,24 @@ Colloquial proofs range from an appeal to authority ("Mathematicians have shown 
 
 A goal of this course is to help you develop the experience and skills needed to evaluate good and bad colloquial proofs. However, a study of this form of argument is not a primary component of this course.
 
-## Scratchwork
+## Whiteboard proof
 
-Scratchwork is the notation created along the way during the construction or explanation of a proof.
-Most proofs have too many steps to hold them all in your working memory at once; scratchwork serves to extend that space by keeping much of it visible in front of you and all accessible to your mind as you think.
-However, it often lacks the context and clarity to be meaningful to those not present during its construction---including, notably, the future selves of those who created it. Old scratchwork has limited value.
+<!--
+signpost proof
+rough proof
+notebook proof
+whiteboard proof
+-->
 
-Scratchwork will be used extensively in class presentations, and you should use it for every proof your create.
-We will discuss some ways of structuring it in some situations, but in general this is no right or wrong way to create scratchwork; I've seen skilled mathematicians use many kinds of scratchwork, including lists, sketches, diagrams, tabular data; even objects like salt cellars and chopsticks can serve some of this purpose in a pinch.
+Most proofs have too many steps to hold them all in your working memory at once.
+Whether creating such a proof or trying to understand one someone else created,
+it can be useful to create a whiteboard proof version of it.
+Whiteboard proofs contain all of the components of a proof, written (or drawn or otherwise represented) outside you head so you don't have to worry about forgetting them, but lack the context and polish to be meaningful to those not present during their construction---including, notably, the future selves of those who created it.
+Once you've created or understood the prose proof, you erase the board, because whiteboard proofs are a means to an end, not an end in themselves.
+
+Whiteboard proofs will be used extensively in class presentations, and you should create them first every time you go to write a proof.
+Because they are only for the benefit of those working on the proof, they do not need to abide by any particular style or structure.
+That said, we will show a few patterns of whiteboard proofs in class that you might find useful to use yourself.
 
 ## Prose proof
 
@@ -30,6 +40,12 @@ The final versions of high-quality proofs, as they appear in publications, are a
 Their tone, grammar, and even typeface communicate "I know what I'm doing, trust me."
 Their content is a progression of steps at just the right resolution so that the target audience can see how each follows logically without seeming too obvious.
 Their ordering and presentation is selected to make the conclusion feel almost inevitable.
+
+<!--
+clear to a skeptic
+not obvious but inevitable
+-->
+
 
 As with other advanced language arts like poetry and novels, full prose proofs cannot be mastered in a single semester: it takes years of diligent practice to hone those skills.
 However, we can and will spend time both reading and writing them in class, treating this class, in part, as an introduction to this art form.
@@ -55,6 +71,8 @@ We will spend some time working proofs at nearly machine-checkable detail in thi
 A special case of machine-checkable proofs is proof-carrying code.
 You can think of this as being a special comment syntax containing machine-checkable proof steps that a proof checker can use to verify properties of the code.
 
+<!-- comments as assertions, others as proofs -->
+
 While we will discuss some proofs of code in this course,
 and many more such proofs in courses that follow it,
 our curriculum does not use proof-carrying code directly.
@@ -74,6 +92,8 @@ to a rough draft of a [prose proof](#prose-proof).
 
 Another variant of this course at UVA makes use of a proof assistant tool ([L∃∀N](https://leanprover.github.io)), which allows the course to be more formal and explore a large scope of proofs.
 This variant of the course does not use any such tool.
+
+<!-- 4-coloring theorem -- brute force -->
 
 # Why proofs
 
