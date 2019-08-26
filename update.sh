@@ -77,7 +77,6 @@ done
 find markdown/files -type f | while read from
 do
     to="$target/${from#markdown/}"
-    echo "$to"
     if [ "$from" -nt "$to" ]; then 
         cp "$from" "$to"
     fi
