@@ -22,7 +22,7 @@ Most proofs have too many steps to hold them all in your working memory at once;
 However, it often lacks the context and clarity to be meaningful to those not present during its construction---including, notably, the future selves of those who created it. Old scratchwork has limited value.
 
 Scratchwork will be used extensively in class presentations, and you should use it for every proof your create.
-We will discuss some ways of structuring it in some situations, but in general this is no right or wrong way to create scratchwork; I've seen skilled mathematicians use many kinds of scratchwork, including lists, sketches, diagrams, tabular data; even objects like salt cellars and grapes can serve some of this purpose in a pinch.
+We will discuss some ways of structuring it in some situations, but in general this is no right or wrong way to create scratchwork; I've seen skilled mathematicians use many kinds of scratchwork, including lists, sketches, diagrams, tabular data; even objects like salt cellars and chopsticks can serve some of this purpose in a pinch.
 
 ## Prose proof
 
