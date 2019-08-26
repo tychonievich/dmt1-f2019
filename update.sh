@@ -74,12 +74,11 @@ do
 	fi
 done
 
-find markdown/files | while read from
+find markdown/files -type f | while read from
 do
-    if [ ! -f "$from" ]; then continue; fi
-    to="$target/$from"
+    to="$target/${from#markdown/}"
+    echo "$to"
     if [ "$from" -nt "$to" ]; then 
-        mkdir -p "$(dirname "$to")"
         cp "$from" "$to"
     fi
 done

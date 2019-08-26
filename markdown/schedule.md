@@ -2,8 +2,8 @@
 title: Fall 2019 Schedule
 ...
 
-The following is the current best guess at course pacing and topics.
-It may be adjusted as the semester progresses to reflect actual pacing and uptake of material.
+As this is my time teaching this course, I expect to change the flow and pacing of topics as the semester progresses.
+The past, and my best guess of the future, is reflected below.
 
 <hr/>
 

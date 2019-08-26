@@ -52,6 +52,10 @@ and [from the Open Logic Project](http://forallx.openlogicproject.org/).
 Readings from *forall x* will be noted with ∀x and then the section number;
 for example, "∀x 15.1" refers to the section "The idea of a formal proof".
 
+I will use ".0" to mean "the text before ".1";
+for example, "∀x 1.0" is the content of chapter 1 preceding section 1.1.
+
+
 From time to time we will also post links to Wikipedia articles or writeups of our own.
 
 ## Proofs
