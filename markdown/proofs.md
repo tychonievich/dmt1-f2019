@@ -117,7 +117,8 @@ to a rough draft of a [prose proof](#prose-proof).
 Another variant of this course at UVA makes use of a proof assistant tool ([L∃∀N](https://leanprover.github.io)), which allows the course to be more formal and explore a large scope of proofs.
 This variant of the course does not use any such tool.
 
-<!-- 4-coloring theorem -- brute force -->
+Computers can also assist in creating proofs that as simply too large for humans to handle, verifying by brute force that every one of many thousands of cases individually work out.
+Several significant theorems have been proven this way, perhaps most famously the [four color theorem](https://en.wikipedia.org/wiki/Four_color_theorem).
 
 # Why proofs
 
