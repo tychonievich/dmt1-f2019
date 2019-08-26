@@ -32,7 +32,7 @@ Hand-waving proofs
 Proof outlines
 :   Arguments that are intended to include the main ideas that could be used to create a proof.
     
-    {.example ...} All primes greater than 3 are exactly one away from a multiple of 6. This is because any number $(6n+i)$, where $i$ is one of $\{0, 2, 3, 4\}$, has either 2 or 3 as a factor.
+    {.example} All primes greater than 3 are exactly one away from a multiple of 6. This is because any number $(6n+i)$, where $i$ is one of $\{0, 2, 3, 4\}$, has either 2 or 3 as a factor.
     
     Note that what might look like a proof outline to one audience might look like a [prose proof](#prose-proof) to another audience with more experience in the domain.
 
