@@ -11,7 +11,28 @@ The terminology on this page is intended to be instructive, not formal, and othe
 ## Colloquial proof
 
 Often when people refer to "proof" they mean it is a very loose, colloquial sense to mean, roughly, "something that can convince you something is inevitably or objectively (as opposed to probably or subjectively) true."
-Colloquial proofs range from an appeal to authority ("Mathematicians have shown that ...") to the key insights that would allow you to flesh out an argument in your head ("there were cookies in the jar last night, but there aren't this morning, so clearly ...").
+Colloquial proofs include 
+
+Fallacies
+:   Arguments some people accept as proofs, but which are actually unsound.
+    
+    {.example} I have a Ph.D. and you don't, so if we disagree I'm right and you are wrong
+
+Hand-waving proofs
+:    Arguments that skip a lot of material, implying that it is tedious to verify and I did the tedium so you don't have too.
+    
+    {.example ...} From [wikipedia](https://en.wikipedia.org/wiki/Collatz_conjecture#Cycle_length):
+    
+    > the period $p$ of any non-trivial cycle \[of the Collatz function\] is of the form
+    >
+    > $$p = 301994 a + 17087915 b + 85137581 c$$
+    >
+    > where $b\geq 1$ and $a c = 0$. This result is based on the continued fraction expansion of $\log ⁡ 3 / \log ⁡ 2$
+    {/}
+
+Proof outlines
+:      
+"), hand-waving an appeal to authority ("Mathematicians have shown that ...") to the key insights that would allow you to flesh out an argument in your head ("there were cookies in the jar last night, but there aren't this morning, so clearly ...").
 
 A goal of this course is to help you develop the experience and skills needed to evaluate good and bad colloquial proofs. However, a study of this form of argument is not a primary component of this course.
 
