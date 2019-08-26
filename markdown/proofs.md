@@ -18,7 +18,7 @@ A goal of this course is to help you develop the experience and skills needed to
 ## Scratchwork
 
 Scratchwork is the notation created along the way during the construction or explanation of a proof.
-Most proofs have too many steps to hold them all in your working memory art once; scratchwork serves to extend that space by keeping much of it visible in front of you and all accessible to your mind as you think.
+Most proofs have too many steps to hold them all in your working memory at once; scratchwork serves to extend that space by keeping much of it visible in front of you and all accessible to your mind as you think.
 However, it often lacks the context and clarity to be meaningful to those not present during its construction---including, notably, the future selves of those who created it. Old scratchwork has limited value.
 
 Scratchwork will be used extensively in class presentations, and you should use it for every proof your create.
@@ -57,7 +57,7 @@ You can think of this as being a special comment syntax containing machine-check
 
 While we will discuss some proofs of code in this course,
 and many more such proofs in courses that follow it,
-our curriculum currently does not use proof-carrying code directly.
+our curriculum does not use proof-carrying code directly.
 
 ## Computer-assisted proof
 
