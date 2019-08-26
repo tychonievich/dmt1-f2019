@@ -62,9 +62,17 @@ We will spend some time working proofs at nearly machine-checkable detail in thi
 ### Proof-carrying code
 
 A special case of machine-checkable proofs is proof-carrying code.
-You can think of this as being a special comment syntax containing machine-checkable proof steps that a proof checker can use to verify properties of the code.
+Proof-carrying code consists of three parts:
 
-<!-- comments as assertions, others as proofs -->
+- Code
+- Assertions about the code, such as "this list index is never out of bounds"
+- Machine-checkable proofs of those assertions
+
+All three are transferred together, as e.g. by embedding the assertions and proofs in specially formatted comments.
+
+Type-checking of statically-typed languages like C and Java is a very limited special case of machine-checkable proofs:
+saying `int x`{.java} is an assertion (all lines that begin `x =` will have an `int` on the right-hand side)
+and type systems are designed so that proof steps are implicit in the language specification itself.
 
 While we will discuss some proofs of code in this course,
 and many more such proofs in courses that follow it,
