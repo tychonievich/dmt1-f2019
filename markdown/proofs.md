@@ -53,12 +53,11 @@ We will spend some time working proofs at nearly machine-checkable detail in thi
 ### Proof-carrying code
 
 A special case of machine-checkable proofs is proof-carrying code.
-You can think of this as being a special comment syntax that has machine-checkable proof steps inside it,
-augmented with a syntax for relating the proofs with the code it accompanies.
+You can think of this as being a special comment syntax containing machine-checkable proof steps that a proof checker can use to verify properties of the code.
 
 While we will discuss some proofs of code in this course,
 and many more such proofs in courses that follow it,
-we will not use proof-carrying code directly.
+our curriculum currently does not use proof-carrying code directly.
 
 ## Computer-assisted proof
 

@@ -78,8 +78,8 @@ lectures:
 reading:
     
     welcome: 
-      - "∀x 1.0"
       - "§Introduction"
+      - "∀x 1.0"
       - txt: on proofs
         lnk: proofs.html
     real maths:
