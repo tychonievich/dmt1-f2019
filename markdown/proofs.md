@@ -17,13 +17,6 @@ A goal of this course is to help you develop the experience and skills needed to
 
 ## Whiteboard proof
 
-<!--
-signpost proof
-rough proof
-notebook proof
-whiteboard proof
--->
-
 Most proofs have too many steps to hold them all in your working memory at once.
 Whether creating such a proof or trying to understand one someone else created,
 it can be useful to create a whiteboard proof version of it.
@@ -47,7 +40,7 @@ not obvious but inevitable
 -->
 
 
-As with other advanced language arts like poetry and novels, full prose proofs cannot be mastered in a single semester: it takes years of diligent practice to hone those skills.
+As with other advanced forms of language arts, such as poetry and novels, full prose proofs cannot be mastered in a single semester: it takes years of diligent practice to hone those skills.
 However, we can and will spend time both reading and writing them in class, treating this class, in part, as an introduction to this art form.
 
 ## Machine-checkable proof
@@ -64,7 +57,7 @@ However, all my reference solutions required some recursion, and knowledge of ho
 Hence, it is not listed as an assignment in this course offering.
 {/}
 
-We will spend some time working proofs at nearly machine-checkable detail in this course.
+We will spend some time working proofs at nearly machine-checkable detail in this course, and might have you work with a proof checker for a few exercises.
 
 ### Proof-carrying code
 
