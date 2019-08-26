@@ -120,6 +120,8 @@ dt,h2,h3,h4,h5,h6 { clear:both; }
 
 .nav.pull-right { margin-left: auto; }
 
+.math.display { display: inline-block; width:100%; text-align:center; }
+
 
 /* env.py inserted style */
 
