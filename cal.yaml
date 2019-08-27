@@ -92,7 +92,7 @@ assignments:
             portion: "100"
             late-policy: []
             total: 100
-    HW01:
+    HW01 Online:
         link: 'https://kytos.cs.virginia.edu/dmt1-f2019/quizzes/quiz.php?qid=01'
         due: 2019-09-02 10:00:00
         open: 2019-08-27 19:00:00
