@@ -132,7 +132,7 @@ def raw2cal(data, links=None):
             if 'due' not in ent: continue
             if ent['due'].date() != d: continue
             group = ent.get('group', re.match('^[A-Za-z]*',task).group(0))
-            tmp = data['assignments'].get('.groups',{}).get(group,{})
+            tmp = dict(data['assignments'].get('.groups',{}).get(group,{}))
             tmp.update(ent)
             ent = tmp
             ans.append({
@@ -141,10 +141,11 @@ def raw2cal(data, links=None):
                 'group':group,
                 'from':ent['due']-timedelta(0,900),
                 'to':ent['due'],
+                'slug':task,
             })
             if 'link' in ent: ans[-1]['link'] = ent['link']
             # add data for submission server
-            
+        
         return ans
 
     ans = []
@@ -202,7 +203,7 @@ def cal2html(cal):
     ans.append('</table>')
     external = '<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path fill="#fff" stroke="#36c" d="M1.5 4.518h5.982V10.5H1.5z"/><path fill="#36c" d="M5.765 1H11v5.39L9.427 7.937l-1.31-1.31L5.393 9.35l-2.69-2.688 2.81-2.808L4.2 2.544z"/><path fill="#fff" d="M9.995 2.004l.022 4.885L8.2 5.07 5.32 7.95 4.09 6.723l2.882-2.88-1.85-1.852z"/></svg>'
     return re.sub(r'(<a[^>]*href="[^"]*//[^"]*"[^<]*)</a>', r'\1'+external+'</a>', ''.join(ans))
-    return 
+
 
 
 def cal2ical(cal, course, home, tz=None, sections=None, stamp=None):
@@ -269,6 +270,27 @@ END:VEVENT'''.format(
                     ans.append(encode(event))
     ans.append('END:VCALENDAR\r\n')
     return '\r\n'.join(_.replace('\n','\r\n') for _ in ans)
+
+def slug2asgn(slug, group, raw):
+    ans = {}
+    ans.update(raw['assignments'].get('.groups').get(group,{}))
+    ans.update(raw['assignments'][slug])
+    return ans
+    
+
+def cal2assigments(cal,raw):
+    ans = {}
+    for week in cal:
+        for day in week:
+            if day is not None:
+                for event in day['events']:
+                    if event.get('kind') == 'assignment':
+                        s = event['slug']
+                        g = event['group']
+                        dat = slug2asgn(s,g,raw)
+                        dat['group'] = g
+                        ans[s] = dict(**dat)
+    return ans
     
 if __name__ == '__main__':
     import os, os.path
@@ -286,3 +308,7 @@ if __name__ == '__main__':
 
     with open('markdown/cal.ics', 'w') as fh:
         fh.write(cal2ical(cal, course, raw['meta']['home'], tz=raw['meta']['timezone']))
+
+    import pjson
+    with open('assignments.json', 'w') as fh:
+        print(pjson.prettyjson(cal2assigments(cal, raw)), file=fh)
