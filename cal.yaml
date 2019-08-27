@@ -87,4 +87,10 @@ reading:
         txt: six habits
 
 assignments:
-    ".groups": {}
+    ".groups":
+        HW:
+            portion: "100"
+            late-policy: []
+            total: 100
+    HW01:
+        link: 'https://kytos.cs.virginia.edu/dmt1-f2019/quizzes/quiz.php?qid=01'
