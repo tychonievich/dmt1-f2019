@@ -61,8 +61,8 @@ Their ordering and presentation is selected to make the conclusion feel almost i
 
 {.example ...} The theorem "There are infinitely many primes" can be proven as follows:
 
-Proof:
-    Let $P$ be the set of all primes.
+Proof
+:   Let $P$ be the set of all primes.
     
     Assume that $|P|$ is finite
     and define $p_p$ as $$\prod_{p \in P} p$$.
