@@ -27,7 +27,7 @@ We may (undecided yet) add some online multiple-choice quizzes to replace some (
 
 |        | Instructor | TAs |
 |--------|------------|-----|
-| Name | Luther Tychonievich | TBA |
+| Name | Luther Tychonievich | Alicia Byrne, David Gravelink, Adrar Majidi Idrissi, Sarah Meng, Anthony Taylor |
 | Location | Rice 208 | TBD |
 | Office Hours | TBA | TBA  |
 | Phone | 243-3789 | (none) |
