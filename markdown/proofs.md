@@ -32,7 +32,9 @@ Hand-waving proofs
 Proof outlines
 :   Arguments that are intended to include the main ideas that could be used to create a proof.
     
-    {.example} All primes greater than 3 are exactly one away from a multiple of 6. This is because any number $(6n+i)$, where $i$ is one of $\{0, 2, 3, 4\}$, has either 2 or 3 as a factor.
+    {.example ...}
+    All primes greater than 3 are exactly one away from a multiple of 6. This is because any number $(6n+i)$, where $i$ is one of $\{0, 2, 3, 4\}$, has either 2 or 3 as a factor.
+    {/}
     
     Note that what might look like a proof outline to one audience might look like a [prose proof](#prose-proof) to another audience with more experience in the domain.
 
@@ -57,6 +59,20 @@ Their tone, grammar, and even typeface communicate "I know what I'm doing, trust
 Their content is a progression of steps at just the right resolution so that the target audience can see how each follows logically without seeming too obvious.
 Their ordering and presentation is selected to make the conclusion feel almost inevitable.
 
+{.example ...} The theorem "There are infinitely many primes" can be proven as follows:
+
+Proof:
+    Let $P$ be the set of all primes.
+    
+    Assume that $|P|$ is finite
+    and define $p_p$ as $$\prod_{p \in P} p$$.
+    Let $p'$ be $p_p + 1$.
+    Then $p'$ must not have any factor in $P$ because $p' \mod p = 1$ for every $p \in P$.
+    Hence either $p'$ is a prime not in $P$, or it has as a factor a different prime not in $P$.
+    But this contradicts our definition of $P$, so our assumption must be false.
+    
+    Hence, $|P|$ is not finite.
+{/}
 <!--
 clear to a skeptic
 not obvious but inevitable
