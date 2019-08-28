@@ -67,7 +67,7 @@ Proof
     Let $p'$ be $p_p + 1$.
     Then $p'$ must not have any factor in $P$ because $p' \mod p = 1$ for every $p \in P$.
     Hence either $p'$ is a prime not in $P$, or it has as a factor a different prime not in $P$.
-    But this contradicts our definition of $P$, so our assumption must be false. Hence, $|P|$ is not finite.   □
+    But this contradicts our definition of $P$, so our assumption must be false. Hence, $|P|$ is not finite. ∎
 {/}
 <!--
 clear to a skeptic
