@@ -62,16 +62,12 @@ Their ordering and presentation is selected to make the conclusion feel almost i
 {.example ...} The theorem "There are infinitely many primes" can be proven as follows:
 
 Proof
-:   Let $P$ be the set of all primes.
-    
-    Assume that $|P|$ is finite
+:   Let $P$ be the set of all primes. Assume that $|P|$ is finite
     and define $p_p$ as $$p_p \triangleq \prod_{x \in P} x$$
     Let $p'$ be $p_p + 1$.
     Then $p'$ must not have any factor in $P$ because $p' \mod p = 1$ for every $p \in P$.
     Hence either $p'$ is a prime not in $P$, or it has as a factor a different prime not in $P$.
-    But this contradicts our definition of $P$, so our assumption must be false.
-    
-    Hence, $|P|$ is not finite.
+    But this contradicts our definition of $P$, so our assumption must be false. Hence, $|P|$ is not finite. □
 {/}
 <!--
 clear to a skeptic
