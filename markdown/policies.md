@@ -34,7 +34,7 @@ We may (undecided yet) add some online multiple-choice quizzes to replace some (
 | Email | <a href="mailto:tychonievich@virginia.edu?subject=DMT1">tychonievich@virginia.edu</a> | use [Piazza](https://piazza.com/class/jxvww9fikng3nr) |
 
 For most communication, [Piazza](https://piazza.com/class/jxvww9fikng3nr) is preferred to email.
-If you email, include "DMT1" in the subject line to prevent your email from skipping my inbox and never getting read.
+If you email, include either "DMT1" or "2102" in the subject line to prevent your email from skipping my inbox and never getting read.
 
 Our TAs are students too, with duties and work outside of their TAing. Please do not ask them to act as your TA except at the scheduled on-the-clock times they have listed as their office hours and lab time. They are also kind people; please don't put them in the position of having to say no or (worse) being nice to you at the expense of their own schooling.
 
@@ -52,7 +52,7 @@ and [from the Open Logic Project](http://forallx.openlogicproject.org/).
 Readings from *forall x* will be noted with ∀x and then the section number;
 for example, "∀x 15.1" refers to the section "The idea of a formal proof".
 
-I will use ".0" to mean "the text before ".1";
+I will use ".0" to mean "the text before .1";
 for example, "∀x 1.0" is the content of chapter 1 preceding section 1.1.
 
 
