@@ -56,7 +56,7 @@ I will use ".0" to mean "the text before .1";
 for example, "∀x 1.0" is the content of chapter 1 preceding section 1.1.
 
 
-From time to time we will also post links to Wikipedia articles or writeups of our own.
+From time to time we will also post links to other articles or writeups of our own.
 
 ## Proofs
 
