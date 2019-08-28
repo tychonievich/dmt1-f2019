@@ -62,7 +62,7 @@ def raw2cal(data, links=None):
                 "where":final['room']
             })
         for k,v in data['Special Dates'].items():
-            if (v['start'] > d or v['end'] < d) if type(v) is dict else v != d:
+            if (v['start'] > d or v['end'] < d) if type(v) is dict else d not in v if type(v) is list else v != d:
                 continue # does not apply
             if 'recess' in k or 'Reading' in k or 'break' in k:
                 return ans # no classes
@@ -123,8 +123,8 @@ def raw2cal(data, links=None):
                     n = os.path.basename(f)
                     n = n[n.find('-')+1:]
                     ans[-1].setdefault('reading',[]).append({'txt':n,'lnk':f})
-                if 'video' in links: ans[-1]['video'] = f['video']
-                if 'audio' in links: ans[-1]['audio'] = f['audio']
+                if 'video' in links[d]: ans[-1]['video'] = links[d]['video']
+                if 'audio' in links[d]: ans[-1]['audio'] = links[d]['audio']
 
         # handle assignments
         for task,ent in data['assignments'].items():
