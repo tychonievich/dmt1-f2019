@@ -20,6 +20,7 @@ function pd() {
             --title-prefix="DMT1" \
             --table-of-contents --toc-depth=3 \
             --css=style.css \
+            --katex \
             --template=${here}template.html \
             --variable=year:$(date +%Y) \
             --variable=datetime:"$(date "+%Y-%m-%d %H:%M")" \
