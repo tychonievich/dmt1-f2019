@@ -67,7 +67,7 @@ and define $p_p$ as $$p_p \triangleq \prod_{x \in P} x$$
 Let $p'$ be $p_p + 1$.
 Then $p'$ must not have any factor in $P$ because $p' = 1 \mod p$ for every $p \in P$.
 Hence either $p'$ is a prime not in $P$, or it has as a factor a different prime not in $P$.
-But this contradicts our definition of $P$, so our assumption must be false. Hence, $|P|$ is not finite.
+But this contradicts our definition of $P$, so our assumption must be false, meaning $|P|$ is not finite.
 :::
 {/}
 
