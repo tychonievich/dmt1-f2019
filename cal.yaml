@@ -35,8 +35,8 @@ lectures:
     - real maths
     - [predicates, operators]
     - truth tables
+    - exercises 1
     - equivalence rules
-    - propositions
     - proofs
     - proofs
     - (flex day)
@@ -85,7 +85,7 @@ reading:
     real maths:
         lnk: https://medium.com/@jeremyjkun/habits-of-highly-mathematical-people-b719df12d15e
         txt: six habits
-    predicates:
+    propositions:
         - "§1.1"
         - "∀x 4.3"
     operators:
