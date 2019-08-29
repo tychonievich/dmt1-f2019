@@ -110,12 +110,14 @@ def raw2cal(data, links=None):
                     "to":dt + timedelta(0,ent['start'] + 60*ent['duration']),
                     "where":ent['room']
                 })
-                if ans[-1]['title'] in data['reading']:
-                    tmp = data['reading'][ans[-1]['title']]
-                    if type(tmp) is list:
-                        ans[-1]['reading'] = tmp
-                    else:
-                        ans[-1]['reading'] = [tmp]
+                for subtitle in (ans[-1]['title'] if type(ans[-1]['title']) is list else [ans[-1]['title']]):
+                    if subtitle in data['reading']:
+                        tmp = data['reading'][subtitle]
+                        if type(tmp) is not list: tmp = [tmp]
+                        if 'reading' in ans[-1]:
+                            ans[-1]['reading'].extend(tmp)
+                        else:
+                            ans[-1]['reading'] = tmp
                 ent['sidx'] += 1
             # handle separate links file
             if links and d in links:
@@ -246,6 +248,7 @@ NAME:{0}'''.format(course)]
         else:
             raise Exception("Event without time: "+str(event))
         title = event.get('title','TBA')
+        if type(title) is list: title = ' and '.join(title)
         if 'section' in event: title = event['section']+' -- ' + title
         elif 'group' in event and event['group'] not in title:
             title = event['group']+' '+title
