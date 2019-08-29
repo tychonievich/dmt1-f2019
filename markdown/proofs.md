@@ -124,6 +124,7 @@ We will spend some time working proofs at nearly machine-checkable detail in thi
     <tr><td>4</td><td>$\lnot A \lor \lnot B$</td><td>LEM 2, 3</td></tr>
 </table>
 
+Of course, to actually be checkable by machine it would not be presented visually like this, but the level of detail above is machine-checkable.
 {/}
 
 ### Proof-carrying code
