@@ -33,14 +33,15 @@ sections:
 lectures:
     - welcome
     - real maths
-    - [predicates, operators]
+    - [propositions, operators]
     - truth tables
-    - exercises 1
+    - in-class exercises 1
     - equivalence rules
     - proofs
-    - proofs
-    - (flex day)
+    - in-class exercises 2
     - predicates
+    - proofs
+    - in-class exercises 3
     - sets
     - sets
     - sets
