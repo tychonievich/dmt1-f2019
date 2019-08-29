@@ -96,6 +96,36 @@ Hence, it is not listed as an assignment in this course offering.
 
 We will spend some time working proofs at nearly machine-checkable detail in this course, and might have you work with a proof checker for a few exercises.
 
+{.example ...} The following is a machine-checkable variant of the proof rule derivation given in ∀x 19.6:
+
+
+<table class="TFL">
+    <tr><td>1</td><td>$\lnot(A \land B)$</td></tr>
+    <tr class="then"><td>2</td><td>
+        <table class="TFL">
+            <tr><td>2</td><td>$A$</td></tr>
+            <tr class="then"><td>3</td><td>
+                <table class="TFL">
+                    <tr><td>3</td><td>$B$</td></tr>
+                    <tr class="then"><td>4</td><td>$A \land B$</td><td>$\land$I 2, 3</td></tr>
+                    <tr><td>5</td><td>$\perp$</td><td>$\lnot$E 1, 4</td></tr>
+                </table>
+            </td></tr>
+            <tr><td>4</td><td>$\lnot B$</td><td>$\lnot$I 3</td></tr>
+            <tr><td>5</td><td>$\lnot A \lor \lnot B$</td><td>$\lor$I 4</td></tr>
+        </table>
+    </td></tr>
+    <tr><td>3</td><td>
+        <table class="TFL">
+            <tr><td>3</td><td>$\lnot A$</td></tr>
+            <tr class="then"><td>4</td><td>$\lnot A \lot \lnot B$</td><td>$\lor$I 3</td></tr>
+        </table>
+    </td></tr>
+    <tr><td>4</td><td>$\lnot A \lor \lnot B$</td><td>LEM 2, 3</td></tr>
+</table>
+
+{/}
+
 ### Proof-carrying code
 
 A special case of machine-checkable proofs is proof-carrying code.
