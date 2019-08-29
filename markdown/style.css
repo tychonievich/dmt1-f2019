@@ -123,9 +123,10 @@ dt,h2,h3,h4,h5,h6 { clear:both; }
 /* .math.display { display: inline-block; width:100%; text-align:center; } */
 
 .proof {
-font-family: KaTeX_Main; 
-hyphens: auto;
-text-align: justify;
+    font-family: KaTeX_Main; 
+    hyphens: auto;
+    text-align: justify;
+    background: rgba(255,255,255,0.5);
 }
 .proof > *:first-child:before { content: "Proof. "; font-style:italic; }
 .proof > *:last-child:after { content: " ∎"; }
