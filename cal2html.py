@@ -174,6 +174,7 @@ def cal2html(cal):
                 for e in day['events']:
                     classes = [e[k] for k in ('section','kind','group') if k in e]
                     title = e.get('title','TBA')
+                    if type(title) is list: title = ' <small>and</small> '.join(title)
                     more = []
                     if 'link' in e:
                         title = '<a target="_blank" href="{}">{}</a>'.format(e['link'], title)
