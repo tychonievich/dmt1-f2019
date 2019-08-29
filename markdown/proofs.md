@@ -26,7 +26,7 @@ Hand-waving proofs
     
     the period $p$ of any non-trivial cycle of the Collatz function is of the form
     $$p = 301994 a + 17087915 b + 85137581 c$$
-    where $b\geq 1$ and $a c = 0$. This result is based on the continued fraction expansion of $\log ⁡ 3 / \log ⁡ 2$.
+    where $b\geq 1$ and $a c = 0$. This result is based on the continued fraction expansion of $\log⁡ 3 / \log⁡ 2$.
     {/}
 
 Proof outlines
