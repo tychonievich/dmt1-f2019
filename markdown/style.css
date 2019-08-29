@@ -138,7 +138,6 @@ table.TFL { border-collapse: collapse; border: none; }
 table.TFL td { padding: 0.25ex 1ex; }
 table.TFL table.TFL { margin: 1ex 0ex; width: 100%; }
 table.TFL tr > td:first-child { border-right: thin solid black; }
-table.TFL tr > td:nth-child(3) { padding-left: 2em; }
 table.TFL tr.then > td { border-top: thin solid black; }
 table.TFL tr.then > td:first-child { border-top: none; }
 
