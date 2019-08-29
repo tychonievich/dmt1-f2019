@@ -96,7 +96,7 @@ Hence, it is not listed as an assignment in this course offering.
 
 We will spend some time working proofs at nearly machine-checkable detail in this course, and might have you work with a proof checker for a few exercises.
 
-{.example ...} The following is a machine-checkable variant of the derivation given in ∀x 19.6:
+{.example ...} The following is a machine-checkable variant of the derivation given in ∀x 19.6, proving that $\lnot(A \land B)$ implies $\lnot A \lor \lnot B$:
 
 
 <table class="TFL">
