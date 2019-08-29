@@ -118,7 +118,7 @@ We will spend some time working proofs at nearly machine-checkable detail in thi
     <tr><td>3</td><td>
         <table class="TFL">
             <tr><td>3</td><td>$\lnot A$</td></tr>
-            <tr class="then"><td>4</td><td>$\lnot A \lot \lnot B$</td><td>$\lor$I 3</td></tr>
+            <tr class="then"><td>4</td><td>$\lnot A \lor \lnot B$</td><td>$\lor$I 3</td></tr>
         </table>
     </td></tr>
     <tr><td>4</td><td>$\lnot A \lor \lnot B$</td><td>LEM 2, 3</td></tr>
