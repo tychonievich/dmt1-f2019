@@ -128,6 +128,7 @@ dt,h2,h3,h4,h5,h6 { clear:both; }
     text-align: justify;
     background: rgba(255,255,255,0.5);
     padding: 1ex;
+    max-width: 60ex;
 }
 .proof > *:first-child:before { content: "Proof. "; font-style:italic; }
 .proof > *:last-child:after { content: " ∎"; }
