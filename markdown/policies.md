@@ -55,7 +55,6 @@ for example, "∀x 15.1" refers to the section "The idea of a formal proof".
 I will use ".0" to mean "the text before .1";
 for example, "∀x 1.0" is the content of chapter 1 preceding section 1.1.
 
-
 From time to time we will also post links to other articles or writeups of our own.
 
 ## Proofs
@@ -128,7 +127,8 @@ and may dock points if it appears you simply copied someone else's ideas (or jus
 
 ### Obey collaboration limitations
 
-Each assignment will list how many other people you can work with on it.
+Some assignments will list how many other people you can work with on it
+(if no number is listed, the number is 0: work alone).
 We will understand if you occasionally go a little over that number, but if that becomes a pattern or if you exceed it by a large amount we may divide your points among the collaborators instead of sharing them with all.
 
 ### Consequences of Dishonesty

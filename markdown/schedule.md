@@ -111,6 +111,8 @@ To subscribe to the above calendar, add <http://www.cs.virginia.edu/luther/DMT1/
 
 The <a href="http://www.virginia.edu/registrar/exams.html#1198">final exam schedule</a> puts our final Monday 16 December at 2:00 pm. The final is an in-person on-paper exam administered in the usual classroom.
 
+Note the <a href="http://www.virginia.edu/registrar/exams.html#1198">final exam schedule</a> *also* lists a "special exam time" for CS 2102. That feature is added to support multi-section courses sharing one exam, and since we are not sharing an exam with the other CS 2102 sections this semester it does *not* applies to us.
+
 
 
         
