@@ -10,7 +10,6 @@ Special Dates:
   Reading days:
     start: 2019-10-05
     end: 2019-10-08
-  Midterm: 2019-10-11
 
 meta:
   timezone: America/New_York
@@ -23,10 +22,16 @@ meta:
     room: Rufner G008
 
 sections:
-  CS2102-002:
+  CS2102-002a:
     type: lecture
     room: Rufner G008
-    days: [Monday, Wednesday, Friday]
+    days: [Monday, Wednesday]
+    start: 15:30:00
+    duration: 50
+  CS2102-002b:
+    type: lab
+    room: Rufner G008
+    days: [Friday]
     start: 15:30:00
     duration: 50
 
@@ -35,40 +40,49 @@ lectures:
     - real maths
     - [propositions, operators]
     - truth tables
-    - in-class exercises 1
+
     - equivalence rules
     - proofs
-    - in-class exercises 2
+
     - predicates
     - proofs
-    - in-class exercises 3
+
     - quantifiers
     - sets
+
     - sets
     - sets
+
     - proofs
     - proofs
-    - Review
+
     - relations
     - functions
+
     - functions
     - induction
+
     - proofs
-    - (flex day)
     - cardinality
+
     - summation
     - summation
+
     - permuation
     - combination
-    - (flex day)
+
     - proofs
     - proofs
+
     - proofs
     - automata
+
     - automata
     - automata
+
     - graphs
     - graphs
+
     - graphs
     - Review
 
@@ -91,7 +105,7 @@ reading:
         - "§3--3.2.0"
         - "∀x 5"
     truth tables:
-        - "§1.1, 3.2.1--3.2.2"
+        - "§3.2.1--3.2.2"
         - "∀x 8, 10"
         
 

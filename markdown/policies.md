@@ -19,9 +19,9 @@ I do not schedule review sessions or the like outside of usual class time.
 
 You will be expected to read instructional material and either understand it or ask questions to clarify what you found confusing. We strongly recommend forming study groups that meet at least weekly all semester long to discuss readings, as even if they appear simple at first they will often contain nuances that will only emerge with conversions.
 
-You will be given take-home assignments, mostly to be printed out and annotated by hand.
+You will be given take-home assignments, given online and auto-graded.
 
-We may (undecided yet) add some online multiple-choice quizzes to replace some (or some parts of some) take-home assignments
+We will have miniature exams in class every week instead of one or two larger midterms. The first of these will be on Friday 6 September; we have not decided if they will be on Wednesdays or Fridays thereafter.
 
 ## Contact
 
