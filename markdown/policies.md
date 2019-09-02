@@ -84,7 +84,7 @@ F       less than minimal competence        retake this course first
 
 These goals do not map perfectly to numeric scores. If you get full or nearly full points on all graded tasks, you should expect an A. If you miss non-trivial numbers of points or deadlines, we may attempt to assess your standing on this subjective scale in lieu of a raw point-based grade.
 
-In re raw points, the intent is to put half weight on supervised assessments (i.e., in class evaluations on Fridays) and the other half on unsupervised (i.e., homework and quizzes).
+In re raw points, the intent is to put half weight on supervised assessments (i.e., in class evaluations on Fridays) and the other half on unsupervised (i.e., online homework).
 If you earn at least 93% of the points, you will earn an A.
 If you earn less, you will likely be given a lower grade.
 We expect this will approximate the usual 10%-per-letter breakdown, but will attempt to diagnose particular learning outcomes and mastery levels rather than being constrained to pure mechanical grade computation.
