@@ -48,29 +48,21 @@ lectures:
     - proofs
 
     - quantifiers
-    - sets
-
-    - sets
-    - sets
-
-    - proofs
     - proofs
 
-    - relations
-    - functions
+    - [sets, cardinality]
+    - proofs
 
-    - functions
+    - [functions, relations]
+    - proofs
+
+    - induction
     - induction
 
-    - proofs
-    - cardinality
-
     - summation
-    - summation
-
-    - permuation
     - combination
 
+    - permuation
     - proofs
     - proofs
 
