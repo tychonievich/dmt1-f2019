@@ -37,7 +37,6 @@ sections:
 
 lectures:
     - welcome
-    - real maths
     - [propositions, operators]
     - truth tables
 
@@ -76,6 +75,9 @@ lectures:
     - review
     - review
 
+
+labs:
+    - real maths
 
 
 reading:
