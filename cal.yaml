@@ -137,9 +137,17 @@ lectures:
 
 labs:
     - real maths
+    - lab01
 
 
 reading:
+    
+    lab01:
+      - txt: list of symbols
+        lnk: symbols.html
+      - txt: practice exam
+        lnk: files/lab01_propositions_practice.pdf
+        
     
     welcome: 
       - "§Introduction"
