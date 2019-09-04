@@ -126,10 +126,10 @@ dt,h2,h3,h4,h5,h6 { clear:both; }
     font-family: KaTeX_Main; 
     hyphens: auto;
     text-align: justify;
-    background: rgba(255,255,255,0.5);
+    background: rgba(243,243,243,0.5);
     padding: 1ex;
     max-width: 40em;
-    display: table; margin: auto 1ex;
+    display: table; margin: 1ex auto;
 }
 .proof > *:first-child:before { content: "Proof. "; font-style:italic; }
 .proof > *:last-child:after { content: " ∎"; }
