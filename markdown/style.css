@@ -141,7 +141,7 @@ dt,h2,h3,h4,h5,h6 { clear:both; }
 .corollary > *:first-child:before { content: "Corollary. "; font-style:italic; }
 .theorem > *:first-child:before { content: "Theorem. "; font-style:italic; }
 
-.proof > *:first-child, .lemma > *:first-child, .definition > *:first-child, .corollary > *:first-child, .theorem > *:first-child { text-indent: -2ex; }
+.proof > *:first-child, .lemma > *:first-child, .definition > *:first-child, .corollary > *:first-child, .theorem > *:first-child { text-indent: -1ex; }
 
 table.TFL { border-collapse: collapse; border: none; }
 table.TFL td { padding: 0.25ex 1ex; }
