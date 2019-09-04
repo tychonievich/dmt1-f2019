@@ -129,7 +129,7 @@ dt,h2,h3,h4,h5,h6 { clear:both; }
     background: rgba(255,255,255,0.5);
     padding: 1ex;
     max-width: 40em;
-    display: table; margin: auto;
+    display: table; margin: auto 1ex;
 }
 .proof > *:first-child:before { content: "Proof. "; font-style:italic; }
 .proof > *:last-child:after { content: " ∎"; }
