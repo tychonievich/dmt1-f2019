@@ -146,7 +146,46 @@ def raw2cal(data, links=None):
                 'slug':task,
             })
             if 'link' in ent: ans[-1]['link'] = ent['link']
-            # add data for submission server
+        
+        # handle office hours
+        ## find
+        oh = {}
+        for kind,meta in data.get('office hours',{}).items():
+            for staff,det in meta.items():
+                if staff == 'where': continue
+                for ent in det['when']:
+                    if ((('dow' in ent and d.weekday() == dow(ent['dow']))
+                            or ('date' in ent and d == ent['date']))
+                        and d not in ent.get('except',[])
+                    ):
+                        if 'where' in det:
+                            oh.setdefault(staff+' OH ('+det['where']+')',{
+                                'where':det['where'],
+                                'when':[]
+                            })['when'].append((ent['start'],ent['end']))
+                        else:
+                            oh.setdefault(kind+' OH ('+meta['where']+')',{
+                                'where':meta['where'],
+                                'when':[]
+                            })['when'].append((ent['start'],ent['end']))
+        ## combine
+        for k in oh:
+            oh[k]['when'].sort()
+            tmp = [oh[k]['when'][0]]
+            for s,e in oh[k]['when'][1:]:
+                if s <= tmp[-1][1]: tmp[-1] = (tmp[-1][0], e)
+                else: tmp.append((s,e))
+            oh[k]['when'] = tmp
+        ## add to events
+        for k in oh:
+            for s,e in oh[k]['when']:
+                ans.append({
+                    'title':k[:k.find(' (')] if ' (' in k else k,
+                    'kind':'office hours',
+                    'from':dt + timedelta(0,s),
+                    'to':dt + timedelta(0,e),
+                    'where':oh[k]['where'],
+                })
         
         return ans
 
@@ -166,12 +205,13 @@ def cal2html(cal):
     for week in cal:
         ans.append('<tr class="week">')
         for day in week:
-            if day is not None:
+            if day is not None and not all(_.get('kind') == 'office hours' for _ in day['events']):
                 ans.append('<td class="day" date="{}">'.format(day['date'].strftime('%Y-%m-%d')))
                 ans.append('<div class="wrapper">')
                 ans.append('<span class="date w{1}">{0}</span>'.format(day['date'].strftime('%d %b').strip('0'), day['date'].strftime('%w')))
                 ans.append('<div class="events">')
                 for e in day['events']:
+                    if e.get('kind') == 'office hours': continue
                     classes = [e[k] for k in ('section','kind','group') if k in e]
                     title = e.get('title','TBA')
                     if type(title) is list: title = ' <small>and</small> '.join(title)
@@ -256,7 +296,7 @@ NAME:{0}'''.format(course)]
         fixlinks(details)
         return '''BEGIN:VEVENT
 SUMMARY:{title}
-DESCRIPTION:{notes}
+DESCRIPTION:{notes}{location}
 DTSTART{dts}
 DTEND{dte}
 DTSTAMP:{now}Z
@@ -264,6 +304,7 @@ UID:{uid}@{course}.cs.virginia.edu
 END:VEVENT'''.format(
             title=title, dts=dts, dte=dte, course=course, now=now,
             notes=icescape('\n'.join(details)),
+            location='' if 'where' not in event else '\nLOCATION:{}'.format(event['where']),
             uid='{}-{}'.format(dts,title),
         )
     for week in cal:
