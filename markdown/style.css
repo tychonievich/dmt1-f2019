@@ -136,7 +136,7 @@ dt,h2,h3,h4,h5,h6 { clear:both; }
 }
 .proof > *:first-child:before { content: "Proof. "; font-style:italic; }
 .proof > *:last-child:after { content: " ∎"; }
-.lemma > *:first-child:before { content: "Lemma. "; font-style:italic; }
+.lemma > *:first-child:before { content: "Lemma. "; font-style:italic; text-indent:-2ex; }
 .definition > *:first-child:before { content: "Definition. "; font-style:italic; }
 .corollary > *:first-child:before { content: "Corollary. "; font-style:italic; }
 .theorem > *:first-child:before { content: "Theorem. "; font-style:italic; }
