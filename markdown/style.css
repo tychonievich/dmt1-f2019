@@ -126,8 +126,9 @@ dt,h2,h3,h4,h5,h6 { clear:both; }
     font-family: KaTeX_Main; 
     hyphens: auto;
     text-align: justify;
-    padding: 1ex;
-    margin: 1ex;
+    padding: 1ex 2ex;
+    margin: 1ex 0ex;
+    background: white;
 /*
     max-width: 40em;
     display: table; margin: 1ex auto;
