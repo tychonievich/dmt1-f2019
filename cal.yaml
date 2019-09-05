@@ -92,7 +92,7 @@ lectures:
     - truth tables
 
     - equivalence rules
-    - proofs
+    - equivalence proofs
 
     - [predicates, quantifiers]
     - proofs
@@ -160,6 +160,13 @@ reading:
     truth tables:
         - "§3.2.1–3.2.2"
         - "∀x 8, 10"
+    
+    equivalence rules:
+        - "§3.3–3.4"
+        - "∀x 11.2"
+    equivalence proofs:
+        - "§3.4.2"
+        - "∀x 14–15"
         
 
 assignments:
