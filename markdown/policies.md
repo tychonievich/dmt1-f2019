@@ -6,7 +6,7 @@ title: Policies
 
 ## Meetings
 
-We will meet Monday, Wednesday, and Friday, 3:30–4:20, in Thorton E303.
+We will meet Monday, Wednesday, and Friday, 3:30–4:20, in Ruffner G008.
 
 Monday and Wednesday lecture is optional, but strongly encouraged.
 Friday lecture will often be used for in-class evaluation:

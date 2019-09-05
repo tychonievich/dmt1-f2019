@@ -70,14 +70,6 @@ office hours:
         - dow: Wednesday
           start: 11:00:00
           end: 13:30:00
-    Abrar:
-      when:
-        - dow: Tuesday
-          start: 15:30:00
-          end: 16:30:00
-        - dow: Thursday
-          start: 15:30:00
-          end: 16:30:00
     Sarah:
       when:
         - dow: Tuesday
@@ -87,9 +79,11 @@ office hours:
           start: 15:30:00
           end: 16:30:00
     Anthony:
-      when: {}
+      when: []
     Tianyu:
-      when: {}
+      when: []
+    Timothy:
+      when: []
       
 
 lectures:
