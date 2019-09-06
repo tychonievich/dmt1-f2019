@@ -139,8 +139,10 @@ reading:
     lab01:
       - txt: list of symbols
         lnk: symbols.html
-      - txt: practice exam
+      - txt: practice quiz
         lnk: files/lab01_propositions_practice.pdf
+      - txt: practice key
+        lnk: files/lab01_propositions_practice_key.pdf
         
     
     welcome: 
