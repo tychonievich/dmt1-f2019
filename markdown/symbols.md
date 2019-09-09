@@ -6,11 +6,11 @@ You have enough to worry about memorizing without keeping dozens of symbols in y
 
 Concept         Java/C      Python      This class                      Bitwise Other
 --------        --------    --------    ---------------------------     ------- ------
+true            `true`      `True`      $\top$ or $1$                   `-1`    T, tautology
+false           `false`     `False`     $\bot$ or $0$                   `0`     F, contradiction
 not $P$         `!p`        `not p`     $\lnot P$ or $\overline{P}$     `~p`
 $P$ and $Q$     `p && q`    `p and q`   $P \land Q$                     `p & q` $P Q$, $P \cdot Q$
 $P$ or $Q$      `p || q`    `p or q`    $P \lor Q$                      `p | q` $P + Q$
 $P$ xor $Q$     `p != q`    `p != q`    $P \oplus Q$                    `p ^ q` $P ⊻ Q$
 $P$ implies $Q$                         $P \rightarrow Q$                       $P \supset Q$, $P \Rightarrow Q$
 $P$ iff $Q$     `p == q`    `p == q`    $P \leftrightarrow Q$                   $P \Leftrightarrow Q$, $P$ xnor $Q$, $P \equiv Q$
-true            `true`      `True`      $\top$                          `-1`    T, 1, tautology
-false           `false`     `False`     $\bot$                          `0`     F, 0, contradiction
