@@ -28,8 +28,8 @@ We will have miniature exams in class every week instead of one or two larger mi
 |        | Instructor | TAs |
 |--------|------------|-----|
 | Name | Luther Tychonievich | Alicia Byrne, David Gravelink, Adrar Majidi Idrissi, Sarah Meng, Anthony Taylor, Tianyu Wang |
-| Location | Rice 208 | TBD |
-| Office Hours | Monday 10:00–11:00<br/>Tuesday 13:00–15:00<br/>Friday 11:00–12:00 | Monday/Wednesday 11:00–12:30<br/>Tuesday/Thursday 15:30–16:30  |
+| Location | Rice 208 | See [the OH page](oh.html) |
+| Office Hours | Monday 10:00–11:00<br/>Tuesday 13:00–15:00<br/>Friday 11:00–12:00 | See [the OH page](oh.html) |
 | Phone | 243-3789 | (none) |
 | Email | <a href="mailto:tychonievich@virginia.edu?subject=DMT1">tychonievich@virginia.edu</a> | use [Piazza](https://piazza.com/class/jxvww9fikng3nr) |
 
