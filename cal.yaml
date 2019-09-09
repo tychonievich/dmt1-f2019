@@ -73,6 +73,14 @@ office hours:
           start: 11:00:00
           end: 11:45:00
           where: Rice 442
+        - dow: Monday
+          start: 15:30:00
+          end: 16:30:00
+          where: Rice 442
+        - dow: Wednesday
+          start: 15:30:00
+          end: 16:30:00
+          where: Rice 442
     Sarah:
       when:
         - dow: Tuesday
