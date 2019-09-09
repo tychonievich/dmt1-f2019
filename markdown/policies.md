@@ -27,7 +27,7 @@ We will have miniature exams in class every week instead of one or two larger mi
 
 |        | Instructor | TAs |
 |--------|------------|-----|
-| Name | Luther Tychonievich | Alicia Byrne, David Gravelink, Adrar Majidi Idrissi, Sarah Meng, Anthony Taylor, Tianyu Wang |
+| Name | Luther Tychonievich | Alicia Byrne, David Gravelink, Sarah Meng, Anthony Taylor, Tianyu Wang |
 | Location | Rice 208 | See [the OH page](oh.html) |
 | Office Hours | Monday 10:00–11:00<br/>Tuesday 13:00–15:00<br/>Friday 11:00–12:00 | See [the OH page](oh.html) |
 | Phone | 243-3789 | (none) |
