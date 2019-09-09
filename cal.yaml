@@ -180,6 +180,8 @@ reading:
     equivalence proofs:
         - "§3.4.2"
         - "∀x 14–15"
+        - lnk: "demorgan.html"
+          txt: "example proof"
         
 
 assignments:
