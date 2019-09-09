@@ -53,31 +53,36 @@ office hours:
           end: 12:00:00
           except: [2019-09-06]
   TA:
-    where: TBD
     David:
       when:
         - dow: Monday
           start: 11:00:00
-          end: 13:30:00
+          end: 12:30:00
+          where: Rice 442
         - dow: Wednesday
           start: 11:00:00
-          end: 13:30:00
+          end: 12:30:00
+          where: Rice 442
     Alicia:
       when:
         - dow: Monday
           start: 11:00:00
-          end: 13:30:00
+          end: 11:45:00
+          where: Rice 442
         - dow: Wednesday
           start: 11:00:00
-          end: 13:30:00
+          end: 11:45:00
+          where: Rice 442
     Sarah:
       when:
         - dow: Tuesday
           start: 15:30:00
           end: 16:30:00
+          where: Rice 442
         - dow: Thursday
           start: 15:30:00
           end: 16:30:00
+          where: location TBD
     Anthony:
       when: []
     Tianyu:

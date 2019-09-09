@@ -160,16 +160,11 @@ def raw2cal(data, links=None):
                                 or ('date' in ent and d == ent['date']))
                             and d not in ent.get('except',[])
                         ):
-                            if 'where' in det:
-                                oh.setdefault(staff+' OH ('+det['where']+')',{
-                                    'where':det['where'],
-                                    'when':[]
-                                })['when'].append((ent['start'],ent['end']))
-                            else:
-                                oh.setdefault(kind+' OH ('+meta['where']+')',{
-                                    'where':meta['where'],
-                                    'when':[]
-                                })['when'].append((ent['start'],ent['end']))
+                            where = ent.get('where', det.get('where', meta.get('where','location TBD')))
+                            oh.setdefault(staff+' OH ('+where+')',{
+                                'where':where,
+                                'when':[]
+                            })['when'].append((ent['start'],ent['end']))
             ## combine
             for k in oh:
                 oh[k]['when'].sort()
@@ -264,6 +259,7 @@ def cal2fullcal(cal, keep=lambda x:True):
                             'title':event['title'],
                             'classNames':['cal-'+event['kind']],
                             'editable':False,
+                            'location':event['where'],
                         })
                         if 'link' in event: ans[-1]['url'] = event['link']
     ans.sort(key=lambda x:x['start'])
