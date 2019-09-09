@@ -12,3 +12,5 @@ $P$ or $Q$      `p || q`    `p or q`    $P \lor Q$                      `p | q` 
 $P$ xor $Q$     `p != q`    `p != q`    $P \oplus Q$                    `p ^ q` $P ⊻ Q$
 $P$ implies $Q$                         $P \rightarrow Q$                       $P \supset Q$, $P \Rightarrow Q$
 $P$ iff $Q$     `p == q`    `p == q`    $P \leftrightarrow Q$                   $P \Leftrightarrow Q$, $P$ xnor $Q$, $P \equiv Q$
+true            `true`      `True`      $\top$                          `-1`    T, 1
+false           `false`     `False`     $\bot$                          `0`     F, 0
