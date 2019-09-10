@@ -33,10 +33,13 @@ $P \leftrightarrow \bot$    $\lnot P$
 $P \leftrightarrow \top$    $P$
 $P \oplus \bot$             $P$
 $P \oplus \top$             $\lnot P$
+$P \oplus P$                $\bot$
 
 ## Other equivalences
 
-The following operators are both **associative** (you can add and remove parentheses around them) and **commutative** (you can swap their operands' position): $\land$, $\lor$, $\oplus$, $\leftrightarrow$
+The following operators are both **associative** (you can add and remove parentheses around them) and **commutative** (you can swap their operands' position): $\land$, $\lor$, $\oplus$
+
+The following operator is *commutative* but not *associative*: $\leftrightarrow$
 
 Of the other rules here, the first four are worth memorizing
 
