@@ -66,6 +66,7 @@ Proof techniques we've learned so far:
         Since the two are equivalent to the same thing, they are equivalent to each other.
 
     Since $P \rightarrow Q \equiv \lnot P \lor Q$ is true in both cases, it is true in general.
+    
     </div>
     {/}
     
