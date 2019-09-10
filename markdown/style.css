@@ -122,7 +122,7 @@ dt,h2,h3,h4,h5,h6 { clear:both; }
 
 /* .math.display { display: inline-block; width:100%; text-align:center; } */
 
-.proof, .lemma, .definition, .corollary, .theorem {
+.proof, .lemma, .definition, .corollary, .theorem, .snippet {
     font-family: KaTeX_Main; 
     hyphens: auto;
     text-align: justify;
