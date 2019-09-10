@@ -46,7 +46,7 @@ $A \land (B \lor C)$    $(A \land B) \lor (A \land C)$                  Distribu
 $A \lor (B \land C)$    $(A \lor B) \land (A \lor C)$                   Distributive law
 $\lnot (A \land B)$     $(\lnot A) \lor (\lnot B)$                      De Morgan's law
 $\lnot (A \lor B)$      $(\lnot A) \land (\lnot B)$                     De Morgan's law
-$(A \leftrightarrow B)$ $(A \rightarrrow B) \land (B \rightarrow A)$
+$(A \leftrightarrow B)$ $(A \rightarrow B) \land (B \rightarrow A)$
 $(A \oplus B)$          $(A \lor B) \land \lnot (A \land B)$
 
 and the rest are either less commonly useful or can be derived easily from other worth-memorizing rules
