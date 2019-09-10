@@ -13,7 +13,7 @@ They are equivalences so they also work backwards (i.e. making expressions large
 
 The first five are big and worth memorizing
 
-This expression         can be simplified as        Name of rule (if any)
+ long                    simplified                 Name of rule (if any)
 ----------------------  ------------------------    ----------------------------
 $\lnot \lnot P$         $P$                         double negation
 $P \land \bot$          $\bot$
@@ -23,7 +23,7 @@ $P \lor \top$           $\top$
 
 The rest can be derived easily from other worth-memorizing rules
 
-This expression             can be simplified as   Name of rule (if any)
+ long                        simplified            Name of rule (if any)
 ----------------------      --------------------   ----------------------------
 $P \rightarrow \bot$        $\lnot P$              The proof-rule version is calls "modus tollens"
 $P \rightarrow \top$        $\top$
@@ -40,7 +40,7 @@ The following operators are **associative** (you can add and remove parentheses 
 
 The following operators are **commutative** (you can swap their operands' position): $\land$, $\lor$, $\oplus$, $\leftrightarrow$
 
-Expression form 1       Expression form 1                   Name of rule (if any)
+ form 1                  form 2                             Name of rule (if any)
 ----------------------  -------------------------------     ----------------------------
 $A \land (B \lor C)$    $(A \land B) \lor (A \land C)$      Distributive law
 $A \lor (B \land C)$    $(A \lor B) \land (A \lor C)$       Distributive law
