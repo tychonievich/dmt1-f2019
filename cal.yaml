@@ -180,8 +180,12 @@ reading:
     equivalence proofs:
         - "§3.4.2"
         - "∀x 14–15"
+        - lnk: "axioms.html"
+          txt: "equivalences"
         - lnk: "demorgan.html"
           txt: "example proof"
+        - lnk: "techniques-q2.html"
+          txt: "proof techniques"
         
 
 assignments:
