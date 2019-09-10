@@ -54,14 +54,14 @@ Proof techniques we've learned so far:
     Case 1: $P$ is true
     :   The expression $P \rightarrow Q$ in this case is equivalent to $\top \rightarrow Q$, which can be simplified to $Q$.
         
-        The expression $\not P \lor Q$ in this case is equivalent to $\bot \lor Q$, which can be simplified to $Q$.
+        The expression $\lnot P \lor Q$ in this case is equivalent to $\bot \lor Q$, which can be simplified to $Q$.
         
         Since the two are equivalent to the same thing, they are equivalent to each other.
 
     Case 2: $P$ is false
     :   The expression $P \rightarrow Q$ in this case is equivalent to $\bot \rightarrow Q$, which can be simplified to $\top$.
         
-        The expression $\not P \lor Q$ in this case is equivalent to $\top \lor Q$, which can be simplified to $\top$.
+        The expression $\lnot P \lor Q$ in this case is equivalent to $\top \lor Q$, which can be simplified to $\top$.
         
         Since the two are equivalent to the same thing, they are equivalent to each other.
 
