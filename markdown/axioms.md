@@ -53,4 +53,4 @@ and the rest are either less commonly useful or can be derived easily from other
 ----------------------      ---------------------------------   ----------------------------
 $A \oplus B$                $\lnot (A \leftrightarrow B)$       
 $A \leftrightarrow B$       $\lnot (A \oplus B)$                xnor
-$P \leftarrow (A \lor Q)$   $(P \land \lnot A) \leftarrow Q$
+$P \rightarrow (A \lor Q)$   $(P \land \lnot A) \rightarrow Q$
