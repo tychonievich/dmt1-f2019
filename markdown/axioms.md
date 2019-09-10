@@ -21,7 +21,7 @@ $P \land \top$          $P$
 $P \lor \bot$           $P$
 $P \lor \top$           $\top$
 
-The rest can be derived easily from other worth-memorizing rules
+and the rest are either less commonly useful or can be derived easily from other worth-memorizing rules
 
  long                        simplified            Name of rule (if any)
 ----------------------      --------------------   ----------------------------
@@ -40,11 +40,18 @@ The following operators are **associative** (you can add and remove parentheses 
 
 The following operators are **commutative** (you can swap their operands' position): $\land$, $\lor$, $\oplus$, $\leftrightarrow$
 
+Of the other rules here, the first four are worth memorizing
+
  form 1                  form 2                             Name of rule (if any)
 ----------------------  -------------------------------     ----------------------------
 $A \land (B \lor C)$    $(A \land B) \lor (A \land C)$      Distributive law
 $A \lor (B \land C)$    $(A \lor B) \land (A \lor C)$       Distributive law
 $\lnot (A \land B)$     $(\lnot A) \lor (\lnot B)$          De Morgan's law
 $\lnot (A \lor B)$      $(\lnot A) \land (\lnot B)$         De Morgan's law
+
+and the rest are either less commonly useful or can be derived easily from other worth-memorizing rules
+
+ form 1                  form 2                             Name of rule (if any)
+----------------------  -------------------------------     ----------------------------
 $A \oplus B$            $\lnot (A \leftrightarrow B)$       
 $A \leftrightarrow B$   $\lnot (A \oplus B)$                xnor
