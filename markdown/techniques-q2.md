@@ -1,3 +1,8 @@
+---
+title: Proof Techniques
+subtitle: as of Quiz 2
+...
+
 Proof techniques we've learned so far:
 
 1. Apply Equivalence Rules
