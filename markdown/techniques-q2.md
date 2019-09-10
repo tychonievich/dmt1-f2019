@@ -4,14 +4,15 @@ Proof techniques we've learned so far:
     
     In a small step proof, write an equivalent expression and cite the rule used to reach it. If several rules are needed, write them out one by one.
     
-    {.example ...}
+    {.example ...} The following uses a note per line to show how it is equivalent to the preceding line
+    
     <table class="TFL">
     <tr><td>1</td><td>$A \lor (B \lor C)$</td></tr>
     <tr><td>2</td><td>$(A \lor B) \lor C$</td><td>Associative property of $\lor$</tr>
-    <tr><td>2</td><td>$(B \lor A) \lor C$</td><td>Commutative property of $\lor$</tr>
-    <tr><td>2</td><td>$B \lor (A \lor C)$</td><td>Associative property of $\lor$</tr>
-    <tr><td>2</td><td>$(\lnot (\lnot B)) \lor (A \lor C)$</td><td>Double negation</tr>
-    <tr><td>2</td><td>$(\lnot B) \rightarrow (A \lor C)$</td><td>Disjunction ot implication</tr>
+    <tr><td>3</td><td>$(B \lor A) \lor C$</td><td>Commutative property of $\lor$</tr>
+    <tr><td>4</td><td>$B \lor (A \lor C)$</td><td>Associative property of $\lor$</tr>
+    <tr><td>5</td><td>$(\lnot (\lnot B)) \lor (A \lor C)$</td><td>Double negation</tr>
+    <tr><td>6</td><td>$(\lnot B) \rightarrow (A \lor C)$</td><td>Disjunction ot implication</tr>
     </table>
     {/}
     
@@ -24,10 +25,11 @@ Proof techniques we've learned so far:
     Simplifying
     :   Removing double negation and the ones and zeros effects of tautologies and contradictions
     
-    {.example ...}
-    :::snippet
+    {.example ...} This is the same example as the previous one, but written in prose style instead.
+    
+    <div class="snippet">
     $A \lor (B \lor C)$ can be re-written as $(\lnot \lnot B) \lor (A \lor C)$, which is equivalent to $(\lnot B) \rightarrow A \lor C$ by the equivalence of implication and disjuction.
-    :::
+    </div>
     {/}
 
 2. Case Analysis
@@ -40,12 +42,13 @@ Proof techniques we've learned so far:
     
     After completing all of the cases, the full proof is also completed:we may not know *which* case's assumption is true, but because the disjunction is a tautology, we know at least one of them *must* be.
     
-    {.example ...}
-    :::theorem
-    $P \rightarrow Q \equiv \lnot P \lor Q$
-    :::
+    {.example ...} This is a full proof of one of our known equivalences
     
-    :::proof
+    <div class="theorem">
+    $P \rightarrow Q \equiv \lnot P \lor Q$
+    </div>
+    
+    <div class="proof">
     Either $P$ is true or $P$ is false.
     
     Case 1: $P$ is true
@@ -63,7 +66,7 @@ Proof techniques we've learned so far:
         Since the two are equivalent to the same thing, they are equivalent to each other.
 
     Since $P \rightarrow Q \equiv \lnot P \lor Q$ is true in both cases, it is true in general.
-    :::
+    </div>
     {/}
     
     Case analysis in small-step proofs involves embedded sub-proofs.
