@@ -49,7 +49,8 @@ $\lnot (A \lor B)$      $(\lnot A) \land (\lnot B)$         De Morgan's law
 
 and the rest are either less commonly useful or can be derived easily from other worth-memorizing rules
 
- form 1                  form 2                             Name of rule (if any)
-----------------------  -------------------------------     ----------------------------
-$A \oplus B$            $\lnot (A \leftrightarrow B)$       
-$A \leftrightarrow B$   $\lnot (A \oplus B)$                xnor
+ form 1                      form 2                             Name of rule (if any)
+----------------------      ---------------------------------   ----------------------------
+$A \oplus B$                $\lnot (A \leftrightarrow B)$       
+$A \leftrightarrow B$       $\lnot (A \oplus B)$                xnor
+$P \leftarrow (A \lor Q)$   $(P \land \lnot A) \leftarrow Q$
