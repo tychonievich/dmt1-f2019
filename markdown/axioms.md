@@ -45,10 +45,11 @@ The following operators are both **associative** (you can add and remove parenth
 
 The following operator is *commutative* but not *associative*: $\leftrightarrow$
 
-Of the other rules here, the first four are worth memorizing
+Of the other rules here, the first five are worth memorizing
 
  form 1                  form 2                                         Name of rule (if any)
 ----------------------  -------------------------------                 ----------------------------
+$A \rightarrow B$       $\lnot A \lor B$
 $A \land (B \lor C)$    $(A \land B) \lor (A \land C)$                  Distributive law
 $A \lor (B \land C)$    $(A \lor B) \land (A \lor C)$                   Distributive law
 $\lnot (A \land B)$     $(\lnot A) \lor (\lnot B)$                      De Morgan's law
