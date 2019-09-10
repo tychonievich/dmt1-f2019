@@ -31,6 +31,7 @@ $\bot \rightarrow P$        $\top$
 $\top \rightarrow P$        $P$                    The proof-rule version is called "modus ponens"
 $P \leftrightarrow \bot$    $\lnot P$
 $P \leftrightarrow \top$    $P$
+$P \leftrightarrow P$       $\top$
 $P \oplus \bot$             $P$
 $P \oplus \top$             $\lnot P$
 $P \oplus P$                $\bot$
