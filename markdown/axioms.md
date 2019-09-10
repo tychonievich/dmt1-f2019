@@ -40,12 +40,14 @@ The following operators are both **associative** (you can add and remove parenth
 
 Of the other rules here, the first four are worth memorizing
 
- form 1                  form 2                             Name of rule (if any)
-----------------------  -------------------------------     ----------------------------
-$A \land (B \lor C)$    $(A \land B) \lor (A \land C)$      Distributive law
-$A \lor (B \land C)$    $(A \lor B) \land (A \lor C)$       Distributive law
-$\lnot (A \land B)$     $(\lnot A) \lor (\lnot B)$          De Morgan's law
-$\lnot (A \lor B)$      $(\lnot A) \land (\lnot B)$         De Morgan's law
+ form 1                  form 2                                         Name of rule (if any)
+----------------------  -------------------------------                 ----------------------------
+$A \land (B \lor C)$    $(A \land B) \lor (A \land C)$                  Distributive law
+$A \lor (B \land C)$    $(A \lor B) \land (A \lor C)$                   Distributive law
+$\lnot (A \land B)$     $(\lnot A) \lor (\lnot B)$                      De Morgan's law
+$\lnot (A \lor B)$      $(\lnot A) \land (\lnot B)$                     De Morgan's law
+$(A \leftrightarrow B)$ $(A \rightarrrow B) \land (B \rightarrow A)$
+$(A \oplus B)$          $(A \lor B) \land \lnot (A \land B)$
 
 and the rest are either less commonly useful or can be derived easily from other worth-memorizing rules
 
