@@ -31,9 +31,12 @@ $\bot \rightarrow P$        $\top$
 $\top \rightarrow P$        $P$                    The proof-rule version is called "modus ponens"
 $P \leftrightarrow \bot$    $\lnot P$
 $P \leftrightarrow \top$    $P$
-$P \leftrightarrow P$       $\top$
 $P \oplus \bot$             $P$
 $P \oplus \top$             $\lnot P$
+$P \land P$                 $P$
+$P \lor P$                  $P$
+$P \rightarrow P$           $\top$
+$P \leftrightarrow P$       $\top$
 $P \oplus P$                $\bot$
 
 ## Other equivalences
