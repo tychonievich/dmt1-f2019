@@ -4,18 +4,16 @@ Proof techniques we've learned so far:
     
     In a small step proof, write an equivalent expression and cite the rule used to reach it. If several rules are needed, write them out one by one.
     
-    :::example
-    
-    <table class="TFL">
-    <tr><td>1</td><td>$A \lor (B \lor C)$</td></tr>
-    <tr><td>2</td><td>$(A \lor B) \lor C$</td><td>Associative property of $\lor$</tr>
-    <tr><td>2</td><td>$(B \lor A) \lor C$</td><td>Commutative property of $\lor$</tr>
-    <tr><td>2</td><td>$B \lor (A \lor C)$</td><td>Associative property of $\lor$</tr>
-    <tr><td>2</td><td>$(\lnot (\lnot B)) \lor (A \lor C)$</td><td>Double negation</tr>
-    <tr><td>2</td><td>$(\lnot B) \rightarrow (A \lor C)$</td><td>Disjunction ot implication</tr>
-    </table>
-    
-    :::
+:::example
+<table class="TFL">
+<tr><td>1</td><td>$A \lor (B \lor C)$</td></tr>
+<tr><td>2</td><td>$(A \lor B) \lor C$</td><td>Associative property of $\lor$</tr>
+<tr><td>2</td><td>$(B \lor A) \lor C$</td><td>Commutative property of $\lor$</tr>
+<tr><td>2</td><td>$B \lor (A \lor C)$</td><td>Associative property of $\lor$</tr>
+<tr><td>2</td><td>$(\lnot (\lnot B)) \lor (A \lor C)$</td><td>Double negation</tr>
+<tr><td>2</td><td>$(\lnot B) \rightarrow (A \lor C)$</td><td>Disjunction ot implication</tr>
+</table>
+:::
     
     In a prose proof, write the original and the new expression, separated by "can be re-written as" or "is equivalent to". Only include intermediate steps or identified proof rules if you believe your audience would take more than a few minutes to figure them out themselves.
     Common shortcut phrases for guiding through steps include
