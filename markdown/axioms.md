@@ -25,10 +25,10 @@ The rest can be derived easily from other worth-memorizing rules
 
  long                        simplified            Name of rule (if any)
 ----------------------      --------------------   ----------------------------
-$P \rightarrow \bot$        $\lnot P$              The proof-rule version is calls "modus tollens"
+$P \rightarrow \bot$        $\lnot P$              The proof-rule version is called "modus tollens"
 $P \rightarrow \top$        $\top$
 $\bot \rightarrow P$        $\top$
-$\top \rightarrow P$        $P$                    The proof-rule version is calls "modus ponens"
+$\top \rightarrow P$        $P$                    The proof-rule version is called "modus ponens"
 $P \leftrightarrow \bot$    $\lnot P$
 $P \leftrightarrow \top$    $P$
 $P \oplus \bot$             $P$
