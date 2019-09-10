@@ -36,9 +36,7 @@ $P \oplus \top$             $\lnot P$
 
 ## Other equivalences
 
-The following operators are **associative** (you can add and remove parentheses around them): $\land$, $\lor$, $\oplus$, $\leftrightarrow$
-
-The following operators are **commutative** (you can swap their operands' position): $\land$, $\lor$, $\oplus$, $\leftrightarrow$
+The following operators are both **associative** (you can add and remove parentheses around them) and **commutative** (you can swap their operands' position): $\land$, $\lor$, $\oplus$, $\leftrightarrow$
 
 Of the other rules here, the first four are worth memorizing
 
