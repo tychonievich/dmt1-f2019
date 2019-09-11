@@ -21,10 +21,10 @@ $P \land \top$          $P$
 $P \lor \bot$           $P$
 $P \lor \top$           $\top$
 
-and the rest are either less commonly useful or can be derived easily from other worth-memorizing rules
+and the rest are either less commonly useful or can be derived from the five above rules
 
 
-| Simple |$\rightarrow$|$\leftrightarrow$|$\oplus$|$\land$|$\lor$|
+| simplified |$\rightarrow$|$\leftrightarrow$|$\oplus$|$\land$|$\lor$|
 |:------:|:-----------:|:---------------:|:------:|:-----:|:----:|
 |$P$|$\top \rightarrow P$<br/>$\lnot P \rightarrow P$|$\top \leftrightarrow P$|$\bot \oplus P$|$\top \land P$<br/>$P \land P$|$\bot \lor P$<br/>$P \lor P$|
 |$\lnot P$|$P \rightarrow \bot$<br/>$P \rightarrow \lnot P$|$\bot \leftrightarrow P$|$\top \oplus P$|||
