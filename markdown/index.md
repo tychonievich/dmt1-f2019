@@ -9,6 +9,17 @@ a course designed to provide the mathematical tools needed for later CS courses,
 offered in a flavor designed to meet both the current Discrete Mathematics requirement and to fit with our [pilot of a new curriculum](http://pilot.cs.virginia.edu/).
 If that new curriculum is adopted, this course is expected to be called "discrete math and theory 1" or DMT1.
 
+## List of reference pages
+
+From time to time I create reference pages intended to supplement the textbooks. These are:
+
+- [On Proofs](proofs.html), including four different uses of the word "proof"
+- [Symbols we'll use](symbols.html), which is made available during in-class quizzes
+- [Axioms](axioms.html), being useful tools out of which we build proofs
+- [Glossary of logical terms](glossary.html)
+- [Proof Techniques](techniques-q2.html), a handy reference
+- Example proofs, including [De Morgan's Law](demorgan.html) and [Bubble Sort](bubble.html)
+
 ## Eligibility
 
 You should take this course if and only if
