@@ -41,7 +41,7 @@ $A \lor (B \lor C)$ can be re-written as $(\lnot \lnot B) \lor (A \lor C)$, whic
 
 # Case Analysis
 
-> See also §1.7, ∀x 17.5, and [our proof of one of De Morgan's laws](demogan.html)
+> See also §1.7, ∀x 17.5, and [our proof of one of De Morgan's laws](demorgan.html)
 
 State a disjunctive tautology.
 For a simple tautology like $P \lor \lnot P$, stating it is enough;
