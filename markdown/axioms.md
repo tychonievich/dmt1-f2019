@@ -23,12 +23,12 @@ $P \lor \top$           $\top$
 
 and the rest are either less commonly useful or can be derived easily from other worth-memorizing rules
 
- long                        simplified            Name of rule (if any)
-----------------------      --------------------   ----------------------------
-$P \rightarrow \bot$        $\lnot P$              The proof-rule version is called "modus tollens"
+ long                        simplified         
+----------------------      --------------------
+$P \rightarrow \bot$        $\lnot P$           
 $P \rightarrow \top$        $\top$
 $\bot \rightarrow P$        $\top$
-$\top \rightarrow P$        $P$                    The proof-rule version is called "modus ponens"
+$\top \rightarrow P$        $P$                 
 $P \leftrightarrow \bot$    $\lnot P$
 $P \leftrightarrow \top$    $P$
 $P \oplus \bot$             $P$
