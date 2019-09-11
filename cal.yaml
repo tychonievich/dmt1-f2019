@@ -249,12 +249,12 @@ assignments:
             auto-late-days: 0
             human:
                 - attempted all problems
-                - name: '"one" when a or b'
-                  weight: 2
-                - name: '"one" when a or b'
-                  weight: 2
+                - '"one" when a ∨ b'
+                - '"three" contains negation of their "one" logic (¬(a ∨ b) unless errors with "one")'
+                - '"three" requires c == a (¬c unless they have different a)'
+                - '"three" is equivalent to ¬a ∧ ¬b ∧ ¬c'
                 - reasonable logic syntax
-                - A xor C column 01011010
-                - B <-> C column 10011001
-                - name: center column <-> of other two (00111100 unless errors above)
+                - A ⊕ C column is 01011010
+                - B ↔ C column is 10011001
+                - name: center column ↔ of other two (00111100 unless errors above)
                   weight: 2
