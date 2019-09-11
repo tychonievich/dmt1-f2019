@@ -2,16 +2,10 @@
 title: Discrete Mathematics
 ...
 
-# Overview 
+# List of reference pages
 
-This is one offering of Discrete Mathematics,
-a course designed to provide the mathematical tools needed for later CS courses,
-offered in a flavor designed to meet both the current Discrete Mathematics requirement and to fit with our [pilot of a new curriculum](http://pilot.cs.virginia.edu/).
-If that new curriculum is adopted, this course is expected to be called "discrete math and theory 1" or DMT1.
-
-## List of reference pages
-
-From time to time I create reference pages intended to supplement the textbooks. These are:
+From time to time I create reference pages intended to supplement the textbooks,
+which I have no place to collect so I'm listing them here. They are:
 
 - [On Proofs](proofs.html), including four different uses of the word "proof"
 - [Symbols we'll use](symbols.html), which is made available during in-class quizzes
@@ -19,6 +13,13 @@ From time to time I create reference pages intended to supplement the textbooks.
 - [Glossary of logical terms](glossary.html)
 - [Proof Techniques](techniques-q2.html), a list with tips on proof writing
 - Example proofs, including [De Morgan's Law](demorgan.html) and [Bubble Sort](bubble.html)
+
+# Course Overview 
+
+This is one offering of Discrete Mathematics,
+a course designed to provide the mathematical tools needed for later CS courses,
+offered in a flavor designed to meet both the current Discrete Mathematics requirement and to fit with our [pilot of a new curriculum](http://pilot.cs.virginia.edu/).
+If that new curriculum is adopted, this course is expected to be called "discrete math and theory 1" or DMT1.
 
 ## Eligibility
 
