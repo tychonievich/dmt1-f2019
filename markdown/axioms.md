@@ -39,6 +39,18 @@ $P \rightarrow P$           $\top$
 $P \leftrightarrow P$       $\top$
 $P \oplus P$                $\bot$
 
+
+
+|simplified|implication|bi-implication|xor|and|or|
+|:--------:|:---------:|:------------:|:-:|:-:|:-:|
+|$P$|$\top \rightarrow P$|$\top \leftrightarrow P$|$\bot \oplus P$|$\top \land P$, $\P \land P$|$\bot \lor P$, $P \lor P$|
+|$\lnot P$|$P \rightarrow \bot$|$\bot \leftrightarrow P$|$\top \oplus P$|||
+|$\top$|$\bot \rightarrow P$,$P \rightarrow \top$,$P \rightarrow P$|$\P \leftrightarrow P$|$P \oplus \lnot P$||$\top \lor P$|
+|$\bot$|||$P \oplus P$|$\bot \land P$||
+
+
+
+
 ## Other equivalences
 
 The following operators are both **associative** (you can add and remove parentheses around them) and **commutative** (you can swap their operands' position): $\land$, $\lor$, $\oplus$
