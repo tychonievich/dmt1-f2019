@@ -80,7 +80,7 @@ office hours:
         - dow: Thursday
           start: 14:00:00
           end: 15:00:00
-          where: Rice 442
+          where: Thornton A-235
     Sarah:
       when:
         - dow: Tuesday
@@ -90,7 +90,7 @@ office hours:
         - dow: Thursday
           start: 15:30:00
           end: 16:30:00
-          where: location TBD
+          where: Thornton A-235
     Anthony:
       when: []
     Tianyu:
