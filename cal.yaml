@@ -224,5 +224,37 @@ assignments:
         open: 2019-09-06 19:00:00
     Quiz01-1:
         due: 2019-09-06 16:30:00
+        rubric:
+            kind: hybrid
+            auto-weight: 0
+            late-penalty: 1
+            auto-late-days: 0
+            human:
+                - attempted all problems
+                - have term definitions
+                - all definitions are propositions
+                - all definitions are atomic propositions
+                - all definitions are from text
+                - no part of text left out
+                - have formula
+                - 1st formula correct
+                - 2nd formula correct
+                - 3rd formula correct
     Quiz01-2:
         due: 2019-09-06 16:30:00
+        rubric:
+            kind: hybrid
+            auto-weight: 0
+            late-penalty: 1
+            auto-late-days: 0
+            human:
+                - attempted all problems
+                - name: '"one" when a or b'
+                  weight: 2
+                - name: '"one" when a or b'
+                  weight: 2
+                - reasonable logic syntax
+                - A xor C column 01011010
+                - B <-> C column 10011001
+                - name: center column <-> of other two (00111100 unless errors above)
+                  weight: 2
