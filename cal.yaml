@@ -203,7 +203,6 @@ assignments:
             late-policy: []
             total: 100
             drop: 1
-            exclude: [HW01]
         Quiz:
             portion: "30"
             late-policy: []
@@ -218,6 +217,7 @@ assignments:
         link: 'https://kytos.cs.virginia.edu/dmt1-f2019/quizzes/quiz.php?qid=01'
         due: 2019-09-02 13:00:00
         open: 2019-08-27 19:00:00
+        weight: 0
     HW02:
         link: 'https://kytos.cs.virginia.edu/dmt1-f2019/quizzes/quiz.php?qid=02'
         due: 2019-09-09 13:00:00
