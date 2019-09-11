@@ -203,6 +203,7 @@ assignments:
             late-policy: []
             total: 100
             drop: 1
+            exclude: [HW01]
         Quiz:
             portion: "30"
             late-policy: []
