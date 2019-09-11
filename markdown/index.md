@@ -17,7 +17,7 @@ From time to time I create reference pages intended to supplement the textbooks.
 - [Symbols we'll use](symbols.html), which is made available during in-class quizzes
 - [Axioms](axioms.html), being useful tools out of which we build proofs
 - [Glossary of logical terms](glossary.html)
-- [Proof Techniques](techniques-q2.html), a handy reference
+- [Proof Techniques](techniques-q2.html), a list with tips on proof writing
 - Example proofs, including [De Morgan's Law](demorgan.html) and [Bubble Sort](bubble.html)
 
 ## Eligibility
