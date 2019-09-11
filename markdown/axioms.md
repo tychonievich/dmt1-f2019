@@ -41,11 +41,11 @@ $P \oplus P$                $\bot$
 
 
 
-|simplified|implication|bi-implication|xor|and|or|
+|simplified|$\rightarrow$|$\leftrightarrow$|$\oplus$|$\land$|$\lor$|
 |:--------:|:---------:|:------------:|:-:|:-:|:-:|
-|$P$|$\top \rightarrow P$|$\top \leftrightarrow P$|$\bot \oplus P$|$\top \land P$, $\P \land P$|$\bot \lor P$, $P \lor P$|
+|$P$|$\top \rightarrow P$|$\top \leftrightarrow P$|$\bot \oplus P$|$\top \land P$, $P \land P$|$\bot \lor P$, $P \lor P$|
 |$\lnot P$|$P \rightarrow \bot$|$\bot \leftrightarrow P$|$\top \oplus P$|||
-|$\top$|$\bot \rightarrow P$,$P \rightarrow \top$,$P \rightarrow P$|$\P \leftrightarrow P$|$P \oplus \lnot P$||$\top \lor P$|
+|$\top$|$\bot \rightarrow P$,$P \rightarrow \top$,$P \rightarrow P$|$P \leftrightarrow P$|$P \oplus \lnot P$||$\top \lor P$|
 |$\bot$|||$P \oplus P$|$\bot \land P$||
 
 
