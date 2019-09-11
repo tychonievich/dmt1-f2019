@@ -33,7 +33,7 @@ Formula
 :   see *Logical Expression*.
 
 Iff
-:   A contraction of "if and only if", a linguistic word for a bi-implication
+:   A contraction of "if and only if", a linguistic word for a bi-implication ($\leftrightarrow$)
 
 Logical Expression
 :   One or more propositions or predicates, combined with operators so that the whole is a predicate or proposition.
