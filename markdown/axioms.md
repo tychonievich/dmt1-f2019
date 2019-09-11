@@ -23,26 +23,9 @@ $P \lor \top$           $\top$
 
 and the rest are either less commonly useful or can be derived easily from other worth-memorizing rules
 
- long                        simplified         
-----------------------      --------------------
-$P \rightarrow \bot$        $\lnot P$           
-$P \rightarrow \top$        $\top$
-$\bot \rightarrow P$        $\top$
-$\top \rightarrow P$        $P$                 
-$P \leftrightarrow \bot$    $\lnot P$
-$P \leftrightarrow \top$    $P$
-$P \oplus \bot$             $P$
-$P \oplus \top$             $\lnot P$
-$P \land P$                 $P$
-$P \lor P$                  $P$
-$P \rightarrow P$           $\top$
-$P \leftrightarrow P$       $\top$
-$P \oplus P$                $\bot$
 
-
-
-|   |$\rightarrow$|$\leftrightarrow$|$\oplus$|$\land$|$\lor$|
-|:-:|:-----------:|:---------------:|:------:|:-----:|:----:|
+| Simple |$\rightarrow$|$\leftrightarrow$|$\oplus$|$\land$|$\lor$|
+|:------:|:-----------:|:---------------:|:------:|:-----:|:----:|
 |$P$|$\top \rightarrow P$|$\top \leftrightarrow P$|$\bot \oplus P$|$\top \land P$<br/>$P \land P$|$\bot \lor P$<br/>$P \lor P$|
 |$\lnot P$|$P \rightarrow \bot$|$\bot \leftrightarrow P$|$\top \oplus P$|||
 |$\top$|$\bot \rightarrow P$<br/>$P \rightarrow \top$<br/>$P \rightarrow P$|$P \leftrightarrow P$|$P \oplus \lnot P$|$P \lor \lnot P$|$\top \lor P$|
