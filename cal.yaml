@@ -155,6 +155,13 @@ reading:
       - txt: practice key
         lnk: files/lab01_propositions_practice_key.pdf
         
+    lab02:
+      - txt: list of symbols
+        lnk: symbols.html
+      - txt: practice quiz
+        lnk: files/lab02_equivalence_practice.pdf
+      - txt: practice key
+        lnk: files/lab02_equivalence_practice_key.pdf
     
     welcome: 
       - "§Introduction"
