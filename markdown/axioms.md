@@ -26,7 +26,7 @@ and the rest are either less commonly useful or can be derived easily from other
 
 | Simple |$\rightarrow$|$\leftrightarrow$|$\oplus$|$\land$|$\lor$|
 |:------:|:-----------:|:---------------:|:------:|:-----:|:----:|
-|$P$|$\top \rightarrow P$|$\top \leftrightarrow P$|$\bot \oplus P$|$\top \land P$<br/>$P \land P$|$\bot \lor P$<br/>$P \lor P$|
+|$P$|$\top \rightarrow P$<br/>$\lnot P \rightarrow P$|$\top \leftrightarrow P$|$\bot \oplus P$|$\top \land P$<br/>$P \land P$|$\bot \lor P$<br/>$P \lor P$|
 |$\lnot P$|$P \rightarrow \bot$<br/>$P \rightarrow \lnot P$|$\bot \leftrightarrow P$|$\top \oplus P$|||
 |$\top$|$\bot \rightarrow P$<br/>$P \rightarrow \top$<br/>$P \rightarrow P$|$P \leftrightarrow P$|$P \oplus \lnot P$||$\top \lor P$<br/>$P \lor \lnot P$|
 |$\bot$||$P \leftrightarrow \lnot P$|$P \oplus P$|$\bot \land P$<br/>$P \land \lnot P$||
