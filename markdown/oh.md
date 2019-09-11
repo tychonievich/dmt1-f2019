@@ -19,7 +19,8 @@ TA office hours are in different locations at different times, as noted in the l
 
 1. Find when and where TAs are holding office hours
 2. Go to that location
-3. Approach the TA and ask for help
+3. Look for a sign on a table or other indicator of CS 2102 TA
+4. Approach the TA and ask for help
 {/}
 
 
