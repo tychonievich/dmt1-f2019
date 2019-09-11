@@ -41,8 +41,8 @@ $P \oplus P$                $\bot$
 
 
 
-|simplified|$\rightarrow$|$\leftrightarrow$|$\oplus$|$\land$|$\lor$|
-|:--------:|:---------:|:------------:|:-:|:-:|:-:|
+|   |$\rightarrow$|$\leftrightarrow$|$\oplus$|$\land$|$\lor$|
+|:-:|:-----------:|:---------------:|:------:|:-----:|:----:|
 |$P$|$\top \rightarrow P$|$\top \leftrightarrow P$|$\bot \oplus P$|$\top \land P$<br/>$P \land P$|$\bot \lor P$<br/>$P \lor P$|
 |$\lnot P$|$P \rightarrow \bot$|$\bot \leftrightarrow P$|$\top \oplus P$|||
 |$\top$|$\bot \rightarrow P$<br/>$P \rightarrow \top$<br/>$P \rightarrow P$|$P \leftrightarrow P$|$P \oplus \lnot P$|$P \lor \lnot P$|$\top \lor P$|
