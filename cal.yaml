@@ -199,9 +199,18 @@ reading:
 assignments:
     ".groups":
         HW:
-            portion: "100"
+            portion: "30"
             late-policy: []
             total: 100
+        Quiz:
+            portion: "30"
+            late-policy: []
+            total: 100
+        Final:
+            portion: "40"
+            late-policy: []
+            total: 100
+            
     HW01 Online:
         link: 'https://kytos.cs.virginia.edu/dmt1-f2019/quizzes/quiz.php?qid=01'
         due: 2019-09-02 13:00:00
@@ -210,4 +219,7 @@ assignments:
         link: 'https://kytos.cs.virginia.edu/dmt1-f2019/quizzes/quiz.php?qid=02'
         due: 2019-09-09 13:00:00
         open: 2019-09-06 19:00:00
-        
+    Quiz01-1:
+        due: 2019-09-06 16:30:00
+    Quiz01-2:
+        due: 2019-09-06 16:30:00

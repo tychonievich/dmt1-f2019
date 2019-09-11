@@ -5,9 +5,15 @@ cd "$here"
 target="$HOME/public_html/DMT1/F2019/"
 mkdir -p "$target"files
 
-git commit -a -m 'autocommit caused by update'
-git pull
-git push
+if [ "$#" -lt 1 ] || [ "$1" != 'test' ]
+then
+    git commit -a -m 'autocommit caused by update'
+    git pull
+    git push
+elif [ "$1" = 'test' ]
+then
+    shift
+fi
 
 
 function pd() {
@@ -40,10 +46,12 @@ function pd() {
 if [ cal.yaml -nt markdown/schedule.html ] \
 || [ links.yaml -nt markdown/schedule.html ] \
 || [ cal2html.py -nt markdown/schedule.html ] \
-|| [ cal.yaml -nt markdown/cal.ics ]
+|| [ cal.yaml -nt markdown/cal.ics ] \
+|| [ cal.yaml -nt assignments.json ]
 then
     python3 cal2html.py
-    # scp "assignments.json" "coursegrade.json" "kytos.cs.virginia.edu:/var/www/html/dmt1-s2019/meta/"
+    scp "assignments.json" "kytos.cs.virginia.edu:/var/www/html/dmt1-f2019/meta/"
+    scp "coursegrade.json" "kytos.cs.virginia.edu:/var/www/html/dmt1-f2019/meta/"
 fi
 
 if [ markdown/schedule.html -nt markdown/schedule.md ]
