@@ -202,10 +202,12 @@ assignments:
             portion: "30"
             late-policy: []
             total: 100
+            drop: 1
         Quiz:
             portion: "30"
             late-policy: []
             total: 100
+            drop: 1
         Final:
             portion: "40"
             late-policy: []
