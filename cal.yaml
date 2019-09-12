@@ -80,7 +80,7 @@ office hours:
         - dow: Thursday
           start: 14:00:00
           end: 15:00:00
-          where: Thornton A-235
+          where: Thornton A-233
           except: [2019-09-12]
     Sarah:
       when:
@@ -91,7 +91,7 @@ office hours:
         - dow: Thursday
           start: 15:30:00
           end: 16:30:00
-          where: Thornton A-235
+          where: Thornton A-233
     Anthony:
       when: []
     Tianyu:
