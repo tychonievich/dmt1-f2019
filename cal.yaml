@@ -223,6 +223,48 @@ assignments:
         link: 'https://kytos.cs.virginia.edu/dmt1-f2019/quizzes/quiz.php?qid=02'
         due: 2019-09-09 13:00:00
         open: 2019-09-06 19:00:00
+    HW03:
+        link: 'https://kytos.cs.virginia.edu/dmt1-f2019/quizzes/quiz.php?qid=03'
+        due: 2019-09-16 13:00:00
+        open: 2019-09-13 19:00:00
+    HW04:
+        link: 'https://kytos.cs.virginia.edu/dmt1-f2019/quizzes/quiz.php?qid=04'
+        due: 2019-09-23 13:00:00
+        open: 2019-09-20 19:00:00
+    HW05:
+        link: 'https://kytos.cs.virginia.edu/dmt1-f2019/quizzes/quiz.php?qid=05'
+        due: 2019-09-30 13:00:00
+        open: 2019-09-27 19:00:00
+    HW06:
+        link: 'https://kytos.cs.virginia.edu/dmt1-f2019/quizzes/quiz.php?qid=06'
+        due: 2019-10-09 13:00:00
+        open: 2019-10-04 19:00:00
+    HW07:
+        link: 'https://kytos.cs.virginia.edu/dmt1-f2019/quizzes/quiz.php?qid=07'
+        due: 2019-10-21 13:00:00
+        open: 2019-10-18 19:00:00
+    HW08:
+        link: 'https://kytos.cs.virginia.edu/dmt1-f2019/quizzes/quiz.php?qid=08'
+        due: 2019-10-28 13:00:00
+        open: 2019-10-25 19:00:00
+    HW09:
+        link: 'https://kytos.cs.virginia.edu/dmt1-f2019/quizzes/quiz.php?qid=09'
+        due: 2019-11-04 13:00:00
+        open: 2019-11-01 19:00:00
+    HW10:
+        link: 'https://kytos.cs.virginia.edu/dmt1-f2019/quizzes/quiz.php?qid=10'
+        due: 2019-11-11 13:00:00
+        open: 2019-11-08 19:00:00
+    HW11:
+        link: 'https://kytos.cs.virginia.edu/dmt1-f2019/quizzes/quiz.php?qid=11'
+        due: 2019-11-18 13:00:00
+        open: 2019-11-15 19:00:00
+    HW12:
+        link: 'https://kytos.cs.virginia.edu/dmt1-f2019/quizzes/quiz.php?qid=12'
+        due: 2019-11-25 13:00:00
+        open: 2019-11-22 19:00:00
+
+
     Quiz01-1:
         due: 2019-09-06 16:30:00
         rubric:
