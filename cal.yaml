@@ -252,7 +252,6 @@ assignments:
                 - attempted all problems
                 - '"one" when a ∨ b'
                 - '"three" contains negation of their "one" logic (¬(a ∨ b) unless errors with "one")'
-                - '"three" requires c == a (¬c unless they have different a)'
                 - '"three" is equivalent to ¬a ∧ ¬b ∧ ¬c'
                 - reasonable logic syntax
                 - A ⊕ C column is 01011010
