@@ -201,18 +201,12 @@ assignments:
     ".groups":
         HW:
             portion: "30"
-            late-policy: []
-            total: 100
             drop: 1
         Quiz:
             portion: "30"
-            late-policy: []
-            total: 100
             drop: 1
         Final:
             portion: "40"
-            late-policy: []
-            total: 100
             
     HW01:
         link: 'https://kytos.cs.virginia.edu/dmt1-f2019/quizzes/quiz.php?qid=01'
