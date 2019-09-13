@@ -184,6 +184,10 @@ reading:
         lnk: files/lab01_propositions_practice.pdf
       - txt: practice key
         lnk: files/lab01_propositions_practice_key.pdf
+      - txt: quiz
+        lnk: files/lab01_quiz.pdf
+      - txt: key
+        lnk: files/lab01_quiz_key.pdf
         
     lab02:
       - txt: list of symbols
