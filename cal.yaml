@@ -238,7 +238,7 @@ reading:
         - "skim ∀x 23–26"
     sets:
         - lnk: "sets.html"
-          text: "sets writeup"
+          txt: "sets writeup"
         - "§4.1.1"
 
 assignments:
