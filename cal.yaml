@@ -228,6 +228,18 @@ reading:
         - lnk: "techniques-q2.html"
           txt: "proof techniques"
         
+    predicates:
+        - "§1.2"
+        - "∀x 21.0–21.3"
+        - "skim §4.1.0"
+    quantifiers:
+        - "∀x 21.4–22"
+        - "§3.6"
+        - "skim ∀x 23–26"
+    sets:
+        - lnk: "sets.html"
+          text: "sets writeup"
+        - "§4.1.1"
 
 assignments:
     ".groups":
