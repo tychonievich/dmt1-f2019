@@ -11,6 +11,7 @@ which I have no obvious place to list so I'm listing them here. They are:
 - [Symbols we'll use](symbols.html), which is made available during in-class quizzes
 - [Axioms](axioms.html), being useful tools out of which we build proofs
 - [Glossary of logical terms](glossary.html)
+- [Sets primer](sets.html)
 - [Proof Techniques](techniques-q2.html), a list with tips on proof writing
 - Example proofs, including [De Morgan's Law](demorgan.html) and [Bubble Sort](bubble.html)
 
