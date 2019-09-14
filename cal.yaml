@@ -134,13 +134,13 @@ lectures:
     - equivalence rules
     - equivalence proofs
 
-    - [predicates, quantifiers]
-    - proofs
-
+    - predicates
     - quantifiers
-    - proofs
 
-    - [sets, cardinality]
+    - first-order logic
+    - first-order proofs
+
+    - sets
     - proofs
 
     - [functions, relations]
