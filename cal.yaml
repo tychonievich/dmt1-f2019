@@ -124,6 +124,16 @@ office hours:
           where: Rice 442
     Tianyu:
       when: []
+    Connor:
+      when:
+        - dow: Tuesday
+          start: 15:00:00
+          end: 17:00:00
+          where: Rice 442
+        - dow: Wednesday
+          start: 14:00:00
+          end: 15:30:00
+          where: Rice 442
 
 
 lectures:
