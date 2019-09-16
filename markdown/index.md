@@ -4,8 +4,8 @@ title: Discrete Mathematics
 
 # List of reference pages
 
-From time to time I create reference pages intended to supplement the textbooks,
-which I have no obvious place to list so I'm listing them here. They are:
+From time to time I create reference pages intended to supplement the textbooks ([MCS](files/mcs.pdf) and [∀x](files/forallx.pdf));
+I have no obvious place to list those suppliments so I'm listing them here. They are:
 
 - [On Proofs](proofs.html), including four different uses of the word "proof"
 - [Symbols we'll use](symbols.html), which is made available during in-class quizzes
