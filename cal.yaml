@@ -206,6 +206,10 @@ reading:
         lnk: files/lab02_equivalence_practice.pdf
       - txt: practice key
         lnk: files/lab02_equivalence_practice_key.pdf
+      - txt: quiz
+        lnk: files/quiz02.pdf
+      - txt: key
+        lnk: files/quiz02-key.pdf
     
     welcome: 
       - "§Introduction"
