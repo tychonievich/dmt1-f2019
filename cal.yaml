@@ -354,9 +354,38 @@ assignments:
     Quiz02-1:
         due: 2019-09-13 16:20:00
         open: 2019-09-13 16:00:00
+        weight: 0.25
+        rubric:
+            kind: hybrid
+            auto-weight: 0
+            late-penalty: 1
+            auto-late-days: 0
+            human:
+                - start with (P ∧ ¬Q)
+                - logic syntax used
+                - applied rules
+                - no skipped steps
+                - end with ¬(P → Q)
     Quiz02-2:
         due: 2019-09-13 16:20:00
         open: 2019-09-13 16:00:00
+        weight: 0.75
+        rubric:
+            kind: hybrid
+            auto-weight: 0
+            late-penalty: 1
+            auto-late-days: 0
+            human:
+                - used same variable in all three blanks
+                - wrote something in all four areas
+                - got both case 1 expressions to same form
+                - ... with the case assumption correctly inserted
+                - ... using valid equivalence rules
+                - ... expressed in prose
+                - got both case 2 expressions to same form
+                - ... with the case assumption correctly inserted
+                - ... using valid equivalence rules
+                - ... expressed in prose
     Quiz03:
         due: 2019-09-20 16:20:00
         open: 2019-09-20 16:00:00
