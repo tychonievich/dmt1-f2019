@@ -351,7 +351,10 @@ assignments:
                 - B ↔ C column is 10011001
                 - name: center column ↔ of other two (00111100 unless errors above)
                   weight: 2
-    Quiz02:
+    Quiz02-1:
+        due: 2019-09-13 16:20:00
+        open: 2019-09-13 16:00:00
+    Quiz02-2:
         due: 2019-09-13 16:20:00
         open: 2019-09-13 16:00:00
     Quiz03:
