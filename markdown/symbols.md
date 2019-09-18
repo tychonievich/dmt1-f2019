@@ -4,7 +4,7 @@ title: Symbols we'll use
 
 You have enough to worry about memorizing without keeping dozens of symbols in your head at once. We intend to provide this table for your reference during every in-class evaluation.
 
-Concept          Java/C      Python     This class                       Bitwise    Other
+Concept          Java/C      Python      This class                      Bitwise    Other
 --------        --------    --------    ---------------------------     ---------   ------
 true            `true`      `True`      $\top$ or $1$                   `-1`        T, tautology
 false           `false`     `False`     $\bot$ or $0$                   `0`         F, contradiction
