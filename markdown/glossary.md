@@ -5,17 +5,20 @@ title: Glossary of logical terms
 See also our [list of symbols](symbols.html)
 
 Antecedent
-:   The left-hand operand of a conditional; the $X$ is $X \rightarrow Y$
+:   The left-hand operand of a conditional; the $X$ is $X \rightarrow Y$.
+
+Axiom
+:   Something we accept as true without requiring a proof.
 
 Associative
 :   Of an operator, meaning the order of operations when several of that operator are applied in a row does not matter.
     To say some operator $\cdot$ is associative means that $(P \cdot Q) \cdot R \equiv P \cdot (Q \cdot R)$ for all propositions $P$, $Q$, and $R$.
 
 Biconditional
-:   See *Iff*
+:   See *Iff*.
 
 Bi-implication
-:   See *Iff*
+:   See *Iff*.
 
 Commutative
 :   Of an operator, meaning the order of its operands does not matter.
@@ -25,7 +28,7 @@ Conjunction
 :   Logical AND ($\land$).
 
 Consequent
-:   The right-hand operand of a conditional; the $Y$ is $X \rightarrow Y$
+:   The right-hand operand of a conditional; the $Y$ is $X \rightarrow Y$.
 
 Contradiction
 :   A logical expression that is equivalent to FALSE ($\bot$).
@@ -48,13 +51,19 @@ Formula
 :   see *Logical Expression*.
 
 Iff
-:   A contraction of "if and only if", a linguistic word for a bi-implication ($\leftrightarrow$)
+:   A contraction of "if and only if", a name for the operator $\leftrightarrow$.
 
 Logical Expression
 :   One or more propositions or predicates, combined with operators so that the whole is a predicate or proposition.
 
+Necessary
+:   Cannot happen without. If $A$ is a necessary condition for $B$, then we know both
+
+    - Without $A$, no $B$ is possible. $\lnot A \rightarrow \lnot B$
+    - If you see $B$, $A$ must also be. $B \rightarrow A$
+
 Predicate
-:   An incomplete proposition, where one or more component has been replaced by a *Variable*
+:   An incomplete proposition, where one or more component has been replaced by a *Variable*.
 
 Proposition
 :   A statement that, by construction, must either be true or false.
@@ -68,11 +77,17 @@ Satisfiable
 Sentence
 :   see *Logical Expression*.
 
+Sufficient
+:   Always happens if. If $A$ is a sufficient condition for $B$, then we know both
+
+    - If you see $A$, $B$ must also be. $A \rightarrow B$
+    - If you don't see $B$, $A$ can't be. $\lnot B \rightarrow \lnot A$
+
 Tautology
 :   A logical expression that is equivalent to TRUE ($\top$).
 
 Universe of Discourse
-:   see *Domain*
+:   see *Domain*.
 
 Valid
 :   A valid expression is a tautology.
@@ -80,7 +95,7 @@ Valid
 Variable
 :   In algebra, a place-holder for a single numeric value.
     
-    In logic, a place-holder for a single element from the *Domain*, generally used with *Quantifiers* and *Predicates*
+    In logic, a place-holder for a single element from the *Domain*, generally used with *Quantifiers* and *Predicates*.
     
     In programming, a named region of memory that may take different values at different times.
     
