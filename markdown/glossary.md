@@ -97,9 +97,9 @@ Valid
 :   A valid expression is a tautology.
 
 Variable
-:   In algebra, a place-holder for a single numeric value.
+:   A single word for (at least) three concepts with similar but non-identical meaning:
     
-    In logic, a place-holder for a single element from the *Domain*, generally used with *Quantifiers* and *Predicates*.
-    
-    In programming, a named region of memory that may take different values at different times.
+    - In algebra, a place-holder for a single numeric value.
+    - In logic, a place-holder for a single element from the *Domain*, generally used with *Quantifiers* and *Predicates*.
+    - In programming, a named region of memory that may take different values at different times.
     
