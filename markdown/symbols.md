@@ -20,6 +20,6 @@ Concept         Symbol          Meaning
 --------        --------        --------------
 equivalent      $\equiv$        "$A \equiv B$" means "$A \leftrightarrow B$ is a tautology"
 entails         $\vDash$        "$A \vDash B$" means "$A \rightarrow B$ is a tautology"
-provable        $\vdash$        "$A \vdash B$" means "$A \vdash B$" *and* "$A$ is true so $B$ is true too"
-therefore       $\therefore$    "$\therefore A$" means "$\vdash A$" *and* "$A$ is the thing we wanted to show"
+provable        $\vdash$        "$A \vdash B$" means both "$A \vdash B$" and "$A$ is true so $B$ is true too"
+therefore       $\therefore$    "$\therefore A$" means both "$\vdash A$" and "$A$ is the thing we wanted to show"
 
