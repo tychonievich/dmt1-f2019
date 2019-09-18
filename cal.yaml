@@ -256,9 +256,10 @@ reading:
         - "∀x 21.0–21.3"
         - "skim §4.1.0"
     quantifiers:
-        - "∀x 21.4–22"
+        - "∀x 21.4–24"
         - "§3.6"
-        - "skim ∀x 23–26"
+        - "skim ∀x 25–26"
+        - "practice exercises in ∀x 22 and 23"
     sets:
         - lnk: "sets.html"
           txt: "sets writeup"
