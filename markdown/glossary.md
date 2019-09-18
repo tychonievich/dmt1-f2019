@@ -96,9 +96,6 @@ Tautology
 Universe of Discourse
 :   see *Domain*.
 
-Valid
-:   A valid expression is a tautology.
-
 Variable
 :   A single word for (at least) three concepts with similar but non-identical meaning:
     
