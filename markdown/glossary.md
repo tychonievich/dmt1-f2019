@@ -65,7 +65,10 @@ Necessary
     Often used to suggest partial causation or a requirement. Compare *Sufficient*.
 
 Predicate
-:   An incomplete proposition, where one or more component has been replaced by a *Variable*.
+:   A single word for two related concepts:
+    
+    - In logic, an incomplete proposition, where one or more component has been replaced by a *Variable*.
+    - In programming, a subroutine that (a) has no side-effects and (b) always returns a Boolean value.
 
 Proposition
 :   A statement that, by construction, must either be true or false.
