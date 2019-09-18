@@ -61,6 +61,8 @@ Necessary
 
     - Without $A$, no $B$ is possible. $\lnot A \rightarrow \lnot B$
     - If you see $B$, $A$ must also be. $B \rightarrow A$
+    
+    Often used to suggest partial causation or a requirement. Compare *Sufficient*.
 
 Predicate
 :   An incomplete proposition, where one or more component has been replaced by a *Variable*.
@@ -82,6 +84,8 @@ Sufficient
 
     - If you see $A$, $B$ must also be. $A \rightarrow B$
     - If you don't see $B$, $A$ can't be. $\lnot B \rightarrow \lnot A$
+
+    Often used to suggest causation. Compare *Necessary*.
 
 Tautology
 :   A logical expression that is equivalent to TRUE ($\top$).
