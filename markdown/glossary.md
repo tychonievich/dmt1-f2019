@@ -71,7 +71,7 @@ Proposition
 :   A statement that, by construction, must either be true or false.
 
 Quantifier
-:   One of $\forall$ or $\exists$; some people also include $\not \exists$ while others think of that as being shorthand for $\lnot \exists$.
+:   One of $\forall$ or $\exists$; some people also include $\nexists$ while others think of that as being shorthand for $\lnot \exists$.
 
 Satisfiable
 :   A satisfiable expression is not a contradiction.
