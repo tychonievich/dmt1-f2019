@@ -183,6 +183,7 @@ labs:
     - real maths
     - lab01
     - lab02
+    - lab03
 
 
 reading:
@@ -210,6 +211,14 @@ reading:
         lnk: files/quiz02.pdf
       - txt: key
         lnk: files/quiz02-key.pdf
+
+    lab03:
+      - txt: list of symbols
+        lnk: symbols.html
+      - txt: practice quiz
+        lnk: files/lab03.pdf
+      - txt: practice key
+        lnk: files/lab03-key.pdf
     
     welcome: 
       - "§Introduction"
