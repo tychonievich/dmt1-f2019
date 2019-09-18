@@ -14,3 +14,12 @@ $P$ or $Q$      `p || q`    `p or q`    $P \lor Q$                      `p | q` 
 $P$ xor $Q$     `p != q`    `p != q`    $P \oplus Q$                    `p ^ q` $P ⊻ Q$
 $P$ implies $Q$                         $P \rightarrow Q$                       $P \supset Q$, $P \Rightarrow Q$
 $P$ iff $Q$     `p == q`    `p == q`    $P \leftrightarrow Q$                   $P \Leftrightarrow Q$, $P$ xnor $Q$, $P \equiv Q$
+
+
+Concept         Symbol          Meaning
+--------        --------        --------------
+equivalent      $\equiv$        $A \equiv B$ means $A \leftrightarrow B$ is a tautology
+entails         $\vDash$        $A \vDash B$ means $A \rightarrow B$ is a tautology
+provable        $\vdash$        $A \vdash B$ means $A \vdash B$ and $A$ is true so $B$ is true too
+therefore       $\therefore$    $\dots \therefore A$ means $\dots \vdash A$ and $A$ is the thing we wanted to show
+

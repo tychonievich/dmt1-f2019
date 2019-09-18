@@ -4,9 +4,18 @@ title: Glossary of logical terms
 
 See also our [list of symbols](symbols.html)
 
+Antecedent
+:   The left-hand operand of a conditional; the $X$ is $X \rightarrow Y$
+
 Associative
 :   Of an operator, meaning the order of operations when several of that operator are applied in a row does not matter.
     To say some operator $\cdot$ is associative means that $(P \cdot Q) \cdot R \equiv P \cdot (Q \cdot R)$ for all propositions $P$, $Q$, and $R$.
+
+Biconditional
+:   See *Iff*
+
+Bi-implication
+:   See *Iff*
 
 Commutative
 :   Of an operator, meaning the order of its operands does not matter.
@@ -14,6 +23,9 @@ Commutative
 
 Conjunction
 :   Logical AND ($\land$).
+
+Consequent
+:   The right-hand operand of a conditional; the $Y$ is $X \rightarrow Y$
 
 Contradiction
 :   A logical expression that is equivalent to FALSE ($\bot$).
@@ -25,6 +37,9 @@ De Morgan's laws
 
 Disjunction
 :   Logical OR ($\lor$).
+
+Domain
+:   The possible values a variable could take under a quantifier; for example, if the domain is "all animals" then $\forall x \;.\; F(x)$ means "$F$ is true for all animals".
 
 Equivalent
 :   Two logical expressions $P$ and $Q$ are equivalent if and only if the expression $P \leftrightarrow Q$ is a tautology.
@@ -38,8 +53,14 @@ Iff
 Logical Expression
 :   One or more propositions or predicates, combined with operators so that the whole is a predicate or proposition.
 
+Predicate
+:   An incomplete proposition, where one or more component has been replaced by a *Variable*
+
 Proposition
 :   A statement that, by construction, must either be true or false.
+
+Quantifier
+:   One of $\forall$ or $\exists$; some people also include $\not \exists$ while others think of that as being a combination of $\lnot$ and $\exists$.
 
 Satisfiable
 :   A satisfiable expression is not a contradiction.
@@ -50,5 +71,16 @@ Sentence
 Tautology
 :   A logical expression that is equivalent to TRUE ($\top$).
 
+Universe of Discourse
+:   see *Domain*
+
 Valid
 :   A valid expression is a tautology.
+
+Variable
+:   In algebra, a place-holder for a single numeric value.
+    
+    In logic, a place-holder for a single element from the *Domain*, generally used with *Quantifiers* and *Predicates*
+    
+    In programming, a named region of memory that may take different values at different times.
+    
