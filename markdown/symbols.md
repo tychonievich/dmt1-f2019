@@ -16,7 +16,7 @@ $P$ implies $Q$                         $P \rightarrow Q$                       
 $P$ iff $Q$     `p == q`    `p == q`    $P \leftrightarrow Q$                   $P \Leftrightarrow Q$, $P$ xnor $Q$, $P \equiv Q$
 
 
-Concept         Symbol          Meaning
+Concept          Symbol         Meaning
 --------        --------        --------------
 equivalent      $\equiv$        "$A \equiv B$" means "$A \leftrightarrow B$ is a tautology"
 entails         $\vDash$        "$A \vDash B$" means "$A \rightarrow B$ is a tautology"
