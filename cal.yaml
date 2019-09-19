@@ -377,7 +377,7 @@ assignments:
             human:
                 - start with (P ∧ ¬Q)
                 - logic syntax used
-                - attmpted to apply rules
+                - attmpted a full proof
                 - applied rules correctly
                 - no skipped steps
                 - end with ¬(P → Q)
