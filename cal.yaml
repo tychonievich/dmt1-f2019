@@ -155,11 +155,11 @@ lectures:
     - predicates
     - quantifiers
 
+    - sets
+    - set proofs
+
     - first-order logic
     - first-order proofs
-
-    - sets
-    - proofs
 
     - [functions, relations]
 
