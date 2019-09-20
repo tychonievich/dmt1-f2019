@@ -4,7 +4,7 @@ title: Discrete Mathematics
 
 # List of reference pages
 
-From time to time I create reference pages intended to supplement the textbooks ([MCS](files/mcs.pdf) and [∀x](files/forallx.pdf), the latter also having a [solution book](http://forallx.openlogicproject.org/solutions/forallxsol.pdf);
+From time to time I create reference pages intended to supplement the textbooks ([MCS](files/mcs.pdf) and [∀x](files/forallx.pdf), the latter also having a [solution book](http://forallx.openlogicproject.org/solutions/forallxsol.pdf));
 I have no obvious place to list those supplements so I'm listing them here. They are:
 
 - [On Proofs](proofs.html), including four different uses of the word "proof"
