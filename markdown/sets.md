@@ -14,7 +14,7 @@ Let's build up a definition of set one step at a time.
 I'll do this informally with an emphasis on ease of understanding
 instead of formally with an emphasis on precision; if you want a precise definition instead, see §7.3.2.
 
-1. *A set contains members.*
+1. **A set contains members.**
     
     **Set** is thus a term referring to a collection, kind of like a list in programming.
     **Member** is the mathematician's word for something inside a set;
@@ -22,19 +22,19 @@ instead of formally with an emphasis on precision; if you want a precise definit
     
     There is no constraint on the type of the members of set.
 
-1. *We write a set with curly braces and commas.*
+1. **We write a set with curly braces and commas.**
     
     For example, {1, 3} is a set. So is {dog, cat, mouse}.
     
     Arguably, {`x?y:z`, satisfaction, 2102, 🐉} is also a set, but sets whose members do not have some defined type are so uncommon some would say they are not actually sets.
 
-1. *A member of a set has no other set-related properties besides membership in the set: not order or position in the set, not number of copies in the set, etc.*
+1. **A member of a set has no other set-related properties besides membership in the set: not order or position in the set, not number of copies in the set, etc.**
     
     Thus, {1, 2} and {2, 1} are two ways of writing the same set.
     
     Also, {1, 2, 2} is nonsensical: {1, 2} already told us that the set had both 1 and 2 inside it; adding another 2 doesn't make any sense, any more than it makes sense to say "I'm a student and a logician and a logician." We might *guess* that they were being sloppy about sets and meant {1, 2}, but perhaps they made a typo and meant {1, 2, 3} instead? We simply can't tell.
 
-1. *The only property of a set is its members.*
+1. **The only property of a set is its members.**
     
     Once you've written {1, 2}, you've written all there is to know about that set. This implies that we can talk about every {1, 2} as referring to the same set, even if we write it as {2, 1} or "the set containing 1 and 2" instead.
     
@@ -42,15 +42,15 @@ instead of formally with an emphasis on precision; if you want a precise definit
     
     Note that we will define other properties which are derived from its members, such as *cardinality* (the number of members it has).
 
-1. *A set can be empty. Both {} and $\emptyset$ represent the empty set.*
+1. **A set can be empty. Both {} and $\emptyset$ represent the empty set.**
     
     Because a set's only property is its members, it is usual to speak of *the* empty set, not *an* empty set.
 
-1. *A set can be infinite.*
+1. **A set can be infinite.**
 
     The set of integers is infinite. So is the set of even positive integers. So is the set of numbers which, when written in base 10, only contain the digit 2. So is the set of responses you could give to the question "how are you?". So is the set of examples I could add to this paragraph.
 
-1. *A set can have sets as members.*
+1. **A set can have sets as members.**
     
     {1} is a set; so is {{1}, {}, {84, 5}}; so is {1, {1, {}}, {{1}}, {{{2, {3}}}}}; so is the set of all two-element sets.
     
