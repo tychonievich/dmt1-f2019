@@ -251,4 +251,4 @@ There are some sets that are so common they have their own special symbol.
 §4.1.1 has a reasonable list of these.
 
 Note that even in handwriting, you have to double at least one of the mostly-vertical lines for people to know you mean the set; "Z" is not the set of integers, "ℤ" is.
-The official word for this orthography is "double-struck" as in "ℝ is a double-struck R," but you can probably make it through your entire life in computing (including this class) without ever needing to know that.
+The official word for this orthography is "double-struck" as in "ℝ is a double-struck R," but you can probably make it through your entire life in computing (including this class) without ever needing to know that word.
