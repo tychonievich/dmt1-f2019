@@ -241,7 +241,7 @@ $|A|$ means "the number of distinct values that are members of $A$
 See §4.1.4. We'll use this a lot.
 
 {.aside ...}
-Python (alone among the languages I use regularly) has a variation of set-builder notation. For example, the set-builder notation $\{x \in \mathbb{Z} \;|\; x^3-30x+1>0\}$ would be written `{x for x in Z if x**3-30*x+1 > 0}`{.python}, though you'd have to define a sensible `Z` first (perhaps `range(-10,11)`{.python}).
+Python (alone among the languages I use regularly) has a variation of set-builder notation. For example, the set-builder notation $\{x \in \mathbb{Z} \;|\; x^3-30x+1>0\}$ would be written `{x for x in Z if x**3-30*x+1 > 0}`{.python}, though you'd have to define a sensible, finite `Z` first (perhaps `range(-10,11)`{.python}).
 It also allows computation after the selection, such as `[x**3 for x in range(15) if (x**0.5)%1 == 0]`{.python} as a list of cubes of perfect squares less than 15.
 {/}
 
