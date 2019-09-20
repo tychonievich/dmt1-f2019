@@ -5,7 +5,7 @@ title: Sets
 {.aside ...}
 The first clause of §4 is "We have assumed that you’ve already been introduced to the concepts of sets...". The authors of that text may have assumed that, but I do not. This text is intended to fill in that gap.
 
-Part of the reason this write-up exists is that sets are traditionally the domain of algebra, not discrete math; but the subset of algebra that is called taught in secondary school and colloquially *called* "algebra" (as opposed to taught in university and called "abstract algebra" or the like) often omits sets. Some of you had a broad algebra experience and already know sets, but many of you did not.
+Part of the reason this write-up exists is that sets are traditionally the domain of algebra, not discrete math; but the subset of algebra that is taught in secondary school and called "algebra" (as opposed to what is taught in university and called "algebra") often omits sets. Some of you had a broad algebra experience and already know sets, but many of you did not.
 {/}
 
 # Defining Sets
