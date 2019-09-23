@@ -72,7 +72,7 @@ $\forall x \in S \;.\; P(x)$ and $T \subseteq S$            $\forall x \in T \;.
 $\forall x \in S \;.\; P(x)$ and $S \neq \emptyset$         $\exists x \in S \;.\; P(x)$
 $|S| \neq |T|$                                              $S \neq T$
 $|S| < |T|$                                                 $S \not \supseteq T$
-$\exists x \in S . P(x)$                                    $P \neq \emptyset$
+$\exists x \in S \;.\; P(x)$                                    $P \neq \emptyset$
 
 
 The following are useful in proving 
