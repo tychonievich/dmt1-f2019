@@ -75,4 +75,5 @@ $|S| \neq |T|$                                              $S \neq T$
 $|S| < |T|$                                                 $S \not \supseteq T$
 $\exists x \in S \;.\; P(x)$                                $P \neq \emptyset$
 
-Additionally, if $x \in S \vdash P(x)$ without specifying which element of $S$ $x$ was, then $\vdash \forall x \in S \;.\; P(x)$. This is sometimes called "universal instantiation" or "skolemization".
+If $x \in S \vdash P(x)$ without specifying which element of $S$ $x$ was, then $\vdash \forall x \in S \;.\; P(x)$. This is sometimes called "universal instantiation" or "skolemization", though both terms are also used for other principles.
+
