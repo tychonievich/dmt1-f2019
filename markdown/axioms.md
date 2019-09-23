@@ -69,7 +69,7 @@ Given                                                       Entails
 -------------------------------------------------------     -----------------------------
 $P(x)$ and $x \in S$                                        $\exists x \in S \;.\; P(x)$
 $\forall x \in S \;.\; P(x)$ and $T \subseteq S$            $\forall x \in T \;.\; P(x)$
-$\exists x \in S \;.\; P(x)$ and $S \subseteq T$            $\exists x \in T \;.\; P(x)$
+$\exists x \in S \;.\; P(x)$ and $T \supseteq S$            $\exists x \in T \;.\; P(x)$
 $\forall x \in S \;.\; P(x)$ and $S \neq \emptyset$         $\exists x \in S \;.\; P(x)$
 $|S| \neq |T|$                                              $S \neq T$
 $|S| < |T|$                                                 $S \not \supseteq T$
