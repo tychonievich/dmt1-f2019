@@ -59,3 +59,19 @@ and the rest are either less commonly useful or can be derived easily from other
 $A \oplus B$                $\lnot (A \leftrightarrow B)$       
 $A \leftrightarrow B$       $\lnot (A \oplus B)$                xnor
 $P \rightarrow (A \lor Q)$  $(P \land \lnot A) \rightarrow Q$
+
+
+# Entailments
+
+## Set entailments
+
+Given                                                       Entails
+-------------------------------------------------------     -----------------------------
+$P(x)$ and $x \in S$                                        $\exists x \in S \;.\; P(x)$
+$\forall x \in S \;.\; P(x)$ and $T \subseteq S$            $\forall x \in T \;.\; P(x)$
+$\forall x \in S \;.\; P(x)$ and $S \neq \emptyset$         $\exists x \in S \;.\; P(x)$
+$|S| \neq |T|$                                              $S \neq T$
+$|S| < |T|$                                                 $S \not \supseteq T$
+
+
+The following are useful in proving 
