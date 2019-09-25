@@ -268,17 +268,17 @@ The notation $\forall x,y \in S$ is shorthand for $\forall x \in S \;.\; \forall
 
 The notation $\exists x,y \in S$ is shorthand for $\exists x \in S \;.\; \exists y \in S$.
 
-## Converting $\forall x \in S\;.$ to $\forall x\;.$
+## Converting $\forall x \in S\;.\; \cdots$ to $\forall x\;.\; \cdots$
 
-Re-write $\forall x \in S \;.$ as $\forall x \;.\; x \in S \rightarrow$.
+Re-write $\forall x \in S \;.\; \cdots$ as $\forall x \;.\; x \in S \rightarrow \cdots$.
 
 If a domain is not specified and all quantifiers are given with sets, the implicit domain is union of all such sets or any superset containing that union.
 
-## Converting $\forall x\;.$ to $\forall x \in S\;.$
+## Converting $\forall x\;.\; \cdots$ to $\forall x \in S\;.\; \cdots$
 
 Define a set $U$ representing the entire domain. The symbol $U$ is not required, but is often used with the intent that it suggest the "universal set" or the "universe of discourse". In handwriting, $U$ and $\cup$ are easily confused so a different letter should be used instead.
 
-Replace all $\forall x \;.$ with $\forall x \in U \;.$
+Replace all $\forall x \;.\; \cdots$ with $\forall x \in U \;.\; \cdots$
 
 
 
