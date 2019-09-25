@@ -68,6 +68,8 @@ Each of the following is either true or false; which one?
 - $0 \in \big\{x \;\big|\; \exists y \in \mathbb Z \;.\; y^{y} = x \big\}$^[false]
 - $\Big|\big\{ x \;\big|\; (x \in \mathbb R) \land (\forall y \in \mathbb N \;.\; x > y) \big\}\Big| \in {0,1,2}$^[true]
 - $8 \in \big\{x^3 \;\big|\; \exists y \in \mathbb Z \;.\; y^2 = x \big\}$^[false]
+- $1 \in \big\{x^3 \;\big|\; \exists y \in \mathbb Z \;.\; y^2 = x \big\}$^[true]
+- $64 \in \big\{x^3 \;\big|\; \exists y \in \mathbb Z \;.\; y^2 = x \big\}$^[true]
 
 
 A set is said to be **closed over** an operation if applying that operation to members of the set always results in another member of that set.
