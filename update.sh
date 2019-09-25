@@ -27,6 +27,7 @@ function pd() {
             --table-of-contents --toc-depth=3 \
             --css=style.css \
             --katex \
+            --html-q-tags \
             --template=${here}template.html \
             --variable=year:$(date +%Y) \
             --variable=datetime:"$(date "+%Y-%m-%d %H:%M")" \
