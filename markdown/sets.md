@@ -278,7 +278,7 @@ If a domain is not specified and all quantifiers are given with sets, the implic
 
 Define a set $U$ representing the entire domain. The symbol $U$ is not required, but is often used with the intent that it suggest the "universal set" or the "universe of discourse". In handwriting, $U$ and $\cup$ are easily confused so a different letter should be used instead.
 
-Replace all $\forall x \;.\; \cdots$ with $\forall x \in U \;.\; \cdots$
+Replace all "$\forall x \;.\; \cdots$" with "$\forall x \in U \;.\; \cdots$"
 
 
 
