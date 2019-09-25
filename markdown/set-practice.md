@@ -134,16 +134,18 @@ For each of the following, fill in the blank with the first element of the follo
 - "disjoint" if the intersection of the two is $\emptyset$; otherwise
 - $\neq$
 
-Set 1                                           Set 2
---------------  -----------------               -----------------------------
-$\mathbb R$     <input></input>^[$\subset$]     $\mathbb Q$
-$\mathbb N$     <input></input>^[$\subset$]     $\mathbb Z^{+}$
-even numbers    <input></input>^[disjoint]      odd numbers
-prime numbers   <input></input>^[$\neq$]        odd numbers
-$\{1, 3, 5\}$   <input></input>^[disjoint]      $\{\{1\}, \{3\}, \{5\}\}$
-$\{1, 3, 5\}$   <input></input>^[=]             $\{5, 3, 1\}$
-$\{1, 3, 5\}$   <input></input>^[$\supset$]     $\{5, 3\}$
-$\{0, 1\}$      <input></input>^[=]             $\big\{ x \;\big|\; x \in \mathbb{R} \land x^2 = x\big\}$
-$\mathbb{N}$    <input></input>^[=]             $\Big\{ x \;\Big|\; x \in \mathbb{R}^{+} \land \big(x - \lfloor x \rfloor = 0\big)\Big\}$
-even numbers    <input></input>^[=]             $\big\{x \;\big|\; \exists y \in \mathbb Z \;.\; 2y = x\big\}$
-
+|Set 1 |  |Set 2|
+|------|--|-----|
+|$\mathbb R$ |<input></input>^[$\subset$] |$\mathbb Q$|
+|$\mathbb N$ |<input></input>^[$\subset$] |$\mathbb Z^{+}$|
+|even numbers |<input></input>^[disjoint] |odd numbers|
+|prime numbers |<input></input>^[$\neq$] |odd numbers|
+|$\{1, 3, 5\}$ |<input></input>^[disjoint] |$\{\{1\}, \{3\}, \{5\}\}$|
+|$\{1, 3, 5\}$ |<input></input>^[=] |$\{5, 3, 1\}$|
+|$\{1, 3, 5\}$ |<input></input>^[$\supset$] |$\{5, 3\}$|
+|$\{0, 1\}$ |<input></input>^[=] |$\big\{ x \;\big|\; x \in \mathbb{R} \land x^2 = x\big\}$|
+|$\mathbb{N}$ |<input></input>^[=] |$\Big\{ x \;\Big|\; x \in \mathbb{R}^{+} \land \big(x - \lfloor x \rfloor = 0\big)\Big\}$|
+|even numbers |<input></input>^[=] |$\big\{x \;\big|\; \exists y \in \mathbb Z \;.\; 2y = x\big\}$|
+|$\mathbb R \setminus \mathbb Z$|<input></input>^[=] |$\big\{ x \;\big|\; x \in \mathbb R \land x \notin \mathbb Z \big\}$|
+|$\mathbb R \setminus \mathbb Z$|<input></input>^[$\supset$] |$\mathbb R \setminus \mathbb Q$|
+|$\mathbb Z \setminus \mathbb Q$|<input></input>^[$\subset$] |${1, 2, 4}$|
