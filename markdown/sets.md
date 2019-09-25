@@ -252,3 +252,32 @@ There are some sets that are so common they have their own special symbol.
 
 Note that even in handwriting, you have to double at least one of the mostly-vertical lines for people to know you mean the set; "Z" is not the set of integers, "ℤ" is.
 The official word for this orthography is "double-struck" as in "ℝ is a double-struck R," but you can probably make it through your entire life in computing (including this class) without ever needing to know that word.
+
+# Quantifiers and Sets
+
+Quantifiers are often used with sets. Set-notation quantifiers and domain-bound quantifiers can each be defined in terms of the other.
+
+## Core notation
+
+The notation $\forall x \in S \;.\; P(x)$ means "The predicate $P(x)$ is true for every $x$ in the set $S$". It does not say anything about the truth or falsehood of $P(x)$ for $x$ not in $S$, nor does it assert that there are any members of $S$.
+
+The notation $\exists x \in S \;.\; P(x)$ means "There is at least one element of $S$, and at least one element of $S$ makes the predicate $P(x)$ true". It does not say anything about the truth or falsehood of $P(x)$ for $x$ not in $S$, nor if there are more (or even all) members of $S$ that also make $P(x)$ true.
+
+The notation $\forall x,y \in S$ is shorthand for $\forall x \in S \;.\; \forall y \in S$.
+
+The notation $\exists x,y \in S$ is shorthand for $\exists x \in S \;.\; \exists y \in S$.
+
+## Converting $\forall x \in S\;.$ to $\forall x\;.$
+
+Re-write $\forall x \in S \;.$ as $\forall x \;.\; x \in S \rightarrow$.
+
+If a domain is not specified and all quantifiers are given with sets, the implicit domain is union of all such sets or any superset containing that union.
+
+## Converting $\forall x\;.$ to $\forall x \in S\;.$
+
+Create a set representing the entire domain. This is often symbolized as $U$, for the "universal set" or the "universe of discourse".
+
+Replace all $\forall x \;.$ with $\forall x \in U \;.$
+
+
+
