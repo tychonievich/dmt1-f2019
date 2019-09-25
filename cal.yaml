@@ -231,7 +231,16 @@ reading:
         lnk: files/quiz03.pdf
       - txt: key
         lnk: files/quiz03-key.pdf
-    
+
+
+    lab04:
+      - txt: list of symbols
+        lnk: symbols.html
+      - txt: practice quiz
+        lnk: files/lab04.pdf
+      - txt: practice key
+        lnk: files/lab04-key.pdf
+        
     welcome: 
       - "§Introduction"
       - "∀x 1.0"
