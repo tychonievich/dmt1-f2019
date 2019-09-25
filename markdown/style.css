@@ -149,6 +149,8 @@ table.TFL table.TFL { margin: 1ex 0ex; }
 table.TFL tr > td:first-child { border-right: thin solid black; }
 table.TFL tr.then > td:nth-child(2) { border-top: thin solid black; }
 
+q > span.math.inline:only-child { border: thin solid rgba(0,0,0,0.25); }
+
 /* env.py inserted style */
 
 .example {
