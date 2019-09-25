@@ -146,7 +146,7 @@ For each of the following, fill in the blank with the first element of the follo
 |$\{0, 1\}$ |<input></input>^[=] |$\big\{ x \;\big|\; x \in \mathbb{R} \land x^2 = x\big\}$|
 |$\mathbb{N}$ |<input></input>^[=] |$\Big\{ x \;\Big|\; x \in \mathbb{R}^{+} \land \big(x - \lfloor x \rfloor = 0\big)\Big\}$|
 |even numbers |<input></input>^[=] |$\big\{x \;\big|\; \exists y \in \mathbb Z \;.\; 2y = x\big\}$|
-|$\mathbb R \setminus \mathbb Z$|<input></input>^[=] |$\big\{ x \;\big|\; x \in \mathbb R \land x \notin \mathbb Z \big\}$|
+|$\mathbb R \setminus \mathbb Z$|<input></input>^[=] |$\big\{ x \;\big|\; x \in \mathbb R \land (\forall y \in \mathbb Z \;.\; x \neq y) \big\}$|
 |$\mathbb R \setminus \mathbb Z$|<input></input>^[$\supset$] |$\mathbb R \setminus \mathbb Q$|
 |$\mathbb Z \setminus \mathbb Q$|<input></input>^[$\subset$] |${1, 2, 4}$|
 |$\emptyset$|<input></input>^[$\subset$] |$\mathcal{P}(\emptyset)$|
