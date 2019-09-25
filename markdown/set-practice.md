@@ -45,6 +45,8 @@ Each of the following is either true or false; which one?
 - $\{2, 3\} \in \mathcal{P}\big(\{2, 3\}\big)$^[true]
 - $|\{2, 3\}| \in \{2, 3\}$^[true]
 - $|\{2, 3\}| \in \mathcal{P}\big(\{2, 3\}\big)$^[false]
+- $\infty \in \mathbb R$^[false]
+- $\Big|\big\{ x \;\big|\; (x \in \mathbb R) \land (\forall y \in \mathbb N \;.\; x > y) \big\}\Big| \in {0,1,2}$^[true]
 
 ## Qualified membership
 
