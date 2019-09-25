@@ -256,6 +256,7 @@ The official word for this orthography is "double-struck" as in "ℝ is a double
 # Quantifiers and Sets
 
 Quantifiers are often used with sets. Set-notation quantifiers and domain-bound quantifiers can each be defined in terms of the other.
+Note that one of our textbooks uses only domain-bound quantifiers and the other only set-notation quantifiers.
 
 ## Core notation
 
@@ -275,7 +276,7 @@ If a domain is not specified and all quantifiers are given with sets, the implic
 
 ## Converting $\forall x\;.$ to $\forall x \in S\;.$
 
-Create a set representing the entire domain. This is often symbolized as $U$, for the "universal set" or the "universe of discourse".
+Define a set $U$ representing the entire domain. The symbol $U$ is not required, but is often used with the intent that it suggest the "universal set" or the "universe of discourse". In handwriting, $U$ and $\cup$ are easily confused so a different letter should be used instead.
 
 Replace all $\forall x \;.$ with $\forall x \in U \;.$
 
