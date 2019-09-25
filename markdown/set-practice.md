@@ -42,6 +42,10 @@ Each of the following is either true or false; which one?
 - $\{3\} \in \{\{1\}, \{2, 3\}, \{4, 5, 6\}\}$^[false]
 - $\{2, 3\} \in \{\{1\}, \{2, 3\}, \{4, 5, 6\}\}$^[true]
 
+- $\{2, 3\} \in \mathcal{P}\big(\{2, 3\}\big)$^[true]
+- $|\{2, 3\}| \in \{2, 3\}$^[true]
+- $|\{2, 3\}| \in \mathcal{P}\big(\{2, 3\}\big)$^[false]
+
 ## Qualified membership
 
 Each of the following is either true or false; which one?
