@@ -164,6 +164,6 @@ For each of the following, list the members of the set:
 - $\Big\{ x + y \;\Big|\; (x,y \in \mathbb Z) \land (1 < x < y < 10)$ $\land$ $\big(\forall w \in \mathbb Z^{+} \setminus \{1\} \;.\; (x \neq w \rightarrow 0 \neq x \mod{w}) \land (y \neq w \rightarrow 0 \neq y \mod{w}) \big) \Big\}$^[$\{5,7,8,9,10,12\}$]
 - Assume that $A = \{1,2,3,4,5\}$ and $B = \{2,3,5,7\}$; $\big\{ x \;\big|\; (x \in A) \oplus (x \in B) \big\}$^[\{1, 4, 7\}]
 - Assume that $A = \{25,0,1\}$; $A \cup \mathcal P(A)$^[\big\{25, 0, 1, \emptyset, \{25\}, \{0\}, \{1\}, \{25,0\}, \{25,1\}, \{25,0,1\}\big\}]
-- Assume that $A$ is the set of all 2-digit numbers; $|\mathcal{P}(A)|$^[$2^{90}$]
+- Assume that $A$ is the set of all 2-digit numbers; $|\mathcal{P}(A)|$^[$2^{90}$ which is 1,237,940,039,285,380,274,899,124,224]
 - Assume that $A$ is the set of all 2-digit numbers; $|\mathcal{P}(A) \cap A|$^[$0$]
-- Assume that $A$ is the set of all 2-digit numbers; $|\mathcal{P}(A) \cup A|$^[$2^{90}+90$]
+- Assume that $A$ is the set of all 2-digit numbers; $|\mathcal{P}(A) \cup A|$^[$2^{90}+90$ which is 1,237,940,039,285,380,274,899,124,314]
