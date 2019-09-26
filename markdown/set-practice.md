@@ -107,7 +107,7 @@ A set is said to be **closed over** an operation if applying that operation to m
     - <lable><input type="checkbox"></input> root extraction ($\sqrt{}$)</label>^[false]
 
 - Which (if any, or all) of the following operators is $\mathbb Q \setminus \{0\}$ closed over?
-    - <lable><input type="checkbox"></input> addition ($+$)</label>^[true]
+    - <lable><input type="checkbox"></input> addition ($+$)</label>^[false]
     - <lable><input type="checkbox"></input> subtraction ($-$)</label>^[false]
     - <lable><input type="checkbox"></input> multiplication ($\times$)</label>^[true]
     - <lable><input type="checkbox"></input> division ($\div$)</label>^[true]
