@@ -152,3 +152,13 @@ For each of the following, fill in the blank with the first element of the follo
 |$\emptyset$|<input></input>^[$\subset$] |$\mathcal{P}(\emptyset)$|
 |${1}$|<input></input>^[disjoint] |$\mathcal{P}({1})$|
 |$R^{+}$|<input></input>^[=] |$\big\{ x \;\big|\; x \in \mathbb R \land \sqrt{x^2} = x \big\}$|
+
+
+# Listing members
+
+For each of the following, list the members of the set:
+
+- $\big\{\frac{x}{y} \;\big\; x\in\{0,1,2\} \land y\in\{1,2,4\} \big\}$^[$\big\{0, \frac{1}{4}, \frac{1}{2}, 1, 2\big\}$]
+- $\mathcal P \big(\mathcal P(\emptyset)\big)$^[$\big\{ \{\}, \{\{\}\} \big\}$]
+- $\mathcal P \Big(\mathcal P \big(\mathcal P(\emptyset)\big)\Big)$^[$\big\{ \{\}, \{\{\}\}, \{\{\{\}\}\}, \{\{\}, \{\{\}\}\} \big\}$]
+
