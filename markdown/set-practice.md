@@ -120,7 +120,7 @@ A set is said to be **closed over** an operation if applying that operation to m
     - <lable><input type="checkbox"></input> multiplication ($\times$)</label>^[true]
     - <lable><input type="checkbox"></input> division ($\div$)</label>^[mostly true, except for 0 divisors]
     - <lable><input type="checkbox"></input> modulo ($\mod{}$ in math, `%` in code)</label>^[mostly true, except for 0 divisors]
-    - <lable><input type="checkbox"></input> root extraction ($\sqrt{}$)</label>^[true]
+    - <lable><input type="checkbox"></input> root extraction ($\sqrt{}$)</label>^[false because $\mathbb R$ contains negative numbers]
 
 
 
