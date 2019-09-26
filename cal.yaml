@@ -434,7 +434,7 @@ assignments:
             late-penalty: 1
             auto-late-days: 0
             human:
-                - no G ar F
+                - no G are F
                 - everything is F
                 - nothing is G
                 - uses therefore symbol
