@@ -63,7 +63,7 @@ Each of the following is either true or false; which one?
 - $\forall x \in \mathbb N \;.\; (x < 0) \rightarrow \bot$^[true]
 - $\forall x \in \mathbb N \;.\; x \in \big\{ \lfloor y \rfloor \;\big|\; y \in \mathbb R^{+} \big\}$^[true]
 - $\forall x \in \mathbb N \;.\; x + 1 \in \mathbb N$^[true]
-- $\forall S \in \{\mathbb Z, \mathbb Q, \mathbb R\}\;.\; \forall x \in S \;.\; x + 1 \in \mathbb S$^[true]
+- $\forall S \in \{\mathbb Z, \mathbb Q, \mathbb R\}\;.\; \forall x \in S \;.\; x + 1 \in S$^[true]
 - $\forall x \in \{3, 1, 4, 5\} \;.\; x^{x} \in \{0, 1, 4, 27, 256, 3125, 46656\}$^[true]
 - $0 \in \big\{x \;\big|\; \exists y \in \mathbb Z \;.\; y^{y} = x \big\}$^[false]
 - $\Big|\big\{ x \;\big|\; (x \in \mathbb R) \land (\forall y \in \mathbb N \;.\; x > y) \big\}\Big| \in {0,1,2}$^[true]

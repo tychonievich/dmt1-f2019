@@ -295,7 +295,7 @@ assignments:
             drop: 1
         Quiz:
             portion: "30"
-            drop: 1
+            drop: 2
         Final:
             portion: "40"
             
@@ -462,7 +462,6 @@ assignments:
                 - "third: universal or not-exist"
                 - "third: allows both artist and champion to love"
                 - "third: ...only if they share no love"
-
     Quiz04:
         due: 2019-09-27 16:20:00
         open: 2019-09-27 16:00:00
