@@ -250,6 +250,8 @@ reading:
         lnk: files/lab04.pdf
       - txt: practice key
         lnk: files/lab04-key.pdf
+      - lnk: "set-practice.html"
+        txt: "more practice"
         
     welcome: 
       - "§Introduction"
