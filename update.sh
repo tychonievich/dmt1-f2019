@@ -5,6 +5,13 @@ cd "$here"
 target="$HOME/public_html/DMT1/F2019/"
 mkdir -p "$target"files
 
+if ls ~/.local/pandoc*/bin/pandoc
+then pd="$(ls  ~/.local/pandoc*/bin/pandoc | tail -1)"
+else pd="$(which pandoc)"
+fi
+
+which python3 || module load python3
+
 if [ "$#" -lt 1 ] || [ "$1" != 'test' ]
 then
     git commit -a -m 'autocommit caused by update'
@@ -20,7 +27,7 @@ function pd() {
     while [ $# -gt 0 ]
     do
         python3 $here/env.py "$1" | \
-        pandoc --standalone --to=html5 \
+        $pd --standalone --to=html5 \
             --from=markdown+inline_code_attributes+smart \
             --number-sections \
             --title-prefix="DMT1" \
