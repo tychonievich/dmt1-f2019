@@ -424,9 +424,44 @@ assignments:
                 - ... with the case assumption correctly inserted
                 - ... using valid equivalence rules
                 - ... expressed in prose
-    Quiz03:
+    Quiz03-1:
         due: 2019-09-20 16:20:00
         open: 2019-09-20 16:00:00
+        weight: 0.4
+        rubric:
+            kind: hybrid
+            auto-weight: 0
+            late-penalty: 1
+            auto-late-days: 0
+            human:
+                - no G ar F
+                - everything is F
+                - nothing is G
+                - uses therefore symbol
+                - all G are F
+                - something is G
+                - some G is F
+                - in the right order with no extras
+    Quiz03-2:
+        due: 2019-09-20 16:20:00
+        open: 2019-09-20 16:00:00
+        weight: 0.6
+        rubric:
+            kind: hybrid
+            auto-weight: 0
+            late-penalty: 1
+            auto-late-days: 0
+            human:
+                - first: uses M and Z
+                - first: universal or not-exist quantifier
+                - first: logcally correct
+                - second: uses L and b
+                - second: universal quantifier
+                - second: implication
+                - second: L(x,b) → L(b,x) not the other way around
+                - third: universal or not-exist
+                - third: allows both artist and champion to love
+                - third: ...only if they share no love
     Quiz04:
         due: 2019-09-27 16:20:00
         open: 2019-09-27 16:00:00
