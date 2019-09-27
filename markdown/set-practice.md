@@ -151,7 +151,7 @@ For each of the following, fill in the blank with the first element of the follo
 |$\mathbb Z \setminus \mathbb Q$|<input></input>^[disjoint] |$\{1, 2, 4\}$|
 |$\emptyset$|<input></input>^[$\subset$] |$\mathcal{P}(\emptyset)$|
 |$\{1\}$|<input></input>^[disjoint] |$\mathcal{P}(\{1\})$|
-|$R^{+}$|<input></input>^[=] |$\big\{ x \;\big|\; x \in \mathbb R \land \sqrt{x^2} = x \big\}$|
+|$R^{+} \cup \{0\}$|<input></input>^[=] |$\big\{ x \;\big|\; x \in \mathbb R \land \sqrt{x^2} = x \big\}$|
 
 
 # Listing members and cardinality
