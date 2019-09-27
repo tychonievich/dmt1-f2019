@@ -8,7 +8,7 @@ notation            meaning
 ---------------     -------------------
 $\mathbb{Z}$        The integers
 $\mathbb{Z}^{+}$    The positive integers; i.e., $\big\{ x \; \big| \; x \in \mathbb{Z} \land x > 0 \big\}$
-$\mathbb{N}$        The natural numbers; i.e., $\mathbb{Z}^{+} \cup {0}$
+$\mathbb{N}$        The natural numbers; i.e., $\big\{ x \; \big| \; x \in \mathbb{Z} \land x \geq 0 \big\}$
 $\mathbb{Z}^{-}$    The negative integers; i.e., $\big\{ x \; \big| \; x \in \mathbb{Z} \land x < 0 \big\}$
 $\mathbb{R}$        The real numbers
 $\mathbb{Q}$        The rational numbers; i.e., $\Big\{ \frac{x}{y} \; \Big| \; x \in \mathbb{Z} \land y \in \mathbb{Z}^{+} \Big\}$
