@@ -136,7 +136,7 @@ For each of the following, fill in the blank with the first element of the follo
 
 |Set 1 |  |Set 2|
 |------|--|-----|
-|$\mathbb R$ |<input></input>^[$\subset$] |$\mathbb Q$|
+|$\mathbb R$ |<input></input>^[$\supset$] |$\mathbb Q$|
 |$\mathbb N$ |<input></input>^[$\subset$] |$\mathbb Z^{+}$|
 |even numbers |<input></input>^[disjoint] |odd numbers|
 |prime numbers |<input></input>^[$\neq$] |odd numbers|
