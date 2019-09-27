@@ -148,7 +148,7 @@ For each of the following, fill in the blank with the first element of the follo
 |even numbers |<input></input>^[=] |$\big\{x \;\big|\; \exists y \in \mathbb Z \;.\; 2y = x\big\}$|
 |$\mathbb R \setminus \mathbb Z$|<input></input>^[=] |$\Big\{ x \;\Big|\; (x \in \mathbb R) \land \big(\forall y \in \mathbb Z \;.\; x \neq y\big) \Big\}$|
 |$\mathbb R \setminus \mathbb Z$|<input></input>^[$\supset$] |$\mathbb R \setminus \mathbb Q$|
-|$\mathbb Z \setminus \mathbb Q$|<input></input>^[$\subset$] |${1, 2, 4}$|
+|$\mathbb Z \setminus \mathbb Q$|<input></input>^[disjoint] |${1, 2, 4}$|
 |$\emptyset$|<input></input>^[$\subset$] |$\mathcal{P}(\emptyset)$|
 |${1}$|<input></input>^[disjoint] |$\mathcal{P}({1})$|
 |$R^{+}$|<input></input>^[=] |$\big\{ x \;\big|\; x \in \mathbb R \land \sqrt{x^2} = x \big\}$|
