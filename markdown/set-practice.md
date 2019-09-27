@@ -54,7 +54,7 @@ Each of the following is either true or false; which one?
 - $\forall x \in \mathbb R \;.\; x \in \mathbb Q$^[false]
 - $\forall x \in \mathbb Q \;.\; x \in \mathbb R$^[true]
 - $\forall x \in \mathbb Z^{+} \;.\; \exists y \in \mathbb Z^{-} \;.\; x + y = 0$^[true]
-- $\forall x \in \mathbb R^{+} \;.\; \exists y \in \mathbb Z^{+} \;.\; 1 \leq \frac{x}{y} \leq 2$^[false]
+- $\forall x \in \mathbb R^{+} \;.\; \exists y \in \mathbb Z^{+} \;.\; 1 \leq \frac{x}{y} \leq 2$^[true]
 - $\exists x \in \mathbb R \;.\; x \in \mathbb N$^[true]
 - $\exists x \in \mathbb R^{+} \;.\; x \notin \mathbb Q^{+}$^[true]
 - $\exists x,y \in (\mathbb R \setminus \mathbb N) \;.\; (x \neq y) \land \big((x - y) \in \mathbb N\big)$^[true]
