@@ -144,7 +144,7 @@ For each of the following, fill in the blank with the first element of the follo
 |$\{1, 3, 5\}$ |<input></input>^[=] |$\{5, 3, 1\}$|
 |$\{1, 3, 5\}$ |<input></input>^[$\supset$] |$\{5, 3\}$|
 |$\{0, 1\}$ |<input></input>^[=] |$\big\{ x \;\big|\; x \in \mathbb{R} \land x^2 = x\big\}$|
-|$\mathbb{N}$ |<input></input>^[= except for 0, so $\supset$] |$\Big\{ x \;\Big|\; x \in \mathbb{R}^{+} \land \big(x - \lfloor x \rfloor = 0\big)\Big\}$|
+|$\mathbb{N}$ |<input></input>^[$\supset$ (whould be = if $\mathbb Z^{+}$ instead of $\mathbb N$] |$\Big\{ x \;\Big|\; x \in \mathbb{R}^{+} \land \big(x - \lfloor x \rfloor = 0\big)\Big\}$|
 |even numbers |<input></input>^[=] |$\big\{x \;\big|\; \exists y \in \mathbb Z \;.\; 2y = x\big\}$|
 |$\mathbb R \setminus \mathbb Z$|<input></input>^[=] |$\Big\{ x \;\Big|\; (x \in \mathbb R) \land \big(\forall y \in \mathbb Z \;.\; x \neq y\big) \Big\}$|
 |$\mathbb R \setminus \mathbb Z$|<input></input>^[$\supset$] |$\mathbb R \setminus \mathbb Q$|
