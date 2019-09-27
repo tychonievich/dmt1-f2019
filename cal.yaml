@@ -477,6 +477,34 @@ assignments:
     Quiz04:
         due: 2019-09-27 16:20:00
         open: 2019-09-27 16:00:00
+        rubric:
+            kind: hybrid
+            auto-weight: 0
+            late-penalty: 1
+            auto-late-days: 0
+            human:
+                - "B has 0"
+                - "B has either 1,4,9 or 1,2,3"
+                - "B has nothing else"
+                - "B is exactly {0, 1, 4, 9}"
+                - "C is a set of sets"
+                - "C contains {}"
+                - "C is contains {{4}, {9}, {4,9}}"
+                - "C has nothing else"
+                - "A ∪ B contains all of {0,2,3}"
+                - "A ∪ B contains all they put in B"
+                - "A ∪ B contains nothing else"
+                - "A ∪ B no element listed twice"
+                - "A ∩ B has only elements A has"
+                - "A ∩ B has only elements B has"
+                - "A ∩ B has all such elements"
+                - "A ∖ B has only elements A has" 
+                - "A ∖ B has no elements B has"
+                - "A ∖ B has all such elements"
+                - "B ∪ C contains both numbers and sets"
+                - "⊕-set is correct ({1, 2, 3, 4, 9} unless B is wrong)"
+                - "∀-set is B ∖ A ({1, 4, 9} unless B is wrong)"
+                - "∃-set is B ∩ {4, 9}"
     Quiz05:
         due: 2019-10-04 16:20:00
         open: 2019-10-04 16:00:00
