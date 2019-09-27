@@ -492,7 +492,7 @@ assignments:
                 - "C is contains {{4}, {9}, {4,9}}"
                 - "C has nothing else"
                 - "A ∪ B contains all of {0,2,3}"
-                - "A ∪ B contains all they put in B"
+                - "A ∪ B contains all of B"
                 - "A ∪ B contains nothing else"
                 - "A ∪ B no element listed twice"
                 - "A ∩ B has only elements A has"
