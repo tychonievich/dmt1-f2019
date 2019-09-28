@@ -33,7 +33,7 @@ A product of $n$ copies of a set $S$ is denoted $S^n$. For example, $\{0,1\}^3$ 
 
 $$\{0,1\}^3 = \{(0,0,0), (0,0,1), (0,1,0), (0,1,1), (1,0,0), (1,0,1), (1,1,0), (1,1,1)\}$$
 
-The special notation $S^{*}$ means the set $\big\{x \;\big\|\; \exists n \in \mathbb N \;\.\; x \in S^n \big\}$. The superscript asterisk is called a **Kleene star**.
+The special notation $S^{*}$ means the set $\big\{x \;\big\|\; \exists n \in \mathbb N \;.\; x \in S^n \big\}$. The superscript asterisk is called a **Kleene star**.
 
 $$\{0,1\}^{*} = \{\lambda, (0), (1), (0,0), (0,1), (1,0), (1,1), (0,0,0), (0,0,1), \dots\}$$
 
