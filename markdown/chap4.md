@@ -101,7 +101,7 @@ Every function can be written as a (possibly infinite) set of pairs, where the f
 
 For every set $S$ there is a special function $f : S \rightarrow S$ defined as $f(x) = x$ and called **the identity function** (the definite article "the" is a bit misleading, as there is one such identity function for each possible set). There is no single standard notation for the identity function.
 
-If, for two functions $f$ and $g$, both $f \circle g$ and $g \circle f$ are both identity functions, then we call $f$ and $g$ one another's **inverses**.
+If, for two functions $f$ and $g$, both $f \circ g$ and $g \circ f$ are both identity functions, then we call $f$ and $g$ one another's **inverses**.
 We often write the inverse of a function $f$ as $f^{-1}$.
 Not all functions have inverses; those that do are called "invertible."
 
