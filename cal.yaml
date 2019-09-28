@@ -158,10 +158,10 @@ lectures:
     - sets
     - sets
 
-    - first-order logic
-    - first-order proofs
+    - data types
+    - data types
 
-    - [functions, relations]
+    - cardinality
 
     - induction
     - induction
@@ -299,6 +299,11 @@ reading:
         - lnk: "set-practice.html"
           txt: "practice"
         - "§4.1.1"
+    
+    data types:
+        - "§4"
+        - txt: "addenda"
+          lnk: "chap4.html"
 
 assignments:
     ".groups":
