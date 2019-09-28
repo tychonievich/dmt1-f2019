@@ -81,7 +81,7 @@ A function that yields a function
 
     $$f_2 : \mathbb \{0,1\}^{*} \rightarrow \{0,1\}^{*} \rightarrow \{0,1\}^{*}$$
     
-    $$f_3 : \mathbb X \rightarrow \mathbb N \rightarrow X^{*}$$
+    $$f_3 : X \rightarrow \mathbb N \rightarrow X^{*}$$
 
     $$f_4 : \mathbb \{\top,\bot\} \rightarrow \{\top,\bot\} \rightarrow \{\top,\bot\}$$
 
