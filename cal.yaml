@@ -160,7 +160,7 @@ lectures:
 
     - data types
     - data types
-
+    
     - cardinality
 
     - induction
@@ -194,7 +194,7 @@ labs:
     - lab03
     - lab04
     - lab05
-    - [functions, relations]
+    - cardinality
     - lab06
     - lab07
     - lab08
@@ -301,9 +301,14 @@ reading:
         - "§4.1.1"
     
     data types:
-        - "§4"
+        - "§4.1–4.4"
         - txt: "addenda"
           lnk: "chap4.html"
+    
+    cardinality:
+        - "§1.8"
+        - "§2"
+        - "§4.5"
 
 assignments:
     ".groups":
