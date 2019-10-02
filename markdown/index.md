@@ -13,6 +13,7 @@ I have no obvious place to list those supplements so I'm listing them here. They
 - [Glossary of logical terms](glossary.html)
 - [Sets primer](sets.html)
 - [Proof Techniques](techniques-q2.html), a list with tips on proof writing
+- [§4 addenda](chap4.html)
 - Example proofs, including [De Morgan's Law](demorgan.html) and [Bubble Sort](bubble.html)
 
 # Course Overview 
