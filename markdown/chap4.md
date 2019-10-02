@@ -115,7 +115,7 @@ MCS 4.4 is a bit confusing when it comes to the relationship between functions a
 - A relation can only be re-posed as a function if there is a unique answer; "what is 3 less than?" and "what does Tychonievich love?" don't have single answers.
 - If a relation can be re-posed as a function, we sometimes say the relation is a function.
 
-The names of various properties of relations show up quite rarely and, when they do, you can generally look them up; but the underlying questions are worth understanding:
+The names of most of the various properties of relations show up quite rarely and, when they do, you can generally look them up; but the underlying questions are worth understanding:
 
 In the,  are there values related to    if so we call it    if not we call it
 -------- ---------------                ------------------  ------------------------
@@ -127,3 +127,4 @@ codomain multiple things?               non-injective       one-to-one or inject
 "Partial" and "total" are usually only discussed in relation to functions.
 A total functional sujective injective relation is the same as a bijection, and is an invertable function.
 
+The subset of these properties that apply to functions show up often enough that we'll want you to memorize them: **total** vs **partial**, and **invertible**.
