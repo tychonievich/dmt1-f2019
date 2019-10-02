@@ -111,7 +111,7 @@ MCS 4.4 is a bit confusing when it comes to the relationship between functions a
 
 - Relations answer "yes/no" questions: "is 3 less than 2?", "does Tychonievich love programming?" etc.
 - Functions answer "what is" questions: "what is the cube root of 2?", "what is Tychonievich's favorite poem?"
-- Every function can be re-posed as a relation by guessing: "is the cube rot of 2 1.4562?", "is Tychonievich's favorite poem *The Panther* by Ogden Nash?"
+- Every function can be re-posed as a relation by guessing: "is the cube root of 2 1.4562?", "is Tychonievich's favorite poem *The Panther* by Ogden Nash?"
 - A relation can only be re-posed as a function if there is a unique answer; "what is 3 less than?" and "what does Tychonievich love?" don't have single answers.
 - If a relation can be re-posed as a function, we sometimes say the relation is a function.
 
