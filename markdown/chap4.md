@@ -127,4 +127,4 @@ codomain multiple things?               non-injective       one-to-one or inject
 "Partial" and "total" are usually only discussed in relation to functions.
 A total functional sujective injective relation is the same as a bijection, and is an invertable function.
 
-The subset of these properties that apply to functions show up often enough that we'll want you to memorize them: **total** vs **partial**, and **invertible**.
+The subset of these properties that apply to functions show up often enough that we'll want you to memorize them: **total** vs **partial** are moderately important, and **invertible** is very important.
