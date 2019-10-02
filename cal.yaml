@@ -252,6 +252,10 @@ reading:
         lnk: files/lab04-key.pdf
       - lnk: "set-practice.html"
         txt: "more practice"
+      - txt: quiz
+        lnk: files/quiz04.pdf
+      - txt: key
+        lnk: files/quiz04-key.pdf
         
     welcome: 
       - "§Introduction"
