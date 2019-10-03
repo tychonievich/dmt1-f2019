@@ -457,6 +457,7 @@ assignments:
         due: 2019-09-13 16:20:00
         open: 2019-09-13 16:00:00
         weight: 0.25
+        hide: true
         rubric:
             kind: hybrid
             auto-weight: 0
@@ -473,6 +474,7 @@ assignments:
         due: 2019-09-13 16:20:00
         open: 2019-09-13 16:00:00
         weight: 0.75
+        hide: true
         rubric:
             kind: hybrid
             auto-weight: 0
@@ -489,10 +491,50 @@ assignments:
                 - ... with the case assumption correctly inserted
                 - ... using valid equivalence rules
                 - ... expressed in prose
+
+    Quiz02:
+        due: 2019-09-13 16:20:00
+        open: 2019-09-13 16:00:00
+        weight: 1
+        hide: true
+        rubric:
+            kind: hybrid
+            auto-weight: 0
+            late-penalty: 1
+            auto-late-days: 0
+            human:
+                - (Quiz02-1) start with (P ∧ ¬Q)
+                - (Quiz02-1) logic syntax used
+                - (Quiz02-1) attmpted a full proof
+                - (Quiz02-1) applied rules correctly
+                - (Quiz02-1) no skipped steps
+                - (Quiz02-1) end with ¬(P → Q)
+                - weight: 1.8
+                  name: (Quiz02-2) used same variable in all three blanks
+                - weight: 1.8
+                  name: (Quiz02-2) wrote something in all four areas
+                - weight: 1.8
+                  name: (Quiz02-2) got both case 1 expressions to same form
+                - weight: 1.8
+                  name: (Quiz02-2) ... with the case assumption correctly inserted
+                - weight: 1.8
+                  name: (Quiz02-2) ... using valid equivalence rules
+                - weight: 1.8
+                  name: (Quiz02-2) ... expressed in prose
+                - weight: 1.8
+                  name: (Quiz02-2) got both case 2 expressions to same form
+                - weight: 1.8
+                  name: (Quiz02-2) ... with the case assumption correctly inserted
+                - weight: 1.8
+                  name: (Quiz02-2) ... using valid equivalence rules
+                - weight: 1.8
+                  name: (Quiz02-2) ... expressed in prose
+
     Quiz03-1:
         due: 2019-09-20 16:20:00
         open: 2019-09-20 16:00:00
         weight: 0.4
+        hide: true
         rubric:
             kind: hybrid
             auto-weight: 0
@@ -511,6 +553,7 @@ assignments:
         due: 2019-09-20 16:20:00
         open: 2019-09-20 16:00:00
         weight: 0.6
+        hide: true
         rubric:
             kind: hybrid
             auto-weight: 0
@@ -527,6 +570,51 @@ assignments:
                 - "third: universal or not-exist"
                 - "third: allows both artist and champion to love"
                 - "third: ...only if they share no love"
+
+    Quiz03:
+        due: 2019-09-20 16:20:00
+        open: 2019-09-20 16:00:00
+        weight: 1
+        rubric:
+            kind: hybrid
+            auto-weight: 0
+            late-penalty: 1
+            auto-late-days: 0
+            human:
+                - (Quiz03-1) no G are F
+                - (Quiz03-1) everything is F
+                - (Quiz03-1) nothing is G
+                - (Quiz03-1) uses therefore symbol
+                - (Quiz03-1) all G are F
+                - (Quiz03-1) something is G
+                - (Quiz03-1) some G is F
+                - (Quiz03-1) in the right order with no extras
+
+                - weight: 1.2
+                  name: (Quiz03-2) "first: uses M and Z"
+                - weight: 1.2
+                  name: (Quiz03-2) "first: universal or not-exist quantifier"
+                - weight: 1.2
+                  name: (Quiz03-2) "first: logcally correct"
+                - weight: 1.2
+                  name: (Quiz03-2) "second: uses L and b"
+                - weight: 1.2
+                  name: (Quiz03-2) "second: universal quantifier"
+                - weight: 1.2
+                  name: (Quiz03-2) "second: implication"
+                - weight: 1.2
+                  name: (Quiz03-2) "second: L(x,b) → L(b,x) not the other way around"
+                - weight: 1.2
+                  name: (Quiz03-2) "third: universal or not-exist"
+                - weight: 1.2
+                  name: (Quiz03-2) "third: allows both artist and champion to love"
+                - weight: 1.2
+                  name: (Quiz03-2) "third: ...only if they share no love"
+
+
+
+
+
     Quiz04:
         due: 2019-09-27 16:20:00
         open: 2019-09-27 16:00:00
