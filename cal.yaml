@@ -589,7 +589,6 @@ assignments:
                 - (Quiz03-1) something is G
                 - (Quiz03-1) some G is F
                 - (Quiz03-1) in the right order with no extras
-
                 - weight: 1.2
                   name: (Quiz03-2) "first: uses M and Z"
                 - weight: 1.2
