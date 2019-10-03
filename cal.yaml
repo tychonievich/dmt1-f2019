@@ -505,13 +505,13 @@ assignments:
             human:
                 - "B has 1,4,9 (half credit for 1,2,3)"
                 - "B has 0 and no extra elements"
-                - "C is has {} (half credit if C *is* {})"
-                - "C is has {4}, {9}, {4,9} and no extra elements"
-                - {name: "A ∪ B has all of {0,2,3} and all of B", weight: 2}
+                - "C has {} (half credit if C *is* {})"
+                - "C has {4}, {9}, {4,9} and no extra elements"
+                - {name: "A ∪ B has all of {0,2,3} and all of B ({0,1,2,3,4,9} unless B wrong)", weight: 2}
                 - "A ∪ B has nothing else, with no element listed twice"
-                - {name: "A ∩ B has only elements A has, and only elements B has", weight: 2}
+                - {name: "A ∩ B has only elements A has, and only elements B has ({0} unless B wrong)", weight: 2}
                 - "A ∩ B has all such elements"
-                - "A ∖ B has only elements A has, and no elements B has"
+                - "A ∖ B has only elements A has, and no elements B has ({2,3} unless B wrong)"
                 - "A ∖ B has all such elements"
                 - "B ∪ C has both numbers and sets"
                 - "⊕-set is correct ({1, 2, 3, 4, 9} unless B is wrong)"
