@@ -590,25 +590,25 @@ assignments:
                 - (Quiz03-1) some G is F
                 - (Quiz03-1) in the right order with no extras
                 - weight: 1.2
-                  name: (Quiz03-2) "first: uses M and Z"
+                  name: "(Quiz03-2) first: uses M and Z"
                 - weight: 1.2
-                  name: (Quiz03-2) "first: universal or not-exist quantifier"
+                  name: "(Quiz03-2) first: universal or not-exist quantifier"
                 - weight: 1.2
-                  name: (Quiz03-2) "first: logcally correct"
+                  name: "(Quiz03-2) first: logcally correct"
                 - weight: 1.2
-                  name: (Quiz03-2) "second: uses L and b"
+                  name: "(Quiz03-2) second: uses L and b"
                 - weight: 1.2
-                  name: (Quiz03-2) "second: universal quantifier"
+                  name: "(Quiz03-2) second: universal quantifier"
                 - weight: 1.2
-                  name: (Quiz03-2) "second: implication"
+                  name: "(Quiz03-2) second: implication"
                 - weight: 1.2
-                  name: (Quiz03-2) "second: L(x,b) → L(b,x) not the other way around"
+                  name: "(Quiz03-2) second: L(x,b) → L(b,x) not the other way around"
                 - weight: 1.2
-                  name: (Quiz03-2) "third: universal or not-exist"
+                  name: "(Quiz03-2) third: universal or not-exist"
                 - weight: 1.2
-                  name: (Quiz03-2) "third: allows both artist and champion to love"
+                  name: "(Quiz03-2) third: allows both artist and champion to love"
                 - weight: 1.2
-                  name: (Quiz03-2) "third: ...only if they share no love"
+                  name: "(Quiz03-2) third: ...only if they share no love"
 
 
 
