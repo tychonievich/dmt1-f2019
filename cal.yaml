@@ -420,6 +420,37 @@ assignments:
                 - B ↔ C column is 10011001
                 - name: center column ↔ of other two (00111100 unless errors above)
                   weight: 2
+
+    Quiz01:
+        due: 2019-09-06 16:30:00
+        weight: 1
+        rubric:
+            kind: hybrid
+            auto-weight: 0
+            late-penalty: 1
+            auto-late-days: 0
+            human:
+                - (Quiz01-1) attempted all problems
+                - (Quiz01-1) have term definitions
+                - (Quiz01-1) all definitions are propositions
+                - (Quiz01-1) all definitions are atomic propositions
+                - (Quiz01-1) all definitions are from text
+                - (Quiz01-1) no part of text left out
+                - (Quiz01-1) have formula
+                - (Quiz01-1) 1st formula correct
+                - (Quiz01-1) 2nd formula correct
+                - (Quiz01-1) 3rd formula correct
+
+                - (Quiz01-2) attempted all problems
+                - (Quiz01-2) '"one" when a ∨ b'
+                - (Quiz01-2) '"three" contains negation of their "one" logic (¬(a ∨ b) unless errors with "one")'
+                - (Quiz01-2) '"three" is equivalent to ¬a ∧ ¬b ∧ ¬c'
+                - (Quiz01-2) reasonable logic syntax
+                - (Quiz01-2) A ⊕ C column is 01011010
+                - (Quiz01-2) B ↔ C column is 10011001
+                - name: (Quiz01-2) center column ↔ of other two (00111100 unless errors above)
+                  weight: 2
+    
     Quiz02-1:
         due: 2019-09-13 16:20:00
         open: 2019-09-13 16:00:00
