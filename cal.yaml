@@ -507,9 +507,9 @@ assignments:
                 - "B has 0 and no extra elements"
                 - "C is has {} (half credit if C *is* {})"
                 - "C is has {4}, {9}, {4,9} and no extra elements"
-                - "A ∪ B has all of {0,2,3} and all of B"
+                - {name: "A ∪ B has all of {0,2,3} and all of B", weight: 2}
                 - "A ∪ B has nothing else, with no element listed twice"
-                - "A ∩ B has only elements A has, and only elements B has"
+                - {name: "A ∩ B has only elements A has, and only elements B has", weight: 2}
                 - "A ∩ B has all such elements"
                 - "A ∖ B has only elements A has, and no elements B has"
                 - "A ∖ B has all such elements"
