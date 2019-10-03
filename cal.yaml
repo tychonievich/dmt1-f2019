@@ -496,7 +496,6 @@ assignments:
         due: 2019-09-13 16:20:00
         open: 2019-09-13 16:00:00
         weight: 1
-        hide: true
         rubric:
             kind: hybrid
             auto-weight: 0
