@@ -327,7 +327,7 @@ assignments:
             drop: 1
         Quiz:
             portion: "30"
-            drop: 2
+            drop: 1
         Final:
             portion: "40"
             
