@@ -385,6 +385,7 @@ assignments:
     Quiz01-1:
         due: 2019-09-06 16:30:00
         weight: 0.5
+        hide: true
         rubric:
             kind: hybrid
             auto-weight: 0
@@ -405,6 +406,7 @@ assignments:
         due: 2019-09-06 16:20:00
         open: 2019-09-06 16:00:00
         weight: 0.5
+        hide: true
         rubric:
             kind: hybrid
             auto-weight: 0
