@@ -194,7 +194,7 @@ labs:
     - lab03
     - lab04
     - lab05
-    - cardinality
+    - contradiction
     - lab06
     - lab07
     - lab08
@@ -319,6 +319,13 @@ reading:
         - "§1.8"
         - "§2"
         - "§4.5"
+
+    contradiction:
+        - "§1.8"
+
+    induction:
+        - "§2"
+        - "§5.1–5.3"
 
 assignments:
     ".groups":
