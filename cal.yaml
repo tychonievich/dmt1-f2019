@@ -646,6 +646,22 @@ assignments:
     Quiz05:
         due: 2019-10-04 16:20:00
         open: 2019-10-04 16:00:00
+        rubric:
+            kind: hybrid
+            auto-weight: 0
+            late-penalty: 1
+            auto-late-days: 0
+            human:
+                - "1. {(4,1), (4,2), (1,1), (1,2)}"
+                - "2. {(4,1,3,3,3), (4,2,3,3,3)}"
+                - "3. {(∅,∅)}"
+                - '4. two of "aok", "oka", and "aaa"'
+                - '5. "MTHMTCS"'
+                - "6. {0, 1, 4}"
+                - "7. is defined as natural for some natural numbers but not all"
+                - "8. is not invertible with the domain and co-domain of ℕ"
+                - "9. b = 3a or equivalent (half-credit for a = 3b)"
+                - "10. has at least one element of domain related to 2+ elements in co-domain"
     Quiz06:
         due: 2019-10-18 16:20:00
         open: 2019-10-18 16:00:00
