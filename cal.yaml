@@ -451,9 +451,9 @@ assignments:
                 - (Quiz01-1) 3rd formula correct
 
                 - (Quiz01-2) attempted all problems
-                - (Quiz01-2) '"one" when a ∨ b'
-                - (Quiz01-2) '"three" contains negation of their "one" logic (¬(a ∨ b) unless errors with "one")'
-                - (Quiz01-2) '"three" is equivalent to ¬a ∧ ¬b ∧ ¬c'
+                - '(Quiz01-2) "one" when a ∨ b'
+                - '(Quiz01-2) "three" contains negation of their "one" logic (¬(a ∨ b) unless errors with "one")'
+                - '(Quiz01-2) "three" is equivalent to ¬a ∧ ¬b ∧ ¬c'
                 - (Quiz01-2) reasonable logic syntax
                 - (Quiz01-2) A ⊕ C column is 01011010
                 - (Quiz01-2) B ↔ C column is 10011001
