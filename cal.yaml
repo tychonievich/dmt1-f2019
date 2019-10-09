@@ -318,6 +318,8 @@ reading:
     cardinality:
         - "§4.5"
         - "§7.1"
+        - txt: schubfachprinzip
+          lnk: https://en.wikipedia.org/wiki/Pigeonhole_principle
 
     contradiction:
         - "§1.8"
