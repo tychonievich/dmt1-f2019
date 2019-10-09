@@ -318,7 +318,7 @@ reading:
     cardinality:
         - "§4.5"
         - "§7.1"
-        - txt: schubfachprinzip
+        - txt: pigeonhole principle
           lnk: https://en.wikipedia.org/wiki/Pigeonhole_principle
 
     contradiction:
