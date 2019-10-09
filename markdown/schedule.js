@@ -61,7 +61,7 @@ function showPast(visible) {
         for(let i=0; i<css.sheet.cssRules.length; i+=1) {
             if (css.sheet.cssRules[i].cssText == '.calendar .week.past { display: none; }')
             { css.sheet.deleteRule(i); i-=1; }
-            if (css.sheet.cssRules[i].cssText == '.calendar > .day.past { display: none; }')
+            else if (css.sheet.cssRules[i].cssText == '.calendar > .day.past { display: none; }')
             { css.sheet.deleteRule(i); i-=1; }
             else if (css.sheet.cssRules[i].cssText == '.agenda .day.past { display: none; }')
             { css.sheet.deleteRule(i); i-=1; }
