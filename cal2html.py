@@ -200,6 +200,7 @@ def raw2cal(data, links=None):
     return ans
 
 def cal2html(cal):
+    """Uses tables with tr for week and td for day"""
     ans = ['<table id="schedule" class="calendar">']
     for week in cal:
         ans.append('<tr class="week">')
@@ -246,6 +247,56 @@ def cal2html(cal):
     ans.append('</table>')
     external = '<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path fill="#fff" stroke="#36c" d="M1.5 4.518h5.982V10.5H1.5z"/><path fill="#36c" d="M5.765 1H11v5.39L9.427 7.937l-1.31-1.31L5.393 9.35l-2.69-2.688 2.81-2.808L4.2 2.544z"/><path fill="#fff" d="M9.995 2.004l.022 4.885L8.2 5.07 5.32 7.95 4.09 6.723l2.882-2.88-1.85-1.852z"/></svg>'
     return re.sub(r'(<a[^>]*href="[^"]*//[^"]*"[^<]*)</a>', r'\1'+external+'</a>', ''.join(ans))
+
+
+def cal2html2(cal):
+    """Uses divs only, with no week-level divs"""
+    ans = ['<div id="schedule" class="calendar">']
+    for week in cal:
+        newweek = True
+        for day in week:
+            if day is not None and not all(_.get('kind') == 'oh' for _ in day['events']):
+                ans.append('<div class="day {}" date="{}">'.format(day['date'].strftime('%a') + (' newweek' if newweek else ''), day['date'].strftime('%Y-%m-%d')))
+                newweek = False
+                ans.append('<span class="date w{1}">{0}</span>'.format(day['date'].strftime('%d %b').strip('0'), day['date'].strftime('%w')))
+                ans.append('<div class="events">')
+                for e in day['events']:
+                    if e.get('kind') == 'oh': continue
+                    if e.get('hide'): continue
+                    classes = [e[k] for k in ('section','kind','group') if k in e]
+                    title = e.get('title','TBA')
+                    if type(title) is list: title = ' <small>and</small> '.join(title)
+                    more = []
+                    if 'link' in e:
+                        title = '<a target="_blank" href="{}">{}</a>'.format(e['link'], title)
+                    for media in ('video', 'audio'):
+                        if media in e:
+                            more.append('<a target="_blank" href="{}">{}{}</a>'.format(
+                                e[media],
+                                media,
+                                e[media][e[media].rfind('.'):]
+                            ))
+                    for reading in e.get('reading',[]):
+                        if type(reading) is str:
+                            more.append(reading)
+                        else:
+                            more.append('<a target="_blank" href="{}">{}</a>'.format(reading['lnk'], reading['txt']))
+                    if more:
+                        ans.append('<details class="{}">'.format(' '.join(classes)))
+                        ans.append('<summary>{}</summary>'.format(title))
+                        ans.append(' <small>and</small> '.join(more))
+                        ans.append('</details>')
+                    else:
+                        ans.append('<div class="{}">{}</div>'.format(' '.join(classes), title))
+                ans.append('</div>')
+                ans.append('</div>')
+            else:
+                pass
+                ans.append('<div class="day empty"></div>')
+    ans.append('</div>')
+    external = '<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path fill="#fff" stroke="#36c" d="M1.5 4.518h5.982V10.5H1.5z"/><path fill="#36c" d="M5.765 1H11v5.39L9.427 7.937l-1.31-1.31L5.393 9.35l-2.69-2.688 2.81-2.808L4.2 2.544z"/><path fill="#fff" d="M9.995 2.004l.022 4.885L8.2 5.07 5.32 7.95 4.09 6.723l2.882-2.88-1.85-1.852z"/></svg>'
+    return re.sub(r'(<a[^>]*href="[^"]*//[^"]*"[^<]*)</a>', r'\1'+external+'</a>', ''.join(ans))
+
 
 def cal2fullcal(cal, keep=lambda x:True):
     """see https://fullcalendar.io/docs/event-object"""
@@ -412,8 +463,10 @@ if __name__ == '__main__':
     raw = yamlfile('cal.yaml')
     links = yamlfile('links.yaml') if os.path.exists('links.yaml') else {}
     cal = raw2cal(raw, links)
-    with open('markdown/schedule.html', 'w') as fh:
+    with open('markdown/schedule-old.html', 'w') as fh:
         fh.write(cal2html(cal))
+    with open('markdown/schedule.html', 'w') as fh:
+        fh.write(cal2html2(cal))
 
     with open('markdown/cal.ics', 'w') as fh:
         fh.write(cal2ical(cal, course, raw['meta']['home'], tz=raw['meta']['timezone']))
