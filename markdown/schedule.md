@@ -25,7 +25,6 @@ The past, and my best guess of the future, is reflected below.
 .calendar .day.Sat { grid-column: 7}
 
 .calendar .day { 
-    border: 0.25ex solid rgba(0,0,0,0); 
     background: white;
     border-radius: 1ex;
     padding: .25ex .5ex;
@@ -47,11 +46,11 @@ The past, and my best guess of the future, is reflected below.
     padding: 0 0.5ex 0 0.5ex;
     margin: 0 -0.5ex 0 -0.5ex;
 }
-.calendar div:first-child {
+.calendar div.day div:first-child {
     padding-top: 0.5ex;
     margin-top: -0.5ex;
 }
-.calendar div:last-child {
+.calendar div.day div:last-child {
     padding-bottom: 0.5ex;
     margin-bottom: -0.5ex;
 }
