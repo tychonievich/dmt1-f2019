@@ -316,12 +316,12 @@ reading:
           lnk: "chap4.html"
     
     cardinality:
-        - "§1.8"
-        - "§2"
         - "§4.5"
+        - "§7.1"
 
     contradiction:
         - "§1.8"
+        - "§2"
 
     induction:
         - "§2"
