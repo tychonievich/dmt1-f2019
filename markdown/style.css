@@ -1,7 +1,7 @@
 /* Overall look-and-feel */
 body { margin:0em; font-family: sans-serif; color: #333333; background: #ffffff; line-height: 150%; }
 p { margin: 0em; }
-p + p { margin-top: 1ex; }
+p + p, p + table, table + p, table + table { margin-top: 1ex; }
 a { color: #0088cc; text-decoration: none; }
 a:hover, a:focus { color: #005580; text-decoration: underline; }
 

@@ -194,7 +194,7 @@ labs:
     - lab03
     - lab04
     - lab05
-    - cardinality
+    - contradiction
     - lab06
     - lab07
     - lab08
@@ -252,6 +252,16 @@ reading:
         lnk: files/lab04-key.pdf
       - lnk: "set-practice.html"
         txt: "more practice"
+      - txt: quiz
+        lnk: files/quiz04.pdf
+      - txt: key
+        lnk: files/quiz04-key.pdf
+
+    lab05:
+      - txt: practice quiz
+        lnk: files/lab05.pdf
+      - txt: practice key
+        lnk: files/lab05-key.pdf
         
     welcome: 
       - "§Introduction"
@@ -306,9 +316,18 @@ reading:
           lnk: "chap4.html"
     
     cardinality:
+        - "§4.5"
+        - "§7.1"
+        - txt: pigeonhole principle
+          lnk: https://en.wikipedia.org/wiki/Pigeonhole_principle
+
+    contradiction:
         - "§1.8"
         - "§2"
-        - "§4.5"
+
+    induction:
+        - "§2"
+        - "§5.1–5.3"
 
 assignments:
     ".groups":
@@ -317,7 +336,7 @@ assignments:
             drop: 1
         Quiz:
             portion: "30"
-            drop: 2
+            drop: 1
         Final:
             portion: "40"
             
@@ -375,6 +394,7 @@ assignments:
     Quiz01-1:
         due: 2019-09-06 16:30:00
         weight: 0.5
+        hide: true
         rubric:
             kind: hybrid
             auto-weight: 0
@@ -395,6 +415,7 @@ assignments:
         due: 2019-09-06 16:20:00
         open: 2019-09-06 16:00:00
         weight: 0.5
+        hide: true
         rubric:
             kind: hybrid
             auto-weight: 0
@@ -410,10 +431,42 @@ assignments:
                 - B ↔ C column is 10011001
                 - name: center column ↔ of other two (00111100 unless errors above)
                   weight: 2
+
+    Quiz01:
+        due: 2019-09-06 16:30:00
+        weight: 1
+        rubric:
+            kind: hybrid
+            auto-weight: 0
+            late-penalty: 1
+            auto-late-days: 0
+            human:
+                - (Quiz01-1) attempted all problems
+                - (Quiz01-1) have term definitions
+                - (Quiz01-1) all definitions are propositions
+                - (Quiz01-1) all definitions are atomic propositions
+                - (Quiz01-1) all definitions are from text
+                - (Quiz01-1) no part of text left out
+                - (Quiz01-1) have formula
+                - (Quiz01-1) 1st formula correct
+                - (Quiz01-1) 2nd formula correct
+                - (Quiz01-1) 3rd formula correct
+
+                - (Quiz01-2) attempted all problems
+                - '(Quiz01-2) "one" when a ∨ b'
+                - '(Quiz01-2) "three" contains negation of their "one" logic (¬(a ∨ b) unless errors with "one")'
+                - '(Quiz01-2) "three" is equivalent to ¬a ∧ ¬b ∧ ¬c'
+                - (Quiz01-2) reasonable logic syntax
+                - (Quiz01-2) A ⊕ C column is 01011010
+                - (Quiz01-2) B ↔ C column is 10011001
+                - name: (Quiz01-2) center column ↔ of other two (00111100 unless errors above)
+                  weight: 2
+    
     Quiz02-1:
         due: 2019-09-13 16:20:00
         open: 2019-09-13 16:00:00
         weight: 0.25
+        hide: true
         rubric:
             kind: hybrid
             auto-weight: 0
@@ -430,6 +483,7 @@ assignments:
         due: 2019-09-13 16:20:00
         open: 2019-09-13 16:00:00
         weight: 0.75
+        hide: true
         rubric:
             kind: hybrid
             auto-weight: 0
@@ -446,10 +500,49 @@ assignments:
                 - ... with the case assumption correctly inserted
                 - ... using valid equivalence rules
                 - ... expressed in prose
+
+    Quiz02:
+        due: 2019-09-13 16:20:00
+        open: 2019-09-13 16:00:00
+        weight: 1
+        rubric:
+            kind: hybrid
+            auto-weight: 0
+            late-penalty: 1
+            auto-late-days: 0
+            human:
+                - (Quiz02-1) start with (P ∧ ¬Q)
+                - (Quiz02-1) logic syntax used
+                - (Quiz02-1) attmpted a full proof
+                - (Quiz02-1) applied rules correctly
+                - (Quiz02-1) no skipped steps
+                - (Quiz02-1) end with ¬(P → Q)
+                - weight: 1.8
+                  name: (Quiz02-2) used same variable in all three blanks
+                - weight: 1.8
+                  name: (Quiz02-2) wrote something in all four areas
+                - weight: 1.8
+                  name: (Quiz02-2) got both case 1 expressions to same form
+                - weight: 1.8
+                  name: (Quiz02-2) ... with the case assumption correctly inserted
+                - weight: 1.8
+                  name: (Quiz02-2) ... using valid equivalence rules
+                - weight: 1.8
+                  name: (Quiz02-2) ... expressed in prose
+                - weight: 1.8
+                  name: (Quiz02-2) got both case 2 expressions to same form
+                - weight: 1.8
+                  name: (Quiz02-2) ... with the case assumption correctly inserted
+                - weight: 1.8
+                  name: (Quiz02-2) ... using valid equivalence rules
+                - weight: 1.8
+                  name: (Quiz02-2) ... expressed in prose
+
     Quiz03-1:
         due: 2019-09-20 16:20:00
         open: 2019-09-20 16:00:00
         weight: 0.4
+        hide: true
         rubric:
             kind: hybrid
             auto-weight: 0
@@ -468,6 +561,7 @@ assignments:
         due: 2019-09-20 16:20:00
         open: 2019-09-20 16:00:00
         weight: 0.6
+        hide: true
         rubric:
             kind: hybrid
             auto-weight: 0
@@ -484,6 +578,50 @@ assignments:
                 - "third: universal or not-exist"
                 - "third: allows both artist and champion to love"
                 - "third: ...only if they share no love"
+
+    Quiz03:
+        due: 2019-09-20 16:20:00
+        open: 2019-09-20 16:00:00
+        weight: 1
+        rubric:
+            kind: hybrid
+            auto-weight: 0
+            late-penalty: 1
+            auto-late-days: 0
+            human:
+                - (Quiz03-1) no G are F
+                - (Quiz03-1) everything is F
+                - (Quiz03-1) nothing is G
+                - (Quiz03-1) uses therefore symbol
+                - (Quiz03-1) all G are F
+                - (Quiz03-1) something is G
+                - (Quiz03-1) some G is F
+                - (Quiz03-1) in the right order with no extras
+                - weight: 1.2
+                  name: "(Quiz03-2) first: uses M and Z"
+                - weight: 1.2
+                  name: "(Quiz03-2) first: universal or not-exist quantifier"
+                - weight: 1.2
+                  name: "(Quiz03-2) first: logcally correct"
+                - weight: 1.2
+                  name: "(Quiz03-2) second: uses L and b"
+                - weight: 1.2
+                  name: "(Quiz03-2) second: universal quantifier"
+                - weight: 1.2
+                  name: "(Quiz03-2) second: implication"
+                - weight: 1.2
+                  name: "(Quiz03-2) second: L(x,b) → L(b,x) not the other way around"
+                - weight: 1.2
+                  name: "(Quiz03-2) third: universal or not-exist"
+                - weight: 1.2
+                  name: "(Quiz03-2) third: allows both artist and champion to love"
+                - weight: 1.2
+                  name: "(Quiz03-2) third: ...only if they share no love"
+
+
+
+
+
     Quiz04:
         due: 2019-09-27 16:20:00
         open: 2019-09-27 16:00:00
@@ -493,31 +631,39 @@ assignments:
             late-penalty: 1
             auto-late-days: 0
             human:
-                - "B has 0"
-                - "B has either 1,4,9 or 1,2,3"
-                - "B has nothing else"
-                - "B is exactly {0, 1, 4, 9}"
-                - "C is a set of sets"
-                - "C contains {}"
-                - "C is contains {{4}, {9}, {4,9}}"
-                - "C has nothing else"
-                - "A ∪ B contains all of {0,2,3}"
-                - "A ∪ B contains all of B"
-                - "A ∪ B contains nothing else"
-                - "A ∪ B no element listed twice"
-                - "A ∩ B has only elements A has"
-                - "A ∩ B has only elements B has"
+                - "B has 1,4,9 (half credit for 1,2,3)"
+                - "B has 0 and no extra elements"
+                - "C has {} (half credit if C *is* {})"
+                - "C has {4}, {9}, {4,9} and no extra elements"
+                - {name: "A ∪ B has all of {0,2,3} and all of B ({0,1,2,3,4,9} unless B wrong)", weight: 2}
+                - "A ∪ B has nothing else, with no element listed twice"
+                - {name: "A ∩ B has only elements A has, and only elements B has ({0} unless B wrong)", weight: 2}
                 - "A ∩ B has all such elements"
-                - "A ∖ B has only elements A has" 
-                - "A ∖ B has no elements B has"
+                - "A ∖ B has only elements A has, and no elements B has ({2,3} unless B wrong)"
                 - "A ∖ B has all such elements"
-                - "B ∪ C contains both numbers and sets"
+                - "B ∪ C has both numbers and sets"
                 - "⊕-set is correct ({1, 2, 3, 4, 9} unless B is wrong)"
                 - "∀-set is B ∖ A ({1, 4, 9} unless B is wrong)"
                 - "∃-set is B ∩ {4, 9}"
     Quiz05:
         due: 2019-10-04 16:20:00
         open: 2019-10-04 16:00:00
+        rubric:
+            kind: hybrid
+            auto-weight: 0
+            late-penalty: 1
+            auto-late-days: 0
+            human:
+                - "1. {(4,1), (4,2), (1,1), (1,2)}"
+                - "2. {(4,1,3,3,3), (4,2,3,3,3)} – extra parens like ((4,1), (3,3,3)) OK"
+                - "3. {(∅,∅)}"
+                - '4. two of "aok", "oka", and "aaa"'
+                - '5. "MTHMTCS"'
+                - "6. {0, 1, 4} – half credit if has 1 twice"
+                - "7. is defined as natural for some natural numbers but not all"
+                - "8. is not invertible with the domain and co-domain of ℕ"
+                - "9. b = 3a or equivalent – half-credit for a = 3b"
+                - "10. has at least one element of domain related to 2+ elements in co-domain"
     Quiz06:
         due: 2019-10-18 16:20:00
         open: 2019-10-18 16:00:00

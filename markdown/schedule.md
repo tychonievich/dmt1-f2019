@@ -9,72 +9,77 @@ The past, and my best guess of the future, is reflected below.
 
 <style id="schedule-css">
 
-#schedule td, #schedule th { padding: 0ex; }
-
-table.calendar { 
-    border-collapse: collapse; 
+#schedule.calendar {
+    display: grid;
     width: 100%; 
     background: rgba(0,0,0,0.125); 
     border: 0.5ex solid rgba(0,0,0,0);
     border-radius: 1.5ex; 
 }
-table.calendar td:empty { padding: 0; height: 4em; }
-table.calendar td { border: 0.25ex solid rgba(0,0,0,0); }
-table.calendar span.date { 
+.calendar .day.Sun { grid-column: 1}
+.calendar .day.Mon { grid-column: 2}
+.calendar .day.Tue { grid-column: 3}
+.calendar .day.Wed { grid-column: 4}
+.calendar .day.Thu { grid-column: 5}
+.calendar .day.Fri { grid-column: 6}
+.calendar .day.Sat { grid-column: 7}
+
+.calendar .day { 
+    background: white;
+    border-radius: 1ex;
+    padding: .25ex .5ex;
+    margin: .25ex;
+    box-sizing:border-box; 
+    overflow: hidden;
+}
+
+
+#schedule td, #schedule th { padding: 0ex; }
+
+.calendar span.date { 
     font-size: 70.7%;
     padding-left: 0.5ex;
     float:right;
     margin-top:-0.5ex;
 }
-table.calendar div.wrapper { 
-    background: white;
-    border-radius: 1ex;
-    padding: .5ex;
-    box-sizing:border-box; 
-    width: 100%;
-    height: 100%;
-    min-height:5em; 
-    overflow: hidden;
-}
-table.calendar div.wrapper div {
+.calendar div {
     padding: 0 0.5ex 0 0.5ex;
     margin: 0 -0.5ex 0 -0.5ex;
 }
-table.calendar div.wrapper div:first-child {
+.calendar div.day div:first-child {
     padding-top: 0.5ex;
     margin-top: -0.5ex;
 }
-table.calendar div.wrapper div:last-child {
+.calendar div.day div:last-child {
     padding-bottom: 0.5ex;
     margin-bottom: -0.5ex;
 }
 
 
-table.agenda, table.agenda tbody { display: block; }
-table.agenda tr {
-    display: block; border-top: thick solid grey;
+.agenda { display: block; }
+
+.agenda .day.newweek {
+    border-top: thick solid grey;
     min-height: 2em;
 }
-table.agenda td {
-    display: table; border-top: thin solid grey; width: 100%;
+.agenda .day {
+    display: block; border-top: thin solid grey; width: 100%;
     padding: 0;
 }
-table.agenda td:empty { display: none; }
-table.agenda span.date.w0:before { content: "Sun "; }
-table.agenda span.date.w1:before { content: "Mon "; }
-table.agenda span.date.w2:before { content: "Tue "; }
-table.agenda span.date.w3:before { content: "Wed "; }
-table.agenda span.date.w4:before { content: "Thu "; }
-table.agenda span.date.w5:before { content: "Fri "; }
-table.agenda span.date.w6:before { content: "Sat "; }
-table.agenda span.date {
+.agenda span.date.w0:before { content: "Sun "; }
+.agenda span.date.w1:before { content: "Mon "; }
+.agenda span.date.w2:before { content: "Tue "; }
+.agenda span.date.w3:before { content: "Wed "; }
+.agenda span.date.w4:before { content: "Thu "; }
+.agenda span.date.w5:before { content: "Fri "; }
+.agenda span.date.w6:before { content: "Sat "; }
+.agenda span.date {
     font-size: 70.7%; width:7em;
     vertical-align: middle; 
     display: table-cell;
     padding: 0 0.5ex;
 }
-table.agenda div.wrapper { display: table-row; }
-table.agenda div.events { display: table-cell; vertical-align: middle; }
+.agenda div.events { display: table-cell; vertical-align: middle; }
 
 .assignment:before { content: "due: "; font-size: 70.7%; }
 small { opacity: 0.5; }
@@ -84,8 +89,10 @@ details { padding-left: 1em; }
 summary { margin-left: -1em; }
 
 .day.past { opacity: 0.707; }
-.day.today .wrapper { box-shadow: 0 0 0.5ex 0.5ex grey; }
+.day.today { box-shadow: 0 0 0.5ex 0.5ex grey; }
 .agenda .day.today .wrapper { margin: 0.5ex 0;}
+
+div.day.empty { background: rgba(0,0,0,0); padding: 0em; margin: 0em; border: none; border-radius: 0; min-height: 1.5em; }
 
 </style>
 
