@@ -134,12 +134,17 @@ dt,h2,h3,h4,h5,h6 { clear:both; }
     display: table; margin: 1ex auto;
 */
 }
+
+body {
+	counter-set: lemma 0 theorem 0 definition 0 corollary 0; 
+}
+
 .proof > *:first-child:before { content: "Proof. "; font-style:italic; }
 .proof > *:last-child:after { content: " ∎"; }
-.lemma > *:first-child:before { content: "Lemma. "; font-style:italic; }
-.definition > *:first-child:before { content: "Definition. "; font-style:italic; }
-.corollary > *:first-child:before { content: "Corollary. "; font-style:italic; }
-.theorem > *:first-child:before { content: "Theorem. "; font-style:italic; }
+.lemma > *:first-child:before { counter-increment:lemma; content: "Lemma " counter(lemma) ". "; font-style:italic; }
+.definition > *:first-child:before { counter-increment:definition; content: "Definition " counter(definition) ". "; font-style:italic; }
+.corollary > *:first-child:before { counter-increment:corollary; content: "Corollary " counter(corollary) ". "; font-style:italic; }
+.theorem > *:first-child:before { counter-increment:theorem; content: "Theorem " counter(theorem) ". "; font-style:italic; }
 
 .proof > *:first-child, .lemma > *:first-child, .definition > *:first-child, .corollary > *:first-child, .theorem > *:first-child { text-indent: -1ex; }
 
