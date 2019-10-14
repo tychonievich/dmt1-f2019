@@ -40,7 +40,7 @@ But by construction the $n_x$th digit of $x$ differs from the $n_x$th digit of $
 
 $$\big\lfloor x 10^{n_x}\big\rfloor = \big\lfloor f'(n_x) 10^{n_x}\big\rfloor + 1 \mod 10$$
 
-That means $f'(n_x) \neq x$, which is a contradiction.
+That means $f'(n_x) \neq x$, which contradicts our definition of $f'$ and $n_x$.
 
 Because assuming $|\mathbb N| = |\mathbb R|$ led to a contradiction, it must be the case that $|\mathbb N| \neq |\mathbb R|$.
 
