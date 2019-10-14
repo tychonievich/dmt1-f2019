@@ -1,4 +1,9 @@
-# Cantor Diagonalization
+---
+title: Cantor Diagonalization
+...
+
+
+# The Proof
 
 :::theorem
 $|\mathbb N| < |\mathbb R|$
