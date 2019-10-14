@@ -163,7 +163,7 @@ lectures:
     
     - cardinality
 
-    - induction
+    - [contradiction, induction]
     - induction
 
     - summation
@@ -324,6 +324,10 @@ reading:
     contradiction:
         - "§1.8"
         - "§2"
+        - txt: Cantor diagonalization
+          lnk: cantor.html
+        - txt: open sets
+          lnk: openset.html
 
     induction:
         - "§2"
