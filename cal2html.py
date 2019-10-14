@@ -74,7 +74,7 @@ def raw2cal(data, links=None):
                     "kind":"special",
                     "day":d
                 })
-        if d <= beg and d >= end:
+        if d >= beg and d <= end:
             
             # handle sections
             for sec, ent in data['sections'].items():
