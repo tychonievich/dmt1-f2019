@@ -14,7 +14,7 @@ I have no obvious place to list those supplements so I'm listing them here. They
 - [Sets primer](sets.html)
 - [Proof Techniques](techniques-q2.html), a list with tips on proof writing
 - [§4 addenda](chap4.html)
-- Example proofs, including [De Morgan's Law](demorgan.html) and [Bubble Sort](bubble.html)
+- Example proofs, including [De Morgan's laws](demorgan.html), [bubble sort](bubble.html), [Cantor diagonalization](cantor.html), and [open sets](openset.html)
 
 # Course Overview 
 
