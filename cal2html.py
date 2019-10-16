@@ -412,7 +412,7 @@ def cal2assigments(cal,raw):
 
 def coursegrade_json(data):
     groups = data['assignments'].get('.groups', {})
-    weights, drops, inc, exc = {}, {}, {}, {}
+    weights, drops, inc, exc, excuse = {}, {}, {}, {}, {}
     for k,v in groups.items():
         if 'portion' in v:
             weights[k] = v['portion']
@@ -429,7 +429,7 @@ def coursegrade_json(data):
         if 'exclude' in v:
             exc[k] = v['exclude']
         if 'excuse' in v:
-            exc[k] = v['excuse']
+            excuse[k] = v['excuse']
     for k,v in drops.items():
         if type(v) is str:
             v = eval(v.replace('%','/100'))
@@ -453,7 +453,7 @@ def coursegrade_json(data):
         {'D' :0.63},
         {'D-':0.60},
         {'F' :0.00},
-    ],'weights':weights,'drops':drops,'includes':inc,'excludes':exc}
+    ],'weights':weights,'drops':drops,'includes':inc,'excludes':exc, 'excuse':excuse}
 
 
 if __name__ == '__main__':
