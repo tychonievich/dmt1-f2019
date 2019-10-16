@@ -428,6 +428,8 @@ def coursegrade_json(data):
             inc[k] = v['include']
         if 'exclude' in v:
             exc[k] = v['exclude']
+        if 'excuse' in v:
+            exc[k] = v['excuse']
     for k,v in drops.items():
         if type(v) is str:
             v = eval(v.replace('%','/100'))
