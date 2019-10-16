@@ -45,6 +45,7 @@ function pd() {
             -e 's/<span class="co">\&quot;/<span class="st">\&quot;/g' \
             -e 's/<table style="width:[^"]*">/<table>/g' \
             "$target${1%.md}.html"
+        chmod a+r "$target${1%.md}.html"
         shift
     done
 }
