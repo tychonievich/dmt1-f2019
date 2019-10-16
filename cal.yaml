@@ -351,6 +351,7 @@ assignments:
         Quiz:
             portion: "30"
             drop: 1
+            excuse: 1
         Final:
             portion: "40"
             
