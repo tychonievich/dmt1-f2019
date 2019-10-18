@@ -40,7 +40,7 @@ Using this theorem, we can prove two related more general corollaries:
 For any rational number, there is no smallest rational number larger than it.
 That is, 
 $$
-\forall q, n_1 \in \mathbb Q \;.\; n_1 > q \rightarrow \exists n_2 \in \mathbb Q^{+} \;.\; q < n_2 < n_1$$
+\forall q, n_1 \in \mathbb Q \;.\; n_1 > q \rightarrow \exists n_2 \in \mathbb Q \;.\; q < n_2 < n_1$$
 :::
 
 :::proof
@@ -71,7 +71,7 @@ We use an even briefer approach in the next proof.
 For any rational number, there is no largest rational number smaller than it.
 That is, 
 $$
-\forall q, n_1 \in \mathbb Q \;.\; n_1 < q \rightarrow \exists n_2 \in \mathbb Q^{+} \;.\; n_1 < n_2 < q$$
+\forall q, n_1 \in \mathbb Q \;.\; n_1 < q \rightarrow \exists n_2 \in \mathbb Q \;.\; n_1 < n_2 < q$$
 :::
 
 :::proof
