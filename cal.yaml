@@ -342,6 +342,13 @@ reading:
     induction:
         - "§2"
         - "§5.1–5.3"
+    
+    summation:
+        - "§13.0–13.2"
+
+    combination:
+        - "§14.5"
+
 
 assignments:
     ".groups":
