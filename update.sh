@@ -89,6 +89,7 @@ do
 	then
 		echo 'copying' "$f"
 		cp "$f" "$target";
+        chmod a+r "$target"
 	fi
 done
 
@@ -97,6 +98,7 @@ do
     to="$target/${from#markdown/}"
     if [ "$from" -nt "$to" ]; then 
         cp "$from" "$to"
+        chmod a+r "$to"
     fi
 done
 
