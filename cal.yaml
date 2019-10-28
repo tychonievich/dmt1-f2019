@@ -411,6 +411,7 @@ assignments:
         link: 'https://kytos.cs.virginia.edu/dmt1/quizzes/quiz.php?qid=08'
         due: 2019-10-28 13:00:00
         open: 2019-10-25 19:00:00
+        weight: 0
     HW09:
         link: 'https://kytos.cs.virginia.edu/dmt1/quizzes/quiz.php?qid=09'
         due: 2019-11-04 13:00:00
