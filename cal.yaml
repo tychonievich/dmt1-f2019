@@ -170,7 +170,7 @@ lectures:
     - combination
 
     - permuation
-    - proofs
+    - counting proofs
 
     - automata
     - automata
@@ -361,6 +361,9 @@ reading:
 
     combination:
         - "§14.5"
+    
+    permutation:
+        - "§14.0—14.6"
 
 
 assignments:
