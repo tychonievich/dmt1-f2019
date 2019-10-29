@@ -714,6 +714,22 @@ assignments:
     Quiz06:
         due: 2019-10-18 16:20:00
         open: 2019-10-18 16:00:00
+        rubric:
+            kind: hybrid
+            auto-weight: 0
+            late-penalty: 1
+            auto-late-days: 0
+            human:
+                - (Quiz06-1) base case includes 0
+                - (Quiz06-1) reasonable defense of base case being finite
+                - (Quiz06-1) induce on symbol (e.g. n), not specific number
+                - (Quiz06-1) next case is +1 (e.g., n+1)
+                - (Quiz06-1) appeals to addition of finite being finite
+                - (Quiz06-2) definition of x is mathematical, larger, and natural
+                - (Quiz06-2) defense of x being natural fits definition of x
+                - (Quiz06-2) defense of x being natural fits definition of natural
+                - (Quiz06-2) last blank mentions assuming led to contradiction
+                - (Quiz06-2) nothing else wrong with proof
 
 
     Quiz06-1:
