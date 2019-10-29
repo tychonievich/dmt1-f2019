@@ -95,7 +95,7 @@ A proof that only uses proof rules is sometimes called a *direct proof*.
 
 Assume the negation of what you want to prove.
 Use other proof techniques to derive $\bot$.
-State "because assuming $\not A$ led to a contradiction, $A$ must be true" or the equivalent in other words.
+State "because assuming $\lnot A$ led to a contradiction, $A$ must be true" or the equivalent in other words.
 
 {.example ...} 
 <div class="theorem">
@@ -119,27 +119,10 @@ Because assuming there is a largest real number led to a contradiction, there mu
 
 # Proof by Induction
 
-Assume the negation of what you want to prove.
-Use other proof techniques to derive $\bot$.
-State "because assuming $\not A$ led to a contradiction, $A$ must be true" or the equivalent in other words.
+Proof by induction, in its purest form, only works for theorems of the form $\forall n \in \mathbb N \;.\; P(n)$ where $P$ is a predicate.
+However, many other proofs can be [reduced](reducibility.html) to that form.
 
-{.example ...} 
-<div class="theorem">
-There is no largest real number.
-</div>
-
-<div class="proof">
-Assume there is a largest real number.
-Call that largest real number $x$; because it is the largest, we know that
-$$\forall y \in \mathbb R \;.\; y \le x \tag{1}$$
-
-Consider the number $x+1$.
-Because $x$ and $1$ are both real numbers and the reals are closed over addition,
-$x+1 \in \mathbb R$.
-Thus, we can instantiate $(1)$ with $y = x+1$ to get $x+1 \le x$.
-But clearly $x+1 > x$, which is a contradiction.
-
-Because assuming there is a largest real number led to a contradiction, there must be no largest real number.
-</div>
-{/}
-
+State you are using induction.
+Identify one or more base cases, which are $P(0)$ and (if needed) $P(1)$, $P(2)$, etc.; prove each using other proof techniques.
+Add an inductive step of the form "assume $P(n)$" and then prove $P(n+1)$; if needed, you can assume $\forall i \in \big\{ i \;\big|\; i \in \mathbb N \land i \le n \} \;.\; P(i)$ instead (called "strong induction") if needed.
+State that by the principle of induction, the theorem holds for all $n \in \mathbb N$.
