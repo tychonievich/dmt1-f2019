@@ -63,7 +63,34 @@ $P \rightarrow (A \lor Q)$  $(P \land \lnot A) \rightarrow Q$
 
 # Entailments
 
-## Set entailments
+## Logical entailment
+
+Given                                                       Entails                         Name^[more have names, but not all are common or important enough to be included here]
+-------------------------------------------------------     -----------------------------   --------------------
+$\bot$                                                      $x$
+                                                            $\top$
+                                                            $A \lor \lnot A$                excluded middle
+$A \land B$                                                 $A$
+$A$ and $B$                                                 $A \land B$
+$A$                                                         $A \lor B$
+$A \lor B$ and $\lnot B$                                    $A$                             disjuctive syllogism
+$A \rightarrow B$ and $B \rightarrow C$                     $A \rightarrow C$               hypothetical syllogism; transitivity of implication
+$A \rightarrow B$ and $A$                                   $B$                             modus ponens
+$A \rightarrow B$ and $\lnot B$                             $\lnot A$                       modus tolens
+$A \leftrightarrow B$                                       $A \rightarrow B$
+$A \rightarrow C$, $B \rightarrow B$, and $A \lor B$        $C$
+$A \rightarrow B$, $C \rightarrow D$, and $A \lor C$        $B \lor D$
+$A \rightarrow B$                                           $A \rightarrow (A \land B)$
+$\lnot(A \land B)$, $A$                                     $\lnot B$
+
+## Assume-and-prove entailment
+
+A proof that assumes $A$ and derives $B$ entails that $A \rightarrow B$
+
+A proof that assumes $A$ and derives $\bot$ entails that $\lnot A$
+
+
+## Set entailment
 
 Given                                                       Entails
 -------------------------------------------------------     -----------------------------

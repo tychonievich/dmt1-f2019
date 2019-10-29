@@ -364,6 +364,12 @@ reading:
     
     permutation:
         - "§14.0—14.6"
+    
+    counting proofs:
+        - "§14.0—14.6"
+        - "§13.0–13.2"
+        - txt: reductions writeup
+          lnk: reducibility.html
 
 
 assignments:

@@ -13,6 +13,7 @@ I have no obvious place to list those supplements so I'm listing them here. They
 - [Glossary of logical terms](glossary.html)
 - [Sets primer](sets.html)
 - [Proof Techniques](techniques-q2.html), a list with tips on proof writing
+- [Logical Reduction](reducibility.html)
 - [§4 addenda](chap4.html)
 - Example proofs, including [De Morgan's laws](demorgan.html), [bubble sort](bubble.html), [Cantor diagonalization](cantor.html), and [open sets](openset.html)
 
