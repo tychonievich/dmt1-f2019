@@ -33,7 +33,7 @@ function pd() {
             --title-prefix="DMT1" \
             --table-of-contents --toc-depth=3 \
             --css=style.css \
-            --katex \
+            --katex='https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/' \
             --html-q-tags \
             --template=${here}template.html \
             --variable=year:$(date +%Y) \
