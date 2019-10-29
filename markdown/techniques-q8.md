@@ -179,4 +179,6 @@ Inductive case
 
 By the principle of induction, it follows that all strings created using this process have an odd number of "`a`"s.
 </div>
+
+Implicitly, the above proof used induction on the number of steps used to create the string, but that was never identified in the proof itself.
 {/}
