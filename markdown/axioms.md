@@ -63,6 +63,20 @@ $P \rightarrow (A \lor Q)$  $(P \land \lnot A) \rightarrow Q$
 
 # Entailments
 
+## Set entailment
+
+Given                                                       Entails
+-------------------------------------------------------     -----------------------------
+$P(x)$ and $x \in S$                                        $\exists x \in S \;.\; P(x)$
+$\forall x \in S \;.\; P(x)$ and $T \subseteq S$            $\forall x \in T \;.\; P(x)$
+$\exists x \in S \;.\; P(x)$ and $T \supseteq S$            $\exists x \in T \;.\; P(x)$
+$\forall x \in S \;.\; P(x)$ and $S \neq \emptyset$         $\exists x \in S \;.\; P(x)$
+$|S| \neq |T|$                                              $S \neq T$
+$|S| < |T|$                                                 $S \not \supseteq T$
+$\exists x \in S \;.\; P(x)$                                $P \neq \emptyset$
+
+If $x \in S \vdash P(x)$ without specifying which element of $S$ $x$ was, then $\vdash \forall x \in S \;.\; P(x)$. This is sometimes called "universal instantiation" or "skolemization", though both terms are also used for other principles.
+
 ## Logical entailment
 
 Given                                                       Entails                         Name^[more have names, but not all are common or important enough to be included here]
@@ -89,18 +103,4 @@ A proof that assumes $A$ and derives $B$ entails that $A \rightarrow B$
 
 A proof that assumes $A$ and derives $\bot$ entails that $\lnot A$
 
-
-## Set entailment
-
-Given                                                       Entails
--------------------------------------------------------     -----------------------------
-$P(x)$ and $x \in S$                                        $\exists x \in S \;.\; P(x)$
-$\forall x \in S \;.\; P(x)$ and $T \subseteq S$            $\forall x \in T \;.\; P(x)$
-$\exists x \in S \;.\; P(x)$ and $T \supseteq S$            $\exists x \in T \;.\; P(x)$
-$\forall x \in S \;.\; P(x)$ and $S \neq \emptyset$         $\exists x \in S \;.\; P(x)$
-$|S| \neq |T|$                                              $S \neq T$
-$|S| < |T|$                                                 $S \not \supseteq T$
-$\exists x \in S \;.\; P(x)$                                $P \neq \emptyset$
-
-If $x \in S \vdash P(x)$ without specifying which element of $S$ $x$ was, then $\vdash \forall x \in S \;.\; P(x)$. This is sometimes called "universal instantiation" or "skolemization", though both terms are also used for other principles.
 
