@@ -370,6 +370,8 @@ reading:
         - "§13.0–13.2"
         - txt: reductions writeup
           lnk: reducibility.html
+        - txt: proof techniques
+          lnk: techniques-q8.html
 
 
 assignments:
