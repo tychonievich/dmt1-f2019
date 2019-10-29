@@ -156,6 +156,8 @@ Induction is used so often that the template is often applied with fairly dramat
 If a string is created by starting with "`a`" and optionally replacing an "`a`" with "`ab`" or a "`b`" with "`aa`", as many times as you want, the result will always have an odd number of "`a`"s.
 </div>
 
+It is also true that any string consisting of an odd number of `a`s, each followed by any number of `b`s, can be created with this process, but let's start with this easier odd-number proof first.
+
 <div class="proof"> We proceed by induction.
 
 Base case
