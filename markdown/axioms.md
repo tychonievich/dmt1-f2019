@@ -99,8 +99,8 @@ $\lnot(A \land B)$, $A$                                     ${\lnot B}$
 
 ## Assume-and-prove entailment
 
-A proof that assumes $A$ and derives $B$ entails that $A \rightarrow B$
+A proof that assumes $A$ and derives $B$ entails that $A \rightarrow B$. This is commonly used in the inductive step of a proof by contradiction.
 
-A proof that assumes $A$ and derives $\bot$ entails that $\lnot A$
+A proof that assumes $A$ and derives $\bot$ entails that $\lnot A$. This is called "proof by contradiction" or "indirect proof."
 
 
