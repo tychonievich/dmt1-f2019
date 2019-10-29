@@ -92,8 +92,8 @@ $A \rightarrow B$ and $B \rightarrow C$                     ${A \rightarrow C}$ 
 $A \rightarrow B$ and $A$                                   ${B}$                           modus ponens
 $A \rightarrow B$ and $\lnot B$                             ${\lnot A}$                     modus tolens
 $A \leftrightarrow B$                                       ${A \rightarrow B}$
-$A \rightarrow C$, $B \rightarrow B$, and $A \lor B$        ${C}$
-$A \rightarrow B$, $C \rightarrow D$, and $A \lor C$        ${B \lor D}$
+${A \rightarrow C}$, ${B \rightarrow B}$, and ${A \lor B}$  ${C}$
+${A \rightarrow B}$, ${C \rightarrow D}$, and ${A \lor C}$  ${B \lor D}$
 $A \rightarrow B$                                           ${A \rightarrow (A \land B)}$
 $\lnot(A \land B)$, $A$                                     ${\lnot B}$
 
