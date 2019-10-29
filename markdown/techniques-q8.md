@@ -119,10 +119,62 @@ Because assuming there is a largest real number led to a contradiction, there mu
 
 # Proof by Induction
 
-Proof by induction, in its purest form, only works for theorems of the form $\forall n \in \mathbb N \;.\; P(n)$ where $P$ is a predicate.
+Proof by induction, in its purest form, only works for theorems of the form $\boxed{\forall n \in \mathbb N \;.\; P(n)}$ where $P$ is a predicate.
 However, many other proofs can be [reduced](reducibility.html) to that form.
 
 State you are using induction.
 Identify one or more base cases, which are $P(0)$ and (if needed) $P(1)$, $P(2)$, etc.; prove each using other proof techniques.
-Add an inductive step of the form "assume $P(n)$" and then prove $P(n+1)$; if needed, you can assume $\forall i \in \big\{ i \;\big|\; i \in \mathbb N \land i \le n \} \;.\; P(i)$ instead (called "strong induction") if needed.
+Add an inductive step of the form "assume $P(n)$" and then prove $P(n+1)$; if needed, you can assume $\boxed{\forall i \in \big\{ i \;\big|\; i \in \mathbb N \land i \le n \} \;.\; P(i)}$ instead (called "strong induction") if needed.
 State that by the principle of induction, the theorem holds for all $n \in \mathbb N$.
+
+{.example ...}
+<div class="theorem">
+$\mathbb N \subseteq \mathbb R$
+</div>
+
+Note that by the definition of subsets, this is equivalent to proving $\boxed{\forall n \in \mathbb N \;.\; n \in \mathbb R}$, so we'll use $P(n) = n \in \mathbb R$ as our predicate.
+
+<div class="proof"> We proceed by induction.
+
+Base case
+:   $0 \in \mathbb R$ by definition.
+
+Inductive case
+:   Assume $n \in \mathbb N$ and $n \in \mathbb R$.
+    Consider $x = n+1$;
+    because $1 \in \mathbb R$ and the reals are closed under addition, $x \in \mathbb R$.
+
+By the principle of induction, it follows that $\forall n \in \mathbb N \;.\; n \in \mathbb R$.
+By the definition of subsets, that means $\mathbb N \subseteq \mathbb R$.
+</div>
+{/}
+
+Induction is used so often that the template is often applied with fairly dramatic modifications, possibly even having multiple inductive steps, without explicitly noting those modifications.
+
+{.example ...}
+<div class="theorem">
+If a string is created by starting with "`a`" and optionally replacing an "`a`" with "`ab`" or a "`b`" with "`aa`", as many times as you want, the result will always have an odd number of "`a`"s.
+</div>
+
+<div class="proof"> We proceed by induction.
+
+Base case
+:   "`a`" has one "`a`", which is an odd number.
+
+Inductive case
+:   Assume a string $s$ has an odd number of "`a`"s.
+    Consider the a string $t$ created in one step from $s$.
+    
+    Case `a` to `ab`
+    :   Suppose $t$ was created by replacing one "`a`" in $s$ with "`ab`".
+        $t$ has the same number of "`a`"s as $s$, so by our assumption $t$ has an odd number of "`a`"s.
+        
+    Case `b` to `aa`
+    :   Suppose $t$ was created by replacing one "`b`" in $s$ with "`aa`".
+        $t$ has exactly two more "`a`"s than $s$, and 2 + an odd number is still odd, so by our assumption $t$ has an odd number of "`a`"s.
+    
+    Since $t$ has an odd number of "`a`"s in each case, it has an odd numebr of "`a`"s in general.
+
+By the principle of induction, it follows that all strings created using this process have an odd number of "`a`"s.
+</div>
+{/}
