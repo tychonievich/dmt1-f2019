@@ -757,16 +757,16 @@ assignments:
             late-penalty: 1
             auto-late-days: 0
             human:
-                - "1. 52 choose 4 (half for 52! ÷ (52-5)! or 52⁵)"
+                - "1. 52 choose 4 (half for 52!/(52-5)! or 52⁵)"
                 - "2. 8!"
-                - "3. 8! ÷ 2!3!2! = 840"
+                - "3. 8!/2!3!2! = 840"
                 - "4. 7776⁶"
-                - "5. 7776! ÷ 7770! (half for 7776 choose 6)"
+                - "5. 7776!/7770! (half for 7776 choose 6)"
                 - "6. 15"
-                - "7. 3 ÷ 64"
-                - "8. 40 ÷ 57"
-                - "9. 40 ÷ 60"
-                - "10. 1 ÷ 1000 (allow (999/1000)⁵⁰⁰⁰ in front at no penalty)"
+                - "7. 3/64"
+                - "8. 40/57"
+                - "9. 40/60"
+                - "10. 1/1000 (half for 1/500; allow (999/1000)⁵⁰⁰⁰ in front at no penalty)"
     Quiz08:
         due: 2019-11-01 16:20:00
         open: 2019-11-01 16:00:00
