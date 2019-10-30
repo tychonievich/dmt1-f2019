@@ -83,6 +83,9 @@ Case analysis in small-step proofs involves embedded sub-proofs, as is described
 
 # Apply Entailment
 
+> See also [our list of entailments](axioms.html#entailments).
+
+
 Applying entailment is very much like applying equivalence rule, except it only needs to work in one direction.
 Because $A \equiv B$ implies $A \vDash B$, you can use equivalence rules in a proof that applies entailment.
 
