@@ -43,13 +43,13 @@ $A \lor (B \lor C)$ can be re-written as $(\lnot \lnot B) \lor (A \lor C)$, whic
 
 > See also §1.7, ∀x 17.5, and [our proof of one of De Morgan's laws](demorgan.html)
 
-State a disjunctive tautology.
+1. State a disjunctive tautology.
 For a simple tautology like $P \lor \lnot P$, stating it is enough;
 for more complicated tautologies, you may need to add a sub-proof or lemma^[a lemma is a helper proof made before the main proof it will be used inside of] that it *is* tautological.
 
-Then proceed to consider several cases: one for each term of the disjunctive tautology, in each case assuming that that clause is true.
+2. Then proceed to consider several cases: one for each term of the disjunctive tautology, in each case assuming that that clause is true.
 
-After completing all of the cases, the full proof is also completed:we may not know *which* case's assumption is true, but because the disjunction is a tautology, we know at least one of them *must* be.
+3. After completing all of the cases, the full proof is also completed:we may not know *which* case's assumption is true, but because the disjunction is a tautology, we know at least one of them *must* be.
 
 {.example ...} This is a full proof of one of our known equivalences
 
@@ -93,9 +93,9 @@ A proof that only uses proof rules is sometimes called a *direct proof*.
 
 # Proof by Contradiction
 
-Assume the negation of what you want to prove.
-Use other proof techniques to derive $\bot$.
-State "because assuming $\lnot A$ led to a contradiction, $A$ must be true" or the equivalent in other words.
+1. Assume the negation of what you want to prove.
+2. Use other proof techniques to derive $\bot$.
+3. State "because assuming $\lnot A$ led to a contradiction, $A$ must be true" or the equivalent in other words.
 
 {.example ...} 
 <div class="theorem">
@@ -122,10 +122,10 @@ Because assuming there is a largest real number led to a contradiction, there mu
 Proof by induction, in its purest form, only works for theorems of the form $\boxed{\forall n \in \mathbb N \;.\; P(n)}$ where $P$ is a predicate.
 However, many other proofs can be [reduced](reducibility.html) to that form.
 
-State you are using induction.
-Identify one or more base cases, which are $P(0)$ and (if needed) $P(1)$, $P(2)$, etc.; prove each using other proof techniques.
-Add an inductive step of the form "assume $P(n)$" and then prove $P(n+1)$; if needed, you can assume $\boxed{\forall i \in \big\{ i \;\big|\; i \in \mathbb N \land i \le n \} \;.\; P(i)}$ instead (called "strong induction") if needed.
-State that by the principle of induction, the theorem holds for all $n \in \mathbb N$.
+1. State you are using induction.
+2. Identify one or more base cases, which are $P(0)$ and (if needed) $P(1)$, $P(2)$, etc.; prove each using other proof techniques.
+3. Add an inductive step of the form "assume $P(n)$" and then prove $P(n+1)$; if needed, you can assume $\boxed{\forall i \in \big\{ i \;\big|\; i \in \mathbb N \land i \le n \} \;.\; P(i)}$ instead (called "strong induction") if needed.
+4. State that by the principle of induction, the theorem holds for all $n \in \mathbb N$.
 
 {.example ...}
 <div class="theorem">
