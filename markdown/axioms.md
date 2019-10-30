@@ -90,7 +90,7 @@ Universal generalization is sometimes called "skolemization."
 
 ## Logical entailment
 
-Given                                                       Entails                         Name^[more have names, but not all are common or important enough to be included here]
+Given                                                       Entails                         Name
 -------------------------------------------------------     -----------------------------   --------------------
 $\bot$                                                      ${x}$
                                                             ${\top}$
