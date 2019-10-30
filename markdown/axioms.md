@@ -85,6 +85,8 @@ $\exists x \in S \;.\; P(x)$      $s \in S \land P(s)$ where $s$ is an otherwise
 $s \in S \vdash P(s)$             $\forall x \in S \;.\; P(x)$                                          universal generalization
 $P(s) \land s \in S$              $\exists x \in S \;.\; P(x)$                                          existential generalization
 
+These also all have versions that use a defined domain instead of set membership.
+Universal generalization is sometimes called "skolemization."
 
 ## Logical entailment
 
