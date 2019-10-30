@@ -13,7 +13,7 @@ They are equivalences so they also work backwards (i.e. making expressions large
 
 The first five are big and worth memorizing
 
- long                    simplified                 Name of rule (if any)
+ long                    simplified                 Name of rule
 ----------------------  ------------------------    ----------------------------
 $\lnot \lnot P$         $P$                         double negation
 $P \land \bot$          $\bot$
@@ -42,7 +42,7 @@ The following operator is *commutative* but not *associative*: $\leftrightarrow$
 
 Of the other rules here, the first several are worth memorizing
 
- form 1                  form 2                                         Name of rule (if any)
+ form 1                  form 2                                         Name of rule
 ----------------------  -------------------------------                 ----------------------------
 $A \rightarrow B$       $\lnot A \lor B$
 $A \land (B \lor C)$    $(A \land B) \lor (A \land C)$                  Distributive law
@@ -54,7 +54,7 @@ $(A \oplus B)$          $(A \lor B) \land \lnot (A \land B)$
 
 and the rest are either less commonly useful or can be derived easily from other worth-memorizing rules
 
- form 1                      form 2                             Name of rule (if any)
+ form 1                      form 2                             Name of rule
 ----------------------      ---------------------------------   ----------------------------
 $A \oplus B$                $\lnot (A \leftrightarrow B)$       
 $A \leftrightarrow B$       $\lnot (A \oplus B)$                xnor
