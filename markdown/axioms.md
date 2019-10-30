@@ -75,16 +75,15 @@ $|S| \neq |T|$                                              $S \neq T$
 $|S| < |T|$                                                 $S \not \supseteq T$
 $\exists x \in S \;.\; P(x)$                                $P \neq \emptyset$
 
-If $x \in S \vdash P(x)$ without specifying which element of $S$ $x$ was, then $\vdash \forall x \in S \;.\; P(x)$. This is sometimes called "universal instantiation" or "skolemization", though both terms are also used for other principles.
 
 ## Qualified entailments
 
-Given                             Entails
---------------------------------  -----------------------------
-$\forall x \in S \;.\; P(x)$      $P(s)$, for any $s \in S$ we care to pick
-$\exists x \in S \;.\; P(x)$      $s \in S \land P(s)$ where $s$ is an otherwise-undefined new variable
-$s \in S \vdash P(s)$             $\forall x \in S \;.\; P(x)$
-$P(s) \land s \in S$              $\exists x \in S \;.\; P(x)$
+Given                             Entails                                                               Names
+--------------------------------  -----------------------------                                         ------
+$\forall x \in S \;.\; P(x)$      $P(s)$, for any $s \in S$ we care to pick                             universal instantiation
+$\exists x \in S \;.\; P(x)$      $s \in S \land P(s)$ where $s$ is an otherwise-undefined new variable existential instantiation 
+$s \in S \vdash P(s)$             $\forall x \in S \;.\; P(x)$                                          universal generalization
+$P(s) \land s \in S$              $\exists x \in S \;.\; P(x)$                                          existential generalization
 
 
 ## Logical entailment
