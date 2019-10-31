@@ -780,7 +780,7 @@ assignments:
             late-penalty: 1
             auto-late-days: 0
             human:
-                - "1. 52 choose 5 = 316251 (half for 52! / (52-5)! or 52⁵)"
+                - "1. 52 choose 5 = 2598960 (half for 52! / (52-5)! or 52⁵)"
                 - "2. 8! = 40320"
                 - "3. 8! / 2!3!2! = 1680"
                 - "4. 7776⁶"
