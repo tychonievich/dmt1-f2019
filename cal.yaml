@@ -788,8 +788,8 @@ assignments:
                 - "6. 15"
                 - "7. 3/64"
                 - "8. 40/57"
-                - "9. 40/60"
-                - "10. 1/1000 (half for 1/500; allow (999/1000)⁵⁰⁰⁰ in front at no penalty)"
+                - "9. 40/60 = 2/3"
+                - "10. 1/1000 (half for 1/500; allow (999/1000)⁵⁰⁰ in front at no penalty)"
     Quiz08:
         due: 2019-11-01 16:20:00
         open: 2019-11-01 16:00:00
