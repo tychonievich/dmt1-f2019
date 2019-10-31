@@ -175,13 +175,13 @@ lectures:
     - automata
     - automata
 
-    - graphs
-    - graphs
+    - primes
+    - logs
     
-    - flex week
-    - flex week
+    - graphs
+    - graphs
 
-    - flex week
+    - and beyond
     
     - review
     - review
@@ -379,7 +379,16 @@ reading:
           lnk: reducibility.html
         - txt: proof techniques
           lnk: techniques-q8.html
-
+    
+    graphs:
+        - "§9"
+    automata:
+        - "§5.4"
+    primes:
+        - "§8.0–8.7"
+    logs:
+        - txt: wikipedia
+          lnk: https://en.m.wikipedia.org/wiki/Logarithm
 
 assignments:
     ".groups":

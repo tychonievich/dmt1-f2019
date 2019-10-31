@@ -115,3 +115,20 @@ A proof that assumes $A$ and derives $B$ entails that $A \rightarrow B$. This is
 A proof that assumes $A$ and derives $\bot$ entails that $\lnot A$. This is called "proof by contradiction" or "indirect proof."
 
 
+# Mathematical Identities
+
+The following are all true for all real numbers where both sides of the equals sign are defined:
+
+- $\displaystyle \log_a(a^x) = x$
+- $\displaystyle a^{\log_a(x)} = x$
+- $\displaystyle \log_a(x y) = \log_a(x) + \log_a(y)$
+- $\displaystyle \log_a\left(\frac{x}{y}\right) = \log_a(x) - \log_a(y)$
+- $\displaystyle \log_a(x^y) = y \log_a(x)$
+- $\displaystyle \log_a(x) = \frac{\log_b(x)}{\log_b(a)}$
+- $\displaystyle \log_{a^b}(x) = b\log_a(x)$
+
+The following are also true:
+
+- $(a \in \mathbb Z) \land (a > 1) \vDash (a$ has at least two factors$)$
+- $(a \in \mathbb Z) \land (a > 1) \land (a$ has exactly two factors$) \equiv (a$ is prime$)$
+- Each integer greater than 1 has exactly one prime factorization
