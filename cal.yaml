@@ -292,6 +292,10 @@ reading:
         lnk: files/lab08.pdf
       - txt: practice key
         lnk: files/lab08-key.pdf
+      - txt: quiz
+        lnk: files/quiz08.pdf
+      - txt: key
+        lnk: files/quiz08-key.pdf
         
     welcome: 
       - "§Introduction"
