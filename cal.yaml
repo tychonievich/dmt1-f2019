@@ -296,6 +296,7 @@ reading:
         lnk: files/quiz08.pdf
       - txt: key
         lnk: files/quiz08-key.pdf
+
     lab09:
       - txt: practice quiz
         lnk: files/lab09.pdf
@@ -305,6 +306,12 @@ reading:
         lnk: files/quiz09.pdf
       - txt: key
         lnk: files/quiz09-key.pdf
+        
+    lab10:
+      - txt: practice quiz
+        lnk: files/lab10.pdf
+      - txt: practice key
+        lnk: files/lab10-key.pdf
         
     welcome: 
       - "§Introduction"
