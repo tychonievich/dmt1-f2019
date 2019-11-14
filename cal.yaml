@@ -822,6 +822,22 @@ assignments:
     Quiz09:
         due: 2019-11-08 16:20:00
         open: 2019-11-08 16:00:00
+        rubric:
+            kind: hybrid
+            auto-weight: 0
+            late-penalty: 1
+            auto-late-days: 0
+            human:
+                - has a base case
+                - base case includes -1
+                - base case shows both sides equal
+                - has inductive step
+                - inductive case assumes true at variable
+                - inductive case shows true at variable + 1
+                - induction argument uses algebra
+                - algebra correct
+                - has conclusion
+                - 'structure: introduces induction, labels parts, etc'
     Quiz10:
         due: 2019-11-15 16:20:00
         open: 2019-11-15 16:00:00
