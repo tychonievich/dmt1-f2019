@@ -125,7 +125,7 @@ The following are all true for all real numbers where both sides of the equals s
 - $\displaystyle \log_a\left(\frac{x}{y}\right) = \log_a(x) - \log_a(y)$
 - $\displaystyle \log_a(x^y) = y \log_a(x)$
 - $\displaystyle \log_a(x) = \frac{\log_b(x)}{\log_b(a)}$
-- $\displaystyle \log_{a^b}(x) = b\log_a(x)$
+- $\displaystyle \log_{a^b}(x) = b^{-1}\log_a(x)$
 
 The following are also true:
 
