@@ -845,6 +845,20 @@ assignments:
     Quiz10:
         due: 2019-11-15 16:20:00
         open: 2019-11-15 16:00:00
+        rubric:
+            kind: hybrid
+            auto-weight: 0
+            late-penalty: 1
+            auto-late-days: 0
+            human:
+                - 'Q1 is 2 · 2 · 3 · 5'
+                - 'Q2 is 3^y = x'
+                - 'Q3 is log_c(b) ÷ log_c(a) -- half credit if inverse of that'
+                - 'Q4 is 2 lg(a) + lg(b)'
+                - 'Q5 is 3/2'
+                - 'pf: each step follows from one above'
+                - 'pf: ends with only integers and powers on last line'
+                - 'pf: fits the rest of proof (e.g. 3^b = 2^a)'
     Quiz11:
         due: 2019-11-22 16:20:00
         open: 2019-11-22 16:00:00
