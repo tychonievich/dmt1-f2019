@@ -851,7 +851,7 @@ assignments:
             late-penalty: 1
             auto-late-days: 0
             human:
-                - 'Q1 is 2 · 2 · 3 · 5'
+                - 'Q1 is 2 · 2 · 3 · 5 (or 2² · 3 · 5)'
                 - 'Q2 is 3^y = x'
                 - 'Q3 is log_c(b) ÷ log_c(a) -- half credit if inverse of that'
                 - 'Q4 is 2 lg(a) + lg(b)'
