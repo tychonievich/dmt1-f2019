@@ -316,6 +316,14 @@ reading:
         lnk: files/quiz10.pdf
       - txt: key
         lnk: files/quiz10-key.pdf
+
+    lab11:
+      - txt: shown during quiz
+        lnk: graph_def.html
+      - txt: practice quiz
+        lnk: files/lab11.pdf
+      - txt: practice key
+        lnk: files/lab11-key.pdf
         
     welcome: 
       - "§Introduction"
