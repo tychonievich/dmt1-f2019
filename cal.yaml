@@ -870,4 +870,17 @@ assignments:
     Quiz11:
         due: 2019-11-22 16:20:00
         open: 2019-11-22 16:00:00
-    
+        rubric:
+            kind: hybrid
+            auto-weight: 0
+            late-penalty: 1
+            auto-late-days: 0
+            human:
+                - 'makes assumption'
+                - 'assumption is (equivalent to from) negation of theorem (i.e. some shortest walk is not a path)'
+                - 'derives contradiction'
+                - 'states contradiction means assumption false'
+                - 'all logic-based claims are true'
+                - 'all graph-based claims are true'
+                - 'appeals to definition of path (no repeat vertex)'
+                - 'appeals to shortness/length in some way'
