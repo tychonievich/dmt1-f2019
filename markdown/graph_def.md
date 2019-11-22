@@ -33,7 +33,7 @@ R is Irreflexive    $\forall x \in A \;.\; \lnot(x$ R $x)$
 R is Symmetric      $\forall x,y \in A \;.\; (x$ R $y) \rightarrow (y$ R $x)$
 R is Asymmetric     $\forall x,y \in A \;.\; (x$ R $y) \rightarrow \lnot(y$ R $x)$
 R is Antisymmetric  $\forall x \neq y \in A \;.\; (x$ R $y) \rightarrow \lnot(y$ R $x)$
-R is Transitive     $\forall x,y,z \in A \;.\; (x$ R $y) \land (y$ R $z) \rightarrow \lnot(x$ R $z)$
+R is Transitive     $\forall x,y,z \in A \;.\; (x$ R $y) \land (y$ R $z) \rightarrow (x$ R $z)$
 
 And those lead to these terms:
 
