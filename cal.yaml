@@ -877,7 +877,7 @@ assignments:
             auto-late-days: 0
             human:
                 - 'makes assumption'
-                - 'assumption is (equivalent to from) negation of theorem (i.e. some shortest walk is not a path)'
+                - 'assumption is negation of theorem (some shortest walk is not a path)'
                 - 'derives contradiction'
                 - 'states contradiction means assumption false'
                 - 'all logic-based claims are true'
