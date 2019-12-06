@@ -430,8 +430,8 @@ reading:
           lnk: lectures/topics.txt
 
     make-up:
-        - txt: You may take up to two topics as a pre-final; this will replace your grade in those topics if turned in.
-          lnk: '#'
+        - txt: quiz
+          lnk: files/quiz12.pdf
 
 assignments:
     ".groups":
