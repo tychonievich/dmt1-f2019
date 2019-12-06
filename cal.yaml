@@ -897,8 +897,8 @@ assignments:
                 - 'appeals to shortness/length in some way'
 
     q12logic:
-        due: 2019-12-06 16:20:00:00
-        open: 2019-12-06 15:30:00:00
+        due: 2019-12-06 16:20:00
+        open: 2019-12-06 15:30:00
         hide: true
         rubric:
             kind: hybrid
@@ -908,8 +908,8 @@ assignments:
             human:
                 - 'shows mastery of topic'
     q12ind:
-        due: 2019-12-06 16:20:00:00
-        open: 2019-12-06 15:30:00:00
+        due: 2019-12-06 16:20:00
+        open: 2019-12-06 15:30:00
         hide: true
         rubric:
             kind: hybrid
@@ -919,8 +919,8 @@ assignments:
             human:
                 - 'shows mastery of topic'
     q12cont:
-        due: 2019-12-06 16:20:00:00
-        open: 2019-12-06 15:30:00:00
+        due: 2019-12-06 16:20:00
+        open: 2019-12-06 15:30:00
         hide: true
         rubric:
             kind: hybrid
@@ -930,8 +930,8 @@ assignments:
             human:
                 - 'shows mastery of topic'
     q12comb:
-        due: 2019-12-06 16:20:00:00
-        open: 2019-12-06 15:30:00:00
+        due: 2019-12-06 16:20:00
+        open: 2019-12-06 15:30:00
         hide: true
         rubric:
             kind: hybrid
@@ -941,8 +941,8 @@ assignments:
             human:
                 - 'shows mastery of topic'
     q12struct:
-        due: 2019-12-06 16:20:00:00
-        open: 2019-12-06 15:30:00:00
+        due: 2019-12-06 16:20:00
+        open: 2019-12-06 15:30:00
         hide: true
         rubric:
             kind: hybrid
@@ -952,8 +952,8 @@ assignments:
             human:
                 - 'shows mastery of topic'
     q12sets:
-        due: 2019-12-06 16:20:00:00
-        open: 2019-12-06 15:30:00:00
+        due: 2019-12-06 16:20:00
+        open: 2019-12-06 15:30:00
         hide: true
         rubric:
             kind: hybrid
