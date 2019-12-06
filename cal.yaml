@@ -895,3 +895,70 @@ assignments:
                 - 'all graph-based claims are true'
                 - 'appeals to definition of path (no repeat vertex)'
                 - 'appeals to shortness/length in some way'
+
+    q12logic:
+        due: 2019-12-06 16:20:00:00
+        open: 2019-12-06 15:30:00:00
+        hide: true
+        rubric:
+            kind: hybrid
+            auto-weight: 0
+            late-penalty: 1
+            auto-late-days: 0
+            human:
+                - 'shows mastery of topic'
+    q12ind:
+        due: 2019-12-06 16:20:00:00
+        open: 2019-12-06 15:30:00:00
+        hide: true
+        rubric:
+            kind: hybrid
+            auto-weight: 0
+            late-penalty: 1
+            auto-late-days: 0
+            human:
+                - 'shows mastery of topic'
+    q12cont:
+        due: 2019-12-06 16:20:00:00
+        open: 2019-12-06 15:30:00:00
+        hide: true
+        rubric:
+            kind: hybrid
+            auto-weight: 0
+            late-penalty: 1
+            auto-late-days: 0
+            human:
+                - 'shows mastery of topic'
+    q12comb:
+        due: 2019-12-06 16:20:00:00
+        open: 2019-12-06 15:30:00:00
+        hide: true
+        rubric:
+            kind: hybrid
+            auto-weight: 0
+            late-penalty: 1
+            auto-late-days: 0
+            human:
+                - 'shows mastery of topic'
+    q12struct:
+        due: 2019-12-06 16:20:00:00
+        open: 2019-12-06 15:30:00:00
+        hide: true
+        rubric:
+            kind: hybrid
+            auto-weight: 0
+            late-penalty: 1
+            auto-late-days: 0
+            human:
+                - 'shows mastery of topic'
+    q12sets:
+        due: 2019-12-06 16:20:00:00
+        open: 2019-12-06 15:30:00:00
+        hide: true
+        rubric:
+            kind: hybrid
+            auto-weight: 0
+            late-penalty: 1
+            auto-late-days: 0
+            human:
+                - 'shows mastery of topic'
