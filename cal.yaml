@@ -962,3 +962,71 @@ assignments:
             auto-late-days: 0
             human:
                 - 'shows mastery of topic'
+
+
+    final-logic:
+        due: 2019-12-16 16:20:00
+        open: 2019-12-16 15:30:00
+        optional: true
+        rubric:
+            kind: hybrid
+            auto-weight: 0
+            late-penalty: 1
+            auto-late-days: 0
+            human:
+                - 'shows mastery of topic'
+    final-ind:
+        due: 2019-12-16 16:20:00
+        open: 2019-12-16 15:30:00
+        optional: true
+        rubric:
+            kind: hybrid
+            auto-weight: 0
+            late-penalty: 1
+            auto-late-days: 0
+            human:
+                - 'shows mastery of topic'
+    final-cont:
+        due: 2019-12-16 16:20:00
+        open: 2019-12-16 15:30:00
+        optional: true
+        rubric:
+            kind: hybrid
+            auto-weight: 0
+            late-penalty: 1
+            auto-late-days: 0
+            human:
+                - 'shows mastery of topic'
+    final-comb:
+        due: 2019-12-16 16:20:00
+        open: 2019-12-16 15:30:00
+        optional: true
+        rubric:
+            kind: hybrid
+            auto-weight: 0
+            late-penalty: 1
+            auto-late-days: 0
+            human:
+                - 'shows mastery of topic'
+    final-struct:
+        due: 2019-12-16 16:20:00
+        open: 2019-12-16 15:30:00
+        optional: true
+        rubric:
+            kind: hybrid
+            auto-weight: 0
+            late-penalty: 1
+            auto-late-days: 0
+            human:
+                - 'shows mastery of topic'
+    final-sets:
+        due: 2019-12-16 16:20:00
+        open: 2019-12-16 15:30:00
+        optional: true
+        rubric:
+            kind: hybrid
+            auto-weight: 0
+            late-penalty: 1
+            auto-late-days: 0
+            human:
+                - 'shows mastery of topic'
