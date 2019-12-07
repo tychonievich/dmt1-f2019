@@ -899,6 +899,7 @@ assignments:
     q12logic:
         due: 2019-12-06 16:20:00
         open: 2019-12-06 15:30:00
+        optional: true
         rubric:
             kind: hybrid
             auto-weight: 0
@@ -909,6 +910,7 @@ assignments:
     q12ind:
         due: 2019-12-06 16:20:00
         open: 2019-12-06 15:30:00
+        optional: true
         rubric:
             kind: hybrid
             auto-weight: 0
@@ -919,6 +921,7 @@ assignments:
     q12cont:
         due: 2019-12-06 16:20:00
         open: 2019-12-06 15:30:00
+        optional: true
         rubric:
             kind: hybrid
             auto-weight: 0
@@ -929,6 +932,7 @@ assignments:
     q12comb:
         due: 2019-12-06 16:20:00
         open: 2019-12-06 15:30:00
+        optional: true
         rubric:
             kind: hybrid
             auto-weight: 0
@@ -939,6 +943,7 @@ assignments:
     q12struct:
         due: 2019-12-06 16:20:00
         open: 2019-12-06 15:30:00
+        optional: true
         rubric:
             kind: hybrid
             auto-weight: 0
@@ -949,6 +954,7 @@ assignments:
     q12sets:
         due: 2019-12-06 16:20:00
         open: 2019-12-06 15:30:00
+        optional: true
         rubric:
             kind: hybrid
             auto-weight: 0
