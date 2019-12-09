@@ -52,6 +52,9 @@ office hours:
           start: 11:00:00
           end: 12:00:00
           except: [2019-09-06]
+        - day: 2019-12-10
+          start: 12:30:00
+          end: 13:30:00
   TA:
     David:
       when:
