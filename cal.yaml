@@ -968,8 +968,8 @@ assignments:
 
 
     final-logic:
-        due: 2019-12-16 16:20:00
-        open: 2019-12-16 15:30:00
+        due: 2019-12-16 14:00:00
+        open: 2019-12-16 17:00:00
         optional: true
         rubric:
             kind: hybrid
@@ -979,8 +979,8 @@ assignments:
             human:
                 - 'shows mastery of topic'
     final-ind:
-        due: 2019-12-16 16:20:00
-        open: 2019-12-16 15:30:00
+        due: 2019-12-16 14:00:00
+        open: 2019-12-16 17:00:00
         optional: true
         rubric:
             kind: hybrid
@@ -990,8 +990,8 @@ assignments:
             human:
                 - 'shows mastery of topic'
     final-cont:
-        due: 2019-12-16 16:20:00
-        open: 2019-12-16 15:30:00
+        due: 2019-12-16 17:00:00
+        open: 2019-12-16 14:00:00
         optional: true
         rubric:
             kind: hybrid
@@ -1001,8 +1001,8 @@ assignments:
             human:
                 - 'shows mastery of topic'
     final-comb:
-        due: 2019-12-16 16:20:00
-        open: 2019-12-16 15:30:00
+        due: 2019-12-16 17:00:00
+        open: 2019-12-16 14:00:00
         optional: true
         rubric:
             kind: hybrid
@@ -1012,8 +1012,8 @@ assignments:
             human:
                 - 'shows mastery of topic'
     final-struct:
-        due: 2019-12-16 16:20:00
-        open: 2019-12-16 15:30:00
+        due: 2019-12-16 17:00:00
+        open: 2019-12-16 14:00:00
         optional: true
         rubric:
             kind: hybrid
@@ -1023,8 +1023,8 @@ assignments:
             human:
                 - 'shows mastery of topic'
     final-sets:
-        due: 2019-12-16 16:20:00
-        open: 2019-12-16 15:30:00
+        due: 2019-12-16 17:00:00
+        open: 2019-12-16 14:00:00
         optional: true
         rubric:
             kind: hybrid
